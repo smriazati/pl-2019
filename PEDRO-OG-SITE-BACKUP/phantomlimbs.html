@@ -1,0 +1,321 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"/>
+	<title>Pedro Lasch - Grand Gestures</title>
+
+	<!-- CSS
+	================================================== -->
+    
+    <!--Coolio Plugin-->
+	<link rel="stylesheet" href="css/base.css">
+	<link rel="stylesheet" href="css/skeleton.css">
+	<link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/isotope.css">
+	<link rel="stylesheet" href="css/colio.css">
+    
+    <!--Custom-->
+    <link rel="stylesheet" type="text/css" href="css/PedroLasch_style.css"/>
+ 
+    <!-- Responsive Mobile Menu -->    
+    <link rel="stylesheet" href="css/responsivemobilemenu.css" type="text/css"/>
+    
+    <!--RS Slider-->
+    <link rel="stylesheet" type="text/css" href="css/responsiveslides.css"/>
+    <link rel="stylesheet" type="text/css" href="css/RS_Slider_mod.css"/>
+    
+    <!-- JS
+	================================================== -->
+    
+    <!--Misc-->
+    <script src="js/jquery-1.8.2.min.js"></script>
+    <script type="text/javascript" src="js/fade.js"></script>
+    
+    <!-- Responsive Mobile Menu -->    
+    <script type="text/javascript" src="js/responsivemobilemenu.js"></script>
+     
+    <!--RS Slider-->
+    <!--<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>-->
+    <script src="js/responsiveslides.min.js"></script>
+    <script src="js/RS_Slider_call.js"></script>
+    
+    <!--Coolio Plugin-->
+	<!--<script type="text/javascript" src="js/jquery.min.js"></script>-->
+	<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+	<script type="text/javascript" src="js/jquery.scrollUp.min.js"></script>
+    <script type="text/javascript" src="js/jquery.isotope.min.js"></script>
+	<script type="text/javascript" src="js/jquery.colio.min.js"></script>
+    
+    <!-- Colio Black Theme-->
+	<link rel="stylesheet" href="colio-black/style.css" />
+	<link rel="stylesheet" href="colio-black/fancybox/jquery.fancybox.css" />
+	<script type="text/javascript" src="colio-black/fancybox/jquery.fancybox.js"></script>
+    
+    <!-- Initialize Colio-->    
+	<script type="text/javascript">
+		$(document).ready(function(){
+			
+			// "scrollTop" plugin
+			$.scrollUp();
+			
+			// "colio" plugin
+			$('.portfolio .list').colio({
+				id: 'demo_1',
+				theme: 'black',
+				placement: 'inside',
+				onContent: function(content){
+					// init "fancybox" plugin
+					$('.fancybox').fancybox({
+						titlePosition : 'over',
+						cyclic : true
+					});
+				}
+			});
+			
+			// "isotope" plugin
+			var filter = '*', isotope_run = function(f) {
+				$('.portfolio .list').isotope({layoutMode : 'fitRows', filter: f}).
+				trigger('colio','excludeHidden');
+			};
+			
+			$('.portfolio .filters a').click(function(){
+				$(this).addClass('filter-active').siblings().removeClass('filter-active');
+				var href = $(this).attr('href').substr(1);
+				filter = href ? '.' + href : '*';
+				isotope_run(filter);
+				return false;
+			});
+			
+			isotope_run(filter);
+			
+		});
+	</script>
+
+    <!--Social Media-->
+    <script src="https://platform.twitter.com/widgets.js"></script>
+    
+    <!--Language Switcher-->
+    <script src="js/jquery-cookie.js" charset="utf-8" type="text/javascript"></script>
+	<script src="js/jquery-lang.js" charset="utf-8" type="text/javascript"></script>
+    <script src="js/JqueryLangJS_call.js" charset="utf-8" type="text/javascript"></script>
+    
+</head>
+
+<body>
+
+<div class="WrapAll">
+
+	<div class="WrapNav">
+    
+    	<div class="WrapLangSwitch">
+            <div id="langChanger"><a href="#" onclick="window.lang.change('en'); location.reload(); return false;"><h4>ENG</h4></a> | <a  href="#" onclick="window.lang.change('es'); return false;"><h4>ESP</h4></a>
+            </div>
+        </div>
+
+        <div class="header">
+             <a href="index.html"><img src="images/PedroTitle.jpg" alt=""></a>
+        </div>
+        
+        <div class="rmm" data-menu-style = "minimal">
+            <ul>
+                <li><a href="works.html"><p lang="en">WORKS</p></a></li>
+                <li><a href="publications.html"><p lang="en">PUBLICATIONS</p></a></li>
+                <li><a href="about.html"><p lang="en">BIO / CV</p></a></li>
+                <li><a href="current.html"><p lang="en">CURRENT</p></a></li>
+                <li><a href="subscribe.html"><p lang="en">SUBSCRIBE</p></a></li>
+            </ul>
+        </div>
+        
+	</div>
+    
+    <div class="WrapContent">
+    
+	<div id="TextContainer">
+    	<h1 lang="en">Phantom Limbs &amp; Twin Towers Go Global</h1><p lang="en"> </p>
+        <br/><br/><p lang="en"></p>
+	</div>
+    
+	<div class="container">
+    
+		<div class="sixteen columns">
+							
+			<div class="portfolio clearfix">
+
+				<ul class="list">
+                   
+
+					<li data-content="#PhantomLimbs">
+						<div class="thumb">
+							<div class="view">
+								<a class="button colio-link" href="#" lang="en">View Project</a>
+							</div>
+							<img src="pictures/PhantomLimbs_ALL/PhantomLimbs_thumb.jpg" alt=""/>
+						</div>
+						<h4><a class="colio-link" href="#" lang="en">Phantom Limbs<br><br></a></h4>
+					</li>
+					
+					<li data-content="#TwinTowers">
+						<div class="thumb">
+							<div class="view">
+								<a class="button colio-link" href="http://www.twintowersgoglobal.org/" target="_blank" lang="en">Visit Project</a>
+							</div>
+							<img src="pictures/Works/PhantomLimbsAndTwinTowersGoGlobal_thumb.jpg" alt=""/>
+						</div>
+						<h4><a href="http://www.twintowersgoglobal.org/" target="_blank" lang="en">Twin Towers Go Global<br>Site for Documenta 13</a></h4>
+					</li>
+                    
+                    <li>
+                            <div class="thumb">
+                                <div class="view">
+                                    <a class="button" href="https://smile.amazon.com/Grand-Gestures-modest-Proposals-Documenta/dp/061568789X/ref=sr_1_4" lang="en">View Book</a>
+                                </div>
+                                <img src="pictures/CV/book_grand_gestures_pedrolasch.jpg" alt=""/>
+                            </div>
+                            <h4><a href="https://smile.amazon.com/Grand-Gestures-modest-Proposals-Documenta/dp/061568789X/ref=sr_1_4" lang="en">Grand Gestures <br>and (Im)modest Proposals</a></h4>
+                        </li>
+					
+				</ul><!-- list -->
+
+			</div><!-- portfolio -->
+            		
+			
+			<div id="PhantomLimbs" class="colio-content">
+									
+				<div class="main">
+					
+                    <h3 lang="en">Phantom Limbs <br> A Memorial Painting Cycle and Museum Installation (2001-2011)</h3> 
+                    <p lang="en"><em>Phantom Limbs</em> is an installation of nine framed paintings and related visual materials produced between October 2001 and July 2011. It is presented as an intervention within institutions and museums that house Western canonical paintings and contemporary art. The paintings are also exhibited individually or in smaller groups, and they are each 36x48 inches (unframed). Each work in this series corresponds to a place in the world where the New York Twin Towers are fictionally reconstructed as an international memorial. Some of these places are contested territories or relevant sites for international affairs between 2001 and 2011. Other sites correspond to cities where the Twin Towers have actually been recreated by light beams to commemorate September 11, 2001. Each painting has different stylistic, iconographic, and technical characteristics that bring various layers of complexity to the independent paintings and the installation as a whole. While the paintings are the central component, the work includes sketches, writings, and visual materials for optional display.   
+                    <br><br>
+                        
+                    The overall series represents new WTC buildings in Kabul, Budapest, Baghdad, Paris, Guantánamo Bay, Liverpool, Darfur Region refugee camps, Medellin, Montevideo, New Orleans, Panmunjum DMZ (North-South Korea), and Gaza City. 
+					</p>		
+				</div><!-- main -->
+				
+				<div class="side">
+					<ul class="feed">
+						<li>
+							<a class="fancybox" rel="PhantomLimbs" title="" href="pictures/PhantomLimbs_ALL/PhantomLimbs_Large/1_PhantomLimbs_Large.jpg">
+								<img src="pictures/PhantomLimbs_ALL/PhantomLimbs_Thumb/1_PhantomLimbs_Thumb.jpg" alt="">
+							</a>
+						</li>
+                        <li>
+							<a class="fancybox" rel="PhantomLimbs" title="" href="pictures/PhantomLimbs_ALL/PhantomLimbs_Large/2_PhantomLimbs_Large.jpg">
+								<img src="pictures/PhantomLimbs_ALL/PhantomLimbs_Thumb/2_PhantomLimbs_Thumb.jpg" alt="">
+							</a>
+						</li>
+                        <li>
+							<a class="fancybox" rel="PhantomLimbs" title="" href="pictures/PhantomLimbs_ALL/PhantomLimbs_Large/3_PhantomLimbs_Large.jpg">
+								<img src="pictures/PhantomLimbs_ALL/PhantomLimbs_Thumb/3_PhantomLimbs_Thumb.jpg" alt="">
+							</a>
+						</li>
+                        <li>
+							<a class="fancybox" rel="PhantomLimbs" title="" href="pictures/PhantomLimbs_ALL/PhantomLimbs_Large/4_PhantomLimbs_Large.jpg">
+								<img src="pictures/PhantomLimbs_ALL/PhantomLimbs_Thumb/4_PhantomLimbs_Thumb.jpg" alt="">
+							</a>
+						</li>
+                        <li>
+							<a class="fancybox" rel="PhantomLimbs" title="" href="pictures/PhantomLimbs_ALL/PhantomLimbs_Large/5_PhantomLimbs_Large.jpg">
+								<img src="pictures/PhantomLimbs_ALL/PhantomLimbs_Thumb/5_PhantomLimbs_Thumb.jpg" alt="">
+							</a>
+						</li>
+                        <li>
+							<a class="fancybox" rel="PhantomLimbs" title="" href="pictures/PhantomLimbs_ALL/PhantomLimbs_Large/6_PhantomLimbs_Large.jpg">
+								<img src="pictures/PhantomLimbs_ALL/PhantomLimbs_Thumb/6_PhantomLimbs_Thumb.jpg" alt="">
+							</a>
+						</li>
+                        
+                            <li>
+							<a class="fancybox" rel="PhantomLimbs" title="" href="pictures/PhantomLimbs_ALL/PhantomLimbs_Large/7_PhantomLimbs_Large.jpg">
+								<img src="pictures/PhantomLimbs_ALL/PhantomLimbs_Thumb/7_PhantomLimbs_Thumb.jpg" alt="">
+							</a>
+						</li>
+                            <li>
+							<a class="fancybox" rel="PhantomLimbs" title="" href="pictures/PhantomLimbs_ALL/PhantomLimbs_Large/8_PhantomLimbs_Large.jpg">
+								<img src="pictures/PhantomLimbs_ALL/PhantomLimbs_Thumb/8_PhantomLimbs_Thumb.jpg" alt="">
+							</a>
+						</li>
+                            <li>
+							<a class="fancybox" rel="PhantomLimbs" title="" href="pictures/PhantomLimbs_ALL/PhantomLimbs_Large/9_PhantomLimbs_Large.jpg">
+								<img src="pictures/PhantomLimbs_ALL/PhantomLimbs_Thumb/9_PhantomLimbs_Thumb.jpg" alt="">
+							</a>
+						</li>
+                      
+                            <li>
+							<a class="fancybox" rel="PhantomLimbs" title="" href="pictures/PhantomLimbs_ALL/PhantomLimbs_Large/10_PhantomLimbs_Large.jpg">
+								<img src="pictures/PhantomLimbs_ALL/PhantomLimbs_Thumb/10_PhantomLimbs_Thumb.jpg" alt="">
+							</a>
+						</li>
+                        
+					</ul>
+				</div><!-- side -->
+				
+			</div><!-- colio-content # PosterandPrint -->
+            
+            <div id="TwinTowers" class="colio-content">
+									
+				<div class="main">
+					
+					<h3 lang="en">Twin Towers Go Global (2006-2012)</h3>
+                    <p lang="en"><em>An Internet Memorial Using New and Old Social Media</em></p>
+                    <br>
+					<p lang="en"><em>Twin Towers Go Global</em> is a new media work that complements the Phantom Limbs series and shares much of the same research material. Also based on the premise that the New York Twin Towers are being reconstructed around the world as living memorials, the project interweaves this fictional framework with ten years of research and factual information through a website, social networks, news stories, an international competition, and collaborations with existing organizations, such as AND AND AND / Documenta 13. The difference in media often leads viewers to infer that the website, architectural renderings, and social media of TTGG are factual, while the paintings from Phantom Limbs are fictional. The assumptions associated with specific media and their social circuits are part of the content of these works, and they constitute a key reason for the broad range of media.
+                    <br><br>
+                        To view the original <em>Twin Towers Go Global</em> site as produced for AND AND AND / Documenta 13, please click <a href="http://www.twintowersgoglobal.org/" target="_blank" lang="en">here</a>.
+                    </p>		
+				</div><!-- main -->
+				
+				<div class="side">
+					<ul class="feed">
+						<li>
+							<a class="fancybox" rel="TwinTowers" title="" href="pictures/PhantomLimbs_ALL/TwinTowers_Large/1_TwinTowers_Large.jpg">
+								<img src="pictures/PhantomLimbs_ALL/TwinTowers_Thumb/1_TwinTowers_Thumb.jpg" alt="">
+							</a>
+						</li>
+                        
+                        <li>
+							<a class="fancybox" rel="TwinTowers" title="" href="pictures/PhantomLimbs_ALL/TwinTowers_Large/2_TwinTowers_Large.jpg">
+								<img src="pictures/PhantomLimbs_ALL/TwinTowers_Thumb/2_TwinTowers_Thumb.jpg" alt="">
+							</a>
+						</li>
+                        
+                        <li>
+							<a class="fancybox" rel="TwinTowers" title="" href="pictures/PhantomLimbs_ALL/TwinTowers_Large/3_TwinTowers_Large.jpg">
+								<img src="pictures/PhantomLimbs_ALL/TwinTowers_Thumb/3_TwinTowers_Thumb.jpg" alt="">
+							</a>
+						</li>
+                        
+        
+					</ul>
+				</div><!-- side -->
+				
+			</div>
+            
+		</div><!-- sixteen columns -->
+        
+	</div><!-- container -->
+    
+    <div id="space"></div>
+    
+    <div id="TextContainer"><p lang="en"><em>Phantom Limbs</em> is an installation of nine framed paintings and related visual materials produced between October 2001 and July 2011. It is presented as an intervention within institutions and museums that house Western canonical paintings and contemporary art. Each work in this series corresponds to a place in the world where the New York Twin Towers are fictionally reconstructed as an international memorial. Some of these places are contested territories or relevant sites for international affairs between 2001 and 2011. Other sites correspond to cities where the Twin Towers have actually been recreated by light beams to commemorate September 11, 2001. Each painting has different stylistic, iconographic, and technical characteristics that bring various layers of complexity to the independent paintings and the installation as a whole. While the paintings are the central component, the work includes sketches, writings, and visual materials for optional display.   
+                   <br><br>
+        
+        <em>Twin Towers Go Global</em> is a new media work that complements the <em>Phantom Limbs</em> series and shares much of the same research material. Also based on the premise that the New York Twin Towers are being reconstructed around the world as living memorials, the project interweaves this fictional framework with ten years of research and factual information through a website, social networks, news stories, an international competition, and collaborations with existing organizations, such as AND AND AND / Documenta 13. The difference in media often leads viewers to infer that the website, architectural renderings, and social media of TTGG are factual, while the paintings from Phantom Limbs are fictional. The assumptions associated with specific media and their social circuits are part of the content of these works, and they constitute a key reason for the broad range of media.
+                    <br><br>
+                        To view the original Twin Towers Go Global site as produced for AND AND AND / Documenta 13, please click <strong><a href="http://www.twintowersgoglobal.org/" target="_blank" lang="en">here</a></strong>.
+        
+        <br><br>To view the book <em>Grand Gestures and (Im)modest Proposals</em>, please click <strong><a href="https://smile.amazon.com/Grand-Gestures-modest-Proposals-Documenta/dp/061568789X">here</a></strong>.<br>
+        </p>
+	</div>
+    
+	<div id="TextContainer">
+    	<a href="works.html"><h2 lang="en">BACK TO ALL WORKS</h2></a>
+	</div>
+    
+	</div>
+    
+</div>
+
+</body>
+</html>

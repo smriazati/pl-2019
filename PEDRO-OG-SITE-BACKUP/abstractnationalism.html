@@ -1,0 +1,1003 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"/>
+	<title>Pedro Lasch - Abstract Nationalism</title>
+
+	<!-- CSS
+	================================================== -->
+    
+    <!--Coolio Plugin-->
+	<link rel="stylesheet" href="css/base.css">
+	<link rel="stylesheet" href="css/skeleton.css">
+	<link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/isotope.css">
+	<link rel="stylesheet" href="css/colio.css">
+    
+    <!--Custom-->
+    <link rel="stylesheet" type="text/css" href="css/PedroLasch_style.css"/>
+ 
+    <!--Responsive Mobile Menu-->    
+    <link rel="stylesheet" href="css/responsivemobilemenu.css" type="text/css"/>
+    
+    <!--RS Slider-->
+    <link rel="stylesheet" type="text/css" href="css/responsiveslides.css"/>
+    <link rel="stylesheet" type="text/css" href="css/RS_Slider_mod.css"/>
+    
+    <!--Magnific Popup-->
+	<link rel="stylesheet" href="css/magnific-popup_mod.css"> 
+    
+    <!-- JS
+	================================================== -->
+    
+    <!--Misc-->
+    <script src="js/jquery-1.8.2.min.js"></script>
+    <script type="text/javascript" src="js/fade.js"></script>
+    
+    <!--Responsive Mobile Menu-->    
+    <script type="text/javascript" src="js/responsivemobilemenu.js"></script>
+     
+    <!--RS Slider-->
+    <!--<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>-->
+    <script src="js/responsiveslides.min.js"></script>
+    <script src="js/RS_Slider_call.js"></script>
+    
+    <!--Magnific Popup-->
+	<script src="js/jquery.magnific-popup.js"></script>
+    
+    <!--Coolio Plugin-->
+	<!--<script type="text/javascript" src="js/jquery.min.js"></script>-->
+	<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+	<script type="text/javascript" src="js/jquery.scrollUp.min.js"></script>
+    <script type="text/javascript" src="js/jquery.isotope.min.js"></script>
+	<script type="text/javascript" src="js/jquery.colio.min.js"></script>
+    
+    <!--Colio Black Theme-->
+	<link rel="stylesheet" href="colio-black/style.css" />
+	<link rel="stylesheet" href="colio-black/fancybox/jquery.fancybox.css" />
+	<script type="text/javascript" src="colio-black/fancybox/jquery.fancybox.js"></script>
+    
+    <!--Initialize Colio-->    
+	<script type="text/javascript">
+		$(document).ready(function(){
+			
+			// "scrollTop" plugin
+			$.scrollUp();
+			
+			// "colio" plugin
+			$('.portfolio .list').colio({
+				id: 'demo_1',
+				theme: 'black',
+				placement: 'inside',
+				onContent: function(content){
+					// init "fancybox" plugin
+					$('.fancybox').fancybox({
+						titlePosition : 'over',
+						cyclic : true
+					});
+				}
+			});
+			
+			// "isotope" plugin
+			var filter = '*', isotope_run = function(f) {
+				$('.portfolio .list').isotope({layoutMode : 'fitRows', filter: f}).
+				trigger('colio','excludeHidden');
+			};
+			
+			$('.portfolio .filters a').click(function(){
+				$(this).addClass('filter-active').siblings().removeClass('filter-active');
+				var href = $(this).attr('href').substr(1);
+				filter = href ? '.' + href : '*';
+				isotope_run(filter);
+				return false;
+			});
+			
+			isotope_run(filter);
+			
+		});
+	</script>
+
+    <!--Social Media-->
+    <script src="https://platform.twitter.com/widgets.js"></script>
+    
+    <!--Language Switcher-->
+    <script src="js/jquery-cookie.js" charset="utf-8" type="text/javascript"></script>
+	<script src="js/jquery-lang.js" charset="utf-8" type="text/javascript"></script>
+    <script src="js/JqueryLangJS_call.js" charset="utf-8" type="text/javascript"></script>
+   
+</head>
+
+<body>
+
+<div class="WrapAll">
+
+	<div class="WrapNav">
+    
+    	<div class="WrapLangSwitch">
+            <div id="langChanger"><a href="#" onclick="window.lang.change('en'); location.reload(); return false;"><h4>ENG</h4></a> | <a  href="#" onclick="window.lang.change('es'); return false;"><h4>ESP</h4></a>
+            </div>
+        </div>
+
+        <div class="header">
+             <a href="index.html"><img src="images/PedroTitle.jpg" alt=""></a>
+        </div>
+        
+        <div class="rmm" data-menu-style = "minimal">
+            <ul>
+                <li><a href="works.html"><p lang="en">WORKS</p></a></li>
+                <li><a href="publications.html"><p lang="en">PUBLICATIONS</p></a></li>
+                <li><a href="about.html"><p lang="en">BIO / CV</p></a></li>
+                <li><a href="current.html"><p lang="en">CURRENT</p></a></li>
+                <li><a href="subscribe.html"><p lang="en">SUBSCRIBE</p></a></li>
+            </ul>
+        </div>
+        
+	</div>
+    
+    <div class="WrapContent">
+    
+	<div id="TextContainer">
+    	<h1 lang="en">Abstract Nationalism &amp; National Abstraction </h1><p lang="en"> - 2001 (flags &amp; scores) / 2014 (musical premiere)</p>
+        <br/><br/><p lang="en">Projects and individual elements in the Abstract Nationalism and National Abstraction series:</p>
+	</div>
+    
+	<div class="container">
+    
+		<div class="sixteen columns">
+							
+			<div class="portfolio clearfix">
+
+				<ul class="list">
+                    
+                    <li data-content="#SchematicScores">
+						<div class="thumb">
+							<div class="view">
+								<a class="button colio-link" href="#" lang="en">View Project</a>
+							</div>
+							<img src="pictures/AbstractNationalism_All/SchematicScores_Thumb/1_SchematicScores_thumb.jpg" alt=""/>
+						</div>
+						<h4><a class="colio-link" href="#" lang="en">Anthems for Four Voices:<br>The Schematic Scores</a></h4>
+					</li>
+
+					<li data-content="#MusicalScores">
+						<div class="thumb">
+							<div class="view">
+								<a class="button colio-link" href="#" lang="en">View Project</a>
+							</div>
+							<img src="pictures/AbstractNationalism_All/MusicalScores_Thumb/1_MusicalScores_thumb.jpg" alt=""/>
+						</div>
+						<h4><a class="colio-link" href="#" lang="en">Anthems for Four Voices:<br>The Musical Scores</a></h4>
+					</li>
+					
+					<li data-content="#FlagFusions">
+						<div class="thumb">
+							<div class="view">
+								<a class="button colio-link" href="#" lang="en">View Project</a>
+							</div>
+							<img src="pictures/AbstractNationalism_All/FlagFusions_Thumb/2_FlagFusions_thumb.jpg" alt=""/>
+						</div>
+						<h4><a class="colio-link" href="#" lang="en">Flag Fusions<br><br></a></h4>
+					</li>
+                    
+                    <li data-content="#FlagModulations">
+						<div class="thumb">
+							<div class="view">
+								<a class="button colio-link" href="#" lang="en">View Project</a>
+							</div>
+							<img src="pictures/AbstractNationalism_All/FlagModulations_Thumb/1_FlagModulations_thumb.jpg" alt=""/>
+						</div>
+						<h4><a class="colio-link" href="#" lang="en">Flag Modulations<br><br></a></h4>
+					</li>
+                    
+                    <!--<li>
+						<div class="thumb">
+							<div class="view">
+								<a class="button colio-link" id="VideoLink1" href="http://vimeo.com/105611337" lang="en">View Project</a>
+							</div>
+							<img src="pictures/AbstractNationalism_All/FlagModulations_Thumb/1_FlagModulations_thumb.jpg" alt=""/>
+						</div>
+						<h4><a class="colio-link" id="VideoLink2" href="http://vimeo.com/105611337" lang="en">Flag Modulations</br></br></a></h4>
+					</li>-->
+                    
+                    
+                     <li data-content="#Anatomy">
+						<div class="thumb">
+							<div class="view">
+								<a class="button colio-link" href="#" lang="en">View Project</a>
+							</div>
+							<img src="pictures/AbstractNationalism_All/Anatomy_Large/1_Anatomy_Large.jpg" alt=""/>
+						</div>
+						<h4><a class="colio-link" href="#" lang="en"> Anatomy of the Nation <br>&amp; Bologna Interventions<br><br></a></h4>
+					</li>
+                    
+                     <li data-content="#ResistanceandBelonging">
+						<div class="thumb">
+							<div class="view">
+								<a class="button colio-link" href="#" lang="en">View Project</a>
+							</div>
+							<img src="pictures/AbstractNationalism_All/ResistanceandBelonging_Thumb/1_resistanceandbelonging_thumb.jpg" alt=""/>
+						</div>
+						<h4><a class="colio-link" href="#" lang="en"> Seattle's Resistance <br>&amp; Belonging <br><br></a></h4>
+					</li>
+                    
+                    <li data-content="#PhillipsCollection">
+						<div class="thumb">
+							<div class="view">
+								<a class="button colio-link" href="#" lang="en">View Project</a>
+							</div>
+							<img src="pictures/AbstractNationalism_All/PhillipsCollection_Thumb/22_PhillipsCollection_thumb.jpg" alt=""/>
+						</div>
+						<h4><a class="colio-link" href="#" lang="en">The Phillips Collection<br><br></a></h4>
+					</li>
+
+					 <li data-content="#VeniceBiennale">
+						<div class="thumb">
+							<div class="view">
+								<a class="button colio-link" href="#" lang="en">View Project</a>
+							</div>
+							<img src="pictures/AbstractNationalism_All/VeniceBiennale_Thumb/01_CTSummit_thumb.jpeg" alt=""/>
+						</div>
+						<h4><a class="colio-link" href="#" lang="en"> 56th Venice Biennale <br> &amp; Creative Time Summit <br><br></a></h4>
+					</li>
+                    
+					
+				</ul><!-- list -->
+
+			</div><!-- portfolio -->
+            		
+			
+			<div id="SchematicScores" class="colio-content">
+									
+				<div class="main">
+					
+					<h3 lang="en">Anthems for Four Voices: The Schematic Scores<br>(2001)</h3>
+					<p lang="en">These scores exist as a suite of 48 prints (one for each composition of four countries) in an edition of 10, created in 2001. They are intentionally abstract scores, yet essential for the creation of the musical scores and all visual components of the series since they lay out the entire concept of the work, including all 48 groups or so-called compositions of four countries in the alphabet, the language shift for each particular anthem, the relationship of each anthem to its specific voice (Soprano, Alto, Tenor, Bass), and the overall temporal structure of the musical composition.</p>		
+				</div><!-- main -->
+				
+				<div class="side">
+					<ul class="feed">
+						<li>
+							<a class="fancybox" rel="SchematicScores" lang="en" title="" href="pictures/AbstractNationalism_All/SchematicScores_Large/1_SchematicScores.jpg">
+								<img src="pictures/AbstractNationalism_All/SchematicScores_Thumb/1_SchematicScores_thumb.jpg" alt="">
+							</a>
+						</li>
+                        <li>
+							<a class="fancybox" rel="SchematicScores" lang="en" title="" href="pictures/AbstractNationalism_All/SchematicScores_Large/2_SchematicScores.jpg">
+								<img src="pictures/AbstractNationalism_All/SchematicScores_Thumb/2_SchematicScores_thumb.jpg" alt="">
+							</a>
+						</li>
+                        <li>
+							<a class="fancybox" rel="SchematicScores" lang="en" title="" href="pictures/AbstractNationalism_All/SchematicScores_Large/3_SchematicScores.jpg">
+								<img src="pictures/AbstractNationalism_All/SchematicScores_Thumb/3_SchematicScores_thumb.jpg" alt="">
+							</a>
+						</li>
+                        <li>
+							<a class="fancybox" rel="SchematicScores" lang="en" title="" href="pictures/AbstractNationalism_All/SchematicScores_Large/4_SchematicScores.jpg">
+								<img src="pictures/AbstractNationalism_All/SchematicScores_Thumb/4_SchematicScores_thumb.jpg" alt="">
+							</a>
+						</li>
+                        <li>
+							<a class="fancybox" rel="SchematicScores" lang="en" title="" href="pictures/AbstractNationalism_All/SchematicScores_Large/5_SchematicScores.jpg">
+								<img src="pictures/AbstractNationalism_All/SchematicScores_Thumb/5_SchematicScores_thumb.jpg" alt="">
+							</a>
+						</li>
+                        <li>
+							<a class="fancybox" rel="SchematicScores" lang="en" title="" href="pictures/AbstractNationalism_All/SchematicScores_Large/6_SchematicScores.jpg">
+								<img src="pictures/AbstractNationalism_All/SchematicScores_Thumb/6_SchematicScores_thumb.jpg" alt="">
+							</a>
+						</li>
+                        <li>
+							<a class="fancybox" rel="SchematicScores" lang="en" title="" href="pictures/AbstractNationalism_All/SchematicScores_Large/7_SchematicScores.jpg">
+								<img src="pictures/AbstractNationalism_All/SchematicScores_Thumb/7_SchematicScores_thumb.jpg" alt="">
+							</a>
+						</li>
+					</ul>
+				</div><!-- side -->
+				
+			</div><!-- colio-content # SchematicScores -->
+            
+            <div id="MusicalScores" class="colio-content">
+									
+				<div class="main">
+					
+					<h3 lang="en">Anthems for Four Voices: The Musical Scores</br>(2014-ongoing)</h3>
+					<p lang="en">Selected groups of anthems and assembled compositions are produced with professional composers for specific contexts and situations. The first two compostions - C20 by Craig DeAlmeida and C46 by Aristides Llaneza, were produced for the series premiere at The Phillips Collection in Washington DC in 2014. Some musical scores are designed and printed exclusively for the use of performers and musicians, while others are part of the art work and are meant for a general public.</p>		
+				</div><!-- main -->
+				
+				<div class="side">
+					<ul class="feed">
+						<li>
+							<a class="fancybox" rel="MusicalScores" lang="en" title="" href="pictures/AbstractNationalism_All/MusicalScores_Large/1_MusicalScores.jpg">
+								<img src="pictures/AbstractNationalism_All/MusicalScores_Thumb/1_MusicalScores_thumb.jpg" alt="">
+							</a>
+						</li>
+                        <li>
+							<a class="fancybox" rel="MusicalScores" lang="en" title="" href="pictures/AbstractNationalism_All/MusicalScores_Large/2_MusicalScores.jpg">
+								<img src="pictures/AbstractNationalism_All/MusicalScores_Thumb/2_MusicalScores_thumb.jpg" alt="">
+							</a>
+						</li>
+                        <li>
+							<a class="fancybox" rel="MusicalScores" lang="en" title="" href="pictures/AbstractNationalism_All/MusicalScores_Large/3_MusicalScores.jpg">
+								<img src="pictures/AbstractNationalism_All/MusicalScores_Thumb/3_MusicalScores_thumb.jpg" alt="">
+							</a>
+						</li>
+                        <li>
+							<a class="fancybox" rel="MusicalScores" lang="en" title="" href="pictures/AbstractNationalism_All/MusicalScores_Large/4_MusicalScores.jpg">
+								<img src="pictures/AbstractNationalism_All/MusicalScores_Thumb/4_MusicalScores_thumb.jpg" alt="">
+							</a>
+						</li>
+                        <li>
+							<a class="fancybox" rel="MusicalScores" lang="en" title="" href="pictures/AbstractNationalism_All/MusicalScores_Large/5_MusicalScores.jpg">
+								<img src="pictures/AbstractNationalism_All/MusicalScores_Thumb/5_MusicalScores_thumb.jpg" alt="">
+							</a>
+						</li>
+                        <li>
+							<a class="fancybox" rel="MusicalScores" lang="en" title="" href="pictures/AbstractNationalism_All/MusicalScores_Large/6_MusicalScores.jpg">
+								<img src="pictures/AbstractNationalism_All/MusicalScores_Thumb/6_MusicalScores_thumb.jpg" alt="">
+							</a>
+						</li>
+					</ul>
+				</div><!-- side -->
+				
+			</div><!-- colio-content # MusicalScores -->
+            
+            <div id="FlagFusions" class="colio-content">
+									
+				<div class="main">
+					
+					<h3 lang="en">Flag Fusions<br>(2001-ongoing)</h3>
+					<p lang="en">These static images are designed to create actual outdoor and indoor flags used as performance props for recitals and social intervention, as well museum installations. paintings, prints, and digital elements for web pages, sites, and social media platforms.</p>		
+				</div><!-- main -->
+				
+				<div class="side">
+					<ul class="feed">
+						<li>
+							<a class="fancybox" rel="FlagFusions" lang="en" title="" href="pictures/AbstractNationalism_All/FlagFusions_Large/1_FlagFusions.jpg">
+								<img src="pictures/AbstractNationalism_All/FlagFusions_Thumb/1_FlagFusions_thumb.jpg" alt="">
+							</a>
+						</li>
+                        <li>
+							<a class="fancybox" rel="FlagFusions" lang="en" title="" href="pictures/AbstractNationalism_All/FlagFusions_Large/2_FlagFusions.jpg">
+								<img src="pictures/AbstractNationalism_All/FlagFusions_Thumb/2_FlagFusions_thumb.jpg" alt="">
+							</a>
+						</li>
+                        <li>
+							<a class="fancybox" rel="FlagFusions" lang="en" title="" href="pictures/AbstractNationalism_All/FlagFusions_Large/3_FlagFusions.jpg">
+								<img src="pictures/AbstractNationalism_All/FlagFusions_Thumb/3_FlagFusions_thumb.jpg" alt="">
+							</a>
+						</li>
+                        <li>
+							<a class="fancybox" rel="FlagFusions" lang="en" title="" href="pictures/AbstractNationalism_All/FlagFusions_Large/4_FlagFusions.jpg">
+								<img src="pictures/AbstractNationalism_All/FlagFusions_Thumb/4_FlagFusions_thumb.jpg" alt="">
+							</a>
+						</li>
+                        <li>
+							<a class="fancybox" rel="FlagFusions" lang="en" title="" href="pictures/AbstractNationalism_All/FlagFusions_Large/5_FlagFusions.jpg">
+								<img src="pictures/AbstractNationalism_All/FlagFusions_Thumb/5_FlagFusions_thumb.jpg" alt="">
+							</a>
+						</li>
+                        <li>
+							<a class="fancybox" rel="FlagFusions" lang="en" title="" href="pictures/AbstractNationalism_All/FlagFusions_Large/6_FlagFusions.jpg">
+								<img src="pictures/AbstractNationalism_All/FlagFusions_Thumb/6_FlagFusions_thumb.jpg" alt="">
+							</a>
+						</li>
+                        <li>
+							<a class="fancybox" rel="FlagFusions" lang="en" title="" href="pictures/AbstractNationalism_All/FlagFusions_Large/7_FlagFusions.jpg">
+								<img src="pictures/AbstractNationalism_All/FlagFusions_Thumb/7_FlagFusions_thumb.jpg" alt="">
+							</a>
+						</li>
+                        <li>
+							<a class="fancybox" rel="FlagFusions" lang="en" title="" href="pictures/AbstractNationalism_All/FlagFusions_Large/8_FlagFusions.jpg">
+								<img src="pictures/AbstractNationalism_All/FlagFusions_Thumb/8_FlagFusions_thumb.jpg" alt="">
+							</a>
+						</li>
+                        <li>
+							<a class="fancybox" rel="FlagFusions" lang="en" title="" href="pictures/AbstractNationalism_All/FlagFusions_Large/9_FlagFusions.jpg">
+								<img src="pictures/AbstractNationalism_All/FlagFusions_Thumb/9_FlagFusions_thumb.jpg" alt="">
+							</a>
+						</li>
+                        <li>
+							<a class="fancybox" rel="FlagFusions" lang="en" title="" href="pictures/AbstractNationalism_All/FlagFusions_Large/10_FlagFusions.jpg">
+								<img src="pictures/AbstractNationalism_All/FlagFusions_Thumb/10_FlagFusions_thumb.jpg" alt="">
+							</a>
+						</li>
+                        <li>
+							<a class="fancybox" rel="FlagFusions" lang="en" title="" href="pictures/AbstractNationalism_All/FlagFusions_Large/11_FlagFusions.jpg">
+								<img src="pictures/AbstractNationalism_All/FlagFusions_Thumb/11_FlagFusions_thumb.jpg" alt="">
+							</a>
+						</li>
+                        <li>
+							<a class="fancybox" rel="FlagFusions" lang="en" title="" href="pictures/AbstractNationalism_All/FlagFusions_Large/12_FlagFusions.jpg">
+								<img src="pictures/AbstractNationalism_All/FlagFusions_Thumb/12_FlagFusions_thumb.jpg" alt="">
+							</a>
+						</li>
+                        <li>
+							<a class="fancybox" rel="FlagFusions" lang="en" title="" href="pictures/AbstractNationalism_All/FlagFusions_Large/13_FlagFusions.jpg">
+								<img src="pictures/AbstractNationalism_All/FlagFusions_Thumb/13_FlagFusions_thumb.jpg" alt="">
+							</a>
+						</li>
+                        <li>
+							<a class="fancybox" rel="FlagFusions" lang="en" title="" href="pictures/AbstractNationalism_All/FlagFusions_Large/14_FlagFusions.jpg">
+								<img src="pictures/AbstractNationalism_All/FlagFusions_Thumb/14_FlagFusions_thumb.jpg" alt="">
+							</a>
+						</li>
+                        <li>
+							<a class="fancybox" rel="FlagFusions" lang="en" title="" href="pictures/AbstractNationalism_All/FlagFusions_Large/15_FlagFusions.jpg">
+								<img src="pictures/AbstractNationalism_All/FlagFusions_Thumb/15_FlagFusions_thumb.jpg" alt="">
+							</a>
+						</li>
+                        <li>
+							<a class="fancybox" rel="FlagFusions" lang="en" title="" href="pictures/AbstractNationalism_All/FlagFusions_Large/16_FlagFusions.jpg">
+								<img src="pictures/AbstractNationalism_All/FlagFusions_Thumb/16_FlagFusions_thumb.jpg" alt="">
+							</a>
+						</li>
+                        <li>
+							<a class="fancybox" rel="FlagFusions" lang="en" title="" href="pictures/AbstractNationalism_All/FlagFusions_Large/17_FlagFusions.jpg">
+								<img src="pictures/AbstractNationalism_All/FlagFusions_Thumb/17_FlagFusions_thumb.jpg" alt="">
+							</a>
+						</li>
+					</ul>
+				</div><!-- side -->
+				
+			</div><!-- colio-content # FlagFusions -->
+            
+            <div id="FlagModulations" class="colio-content">
+									
+				<div class="main">
+					
+					<h3 lang="en">Flag Modulations<br>(2014-ongoing)</h3>
+					<p lang="en">These works include flipbooks, digital animations, video, and other moving image pieces that show different degrees and speeds of transitions and modulations between flags. Some are designed to be seen by themselves, and others used to accompany performances as wall projections.</p>		
+				</div><!-- main -->
+				
+				<div class="side">
+					<iframe width="260" src="https://warpwire.duke.edu/w/RBUCAA/" frameborder="0" scrolling="0" allowfullscreen></iframe>
+<p>Flag Modulations from Pedro Lasch.</p>
+				</div><!-- side -->
+				
+			</div><!-- colio-content # FlagModulations -->
+            
+            <div id="PhillipsCollection" class="colio-content">
+									
+				<div class="main">
+					
+					<h3 lang="en">The Phillips Collection<br></h3>
+					<p lang="en">Beginning with the work’s 2014 premiere at The Phillips Collection in Washington DC’s Embassy Row, the series is constituted in great part by its evolving productions designed for specific contexts and institutions, as well as less institutional social interventions in relevant sites or situations. This part of the project includes musical and non-musical performances that use the choreographies and protocols of national ceremonies as a key art material and source of inspiration. Publications, websites, social media platforms, mapping interfaces, blogs and feeds, forums and digital networks, as well as databases on flags and anthems are also understood to be part of these social and institutional interventions.</p>		
+				</div><!-- main -->
+				
+				<div class="side">
+					<ul class="feed">
+						<li>
+							<a class="fancybox" rel="PhillipsCollection" lang="en" title="" href="pictures/AbstractNationalism_All/PhillipsCollection_Large/1_PhillipsCollection.jpg">
+								<img src="pictures/AbstractNationalism_All/PhillipsCollection_Thumb/1_PhillipsCollection_thumb.jpg" alt="">
+							</a>
+						</li>
+                        <li>
+							<a class="fancybox" rel="PhillipsCollection" lang="en" title="" href="pictures/AbstractNationalism_All/PhillipsCollection_Large/2_PhillipsCollection.jpg">
+								<img src="pictures/AbstractNationalism_All/PhillipsCollection_Thumb/2_PhillipsCollection_thumb.jpg" alt="">
+							</a>
+						</li>
+                        <li>
+							<a class="fancybox" rel="PhillipsCollection" lang="en" title="" href="pictures/AbstractNationalism_All/PhillipsCollection_Large/3_PhillipsCollection.jpg">
+								<img src="pictures/AbstractNationalism_All/PhillipsCollection_Thumb/3_PhillipsCollection_thumb.jpg" alt="">
+							</a>
+						</li>
+                        <li>
+							<a class="fancybox" rel="PhillipsCollection" lang="en" title="" href="pictures/AbstractNationalism_All/PhillipsCollection_Large/4_PhillipsCollection.jpg">
+								<img src="pictures/AbstractNationalism_All/PhillipsCollection_Thumb/4_PhillipsCollection_thumb.jpg" alt="">
+							</a>
+						</li>
+                        <li>
+							<a class="fancybox" rel="PhillipsCollection" lang="en" title="" href="pictures/AbstractNationalism_All/PhillipsCollection_Large/5_PhillipsCollection.jpg">
+								<img src="pictures/AbstractNationalism_All/PhillipsCollection_Thumb/5_PhillipsCollection_thumb.jpg" alt="">
+							</a>
+						</li>
+                        <li>
+							<a class="fancybox" rel="PhillipsCollection" lang="en" title="" href="pictures/AbstractNationalism_All/PhillipsCollection_Large/6_PhillipsCollection.jpg">
+								<img src="pictures/AbstractNationalism_All/PhillipsCollection_Thumb/6_PhillipsCollection_thumb.jpg" alt="">
+							</a>
+						</li>
+                        <li>
+							<a class="fancybox" rel="PhillipsCollection" lang="en" title="" href="pictures/AbstractNationalism_All/PhillipsCollection_Large/7_PhillipsCollection.jpg">
+								<img src="pictures/AbstractNationalism_All/PhillipsCollection_Thumb/7_PhillipsCollection_thumb.jpg" alt="">
+							</a>
+						</li>
+                        <li>
+							<a class="fancybox" rel="PhillipsCollection" lang="en" title="" href="pictures/AbstractNationalism_All/PhillipsCollection_Large/8_PhillipsCollection.jpg">
+								<img src="pictures/AbstractNationalism_All/PhillipsCollection_Thumb/8_PhillipsCollection_thumb.jpg" alt="">
+							</a>
+						</li>
+                        <li>
+							<a class="fancybox" rel="PhillipsCollection" lang="en" title="" href="pictures/AbstractNationalism_All/PhillipsCollection_Large/9_PhillipsCollection.jpg">
+								<img src="pictures/AbstractNationalism_All/PhillipsCollection_Thumb/9_PhillipsCollection_thumb.jpg" alt="">
+							</a>
+						</li>
+                        <li>
+							<a class="fancybox" rel="PhillipsCollection" lang="en" title="" href="pictures/AbstractNationalism_All/PhillipsCollection_Large/10_PhillipsCollection.jpg">
+								<img src="pictures/AbstractNationalism_All/PhillipsCollection_Thumb/10_PhillipsCollection_thumb.jpg" alt="">
+							</a>
+						</li>
+                        <li>
+							<a class="fancybox" rel="PhillipsCollection" lang="en" title="" href="pictures/AbstractNationalism_All/PhillipsCollection_Large/11_PhillipsCollection.jpg">
+								<img src="pictures/AbstractNationalism_All/PhillipsCollection_Thumb/11_PhillipsCollection_thumb.jpg" alt="">
+							</a>
+						</li>
+                        <li>
+							<a class="fancybox" rel="PhillipsCollection" lang="en" title="" href="pictures/AbstractNationalism_All/PhillipsCollection_Large/12_PhillipsCollection.jpg">
+								<img src="pictures/AbstractNationalism_All/PhillipsCollection_Thumb/12_PhillipsCollection_thumb.jpg" alt="">
+							</a>
+						</li>
+                        <li>
+							<a class="fancybox" rel="PhillipsCollection" lang="en" title="" href="pictures/AbstractNationalism_All/PhillipsCollection_Large/13_PhillipsCollection.jpg">
+								<img src="pictures/AbstractNationalism_All/PhillipsCollection_Thumb/13_PhillipsCollection_thumb.jpg" alt="">
+							</a>
+						</li>
+                        <li>
+							<a class="fancybox" rel="PhillipsCollection" lang="en" title="" href="pictures/AbstractNationalism_All/PhillipsCollection_Large/14_PhillipsCollection.jpg">
+								<img src="pictures/AbstractNationalism_All/PhillipsCollection_Thumb/14_PhillipsCollection_thumb.jpg" alt="">
+							</a>
+						</li>
+                        <li>
+							<a class="fancybox" rel="PhillipsCollection" lang="en" title="" href="pictures/AbstractNationalism_All/PhillipsCollection_Large/15_PhillipsCollection.jpg">
+								<img src="pictures/AbstractNationalism_All/PhillipsCollection_Thumb/15_PhillipsCollection_thumb.jpg" alt="">
+							</a>
+						</li>
+                        <li>
+							<a class="fancybox" rel="PhillipsCollection" lang="en" title="" href="pictures/AbstractNationalism_All/PhillipsCollection_Large/16_PhillipsCollection.jpg">
+								<img src="pictures/AbstractNationalism_All/PhillipsCollection_Thumb/16_PhillipsCollection_thumb.jpg" alt="">
+							</a>
+						</li>
+                        <li>
+							<a class="fancybox" rel="PhillipsCollection" lang="en" title="" href="pictures/AbstractNationalism_All/PhillipsCollection_Large/17_PhillipsCollection.jpg">
+								<img src="pictures/AbstractNationalism_All/PhillipsCollection_Thumb/17_PhillipsCollection_thumb.jpg" alt="">
+							</a>
+						</li>
+                        <li>
+							<a class="fancybox" rel="PhillipsCollection" lang="en" title="" href="pictures/AbstractNationalism_All/PhillipsCollection_Large/18_PhillipsCollection.jpg">
+								<img src="pictures/AbstractNationalism_All/PhillipsCollection_Thumb/18_PhillipsCollection_thumb.jpg" alt="">
+							</a>
+						</li>
+                        <li>
+							<a class="fancybox" rel="PhillipsCollection" lang="en" title="" href="pictures/AbstractNationalism_All/PhillipsCollection_Large/19_PhillipsCollection.jpg">
+								<img src="pictures/AbstractNationalism_All/PhillipsCollection_Thumb/19_PhillipsCollection_thumb.jpg" alt="">
+							</a>
+						</li>
+                        <li>
+							<a class="fancybox" rel="PhillipsCollection" lang="en" title="" href="pictures/AbstractNationalism_All/PhillipsCollection_Large/20_PhillipsCollection.jpg">
+								<img src="pictures/AbstractNationalism_All/PhillipsCollection_Thumb/20_PhillipsCollection_thumb.jpg" alt="">
+							</a>
+						</li>
+                        <li>
+							<a class="fancybox" rel="PhillipsCollection" lang="en" title="" href="pictures/AbstractNationalism_All/PhillipsCollection_Large/21_PhillipsCollection.jpg">
+								<img src="pictures/AbstractNationalism_All/PhillipsCollection_Thumb/21_PhillipsCollection_thumb.jpg" alt="">
+							</a>
+						</li>
+                        <li>
+							<a class="fancybox" rel="PhillipsCollection" lang="en" title="" href="pictures/AbstractNationalism_All/PhillipsCollection_Large/22_PhillipsCollection.jpg">
+								<img src="pictures/AbstractNationalism_All/PhillipsCollection_Thumb/22_PhillipsCollection_thumb.jpg" alt="">
+							</a>
+						</li>
+					</ul>
+				</div><!-- side -->
+				
+			</div><!-- colio-content # PhillipsCollection --> 
+        
+        <div id="Anatomy" class="colio-content">
+									
+				<div class="main">
+					
+					<h3 lang="en">Anatomy of the <br>Nation &amp; Bologna <br>Interventions (2017)</h3>
+
+					<p lang="en"><em>Anatomy of the Nation</em> is a video artwork staged in the iconic Teatro Anatomico in Bologna, and premiered at the Museum of Modern Art (MAMbo). Along with other Bologna Social Practice Lab public productions (2017-2018), this work was created for the Academy of Global Humanities &amp; Critical Theory and Fondazione Gramsci with co-director Rossella Mazzaglia and lab participants from around the world. Other <em>Polit(t)ico</em> interventions from the <em>Abstract Nationalism</em> series were staged at Bologna’s main square and Piazza Nettuno, the Museo Archeologico, and Piazza Verdi.
+                        <br><br>
+                    Artistic Direction: Pedro Lasch, Rossella Mazzaglia / Production management: Massimo Carosi / Choreography: Cristina Kristal Rizzo / Music and Sound: Mathias Hinke / Performance: Antonia Casadei, Laura Colomban, Antonella De Francesco, Laura Gibertini, Yancen Guo, Margherita Isola, Rossella Mazzaglia / Photography: Pedro Lasch, Benedetta Manzi / Videography: Rita Maralla, Teresa Sala / Video Editing: Michael Blair. Production: Bologna Social Practice Lab 2017 in collaboration with Biblioteca dell’Archiginnasio, Fondazione Gramsci - Emilia Romagna, Festival Danza Urbana di Bologna. For the full list of lab participants, visit the <a href="https://www.socialpracticelab.org/portfolio/nae-anatomy-of-a-nation/">FHI Social Practice Lab site</a>.    
+                    </p>		
+				</div><!-- main -->
+				
+				<div class="side">
+					<ul class="feed">
+						
+                        <li>
+							<a class="fancybox" rel="Anatomy" lang="en" title="" href="pictures/AbstractNationalism_All/Anatomy_Large/10_AnatomyB_Large.jpg">
+								<img src="pictures/AbstractNationalism_All/Anatomy_Thumb/10_AnatomyB_Thumb.jpg" alt="">
+							</a>
+						</li>
+                         <li>
+							<a class="fancybox" rel="Anatomy" lang="en" title="" href="pictures/AbstractNationalism_All/Anatomy_Large/11_AnatomyB_Large.jpg">
+								<img src="pictures/AbstractNationalism_All/Anatomy_Thumb/11_AnatomyB_Thumb.jpg" alt="">
+							</a>
+						</li>
+                         <li>
+							<a class="fancybox" rel="Anatomy" lang="en" title="" href="pictures/AbstractNationalism_All/Anatomy_Large/12_AnatomyB_Large.jpg">
+								<img src="pictures/AbstractNationalism_All/Anatomy_Thumb/12_AnatomyB_Thumb.jpg" alt="">
+							</a>
+						</li>
+                         <li>
+							<a class="fancybox" rel="Anatomy" lang="en" title="" href="pictures/AbstractNationalism_All/Anatomy_Large/13_AnatomyB_Large.jpg">
+								<img src="pictures/AbstractNationalism_All/Anatomy_Thumb/13_AnatomyB_Thumb.jpg" alt="">
+							</a>
+						</li>
+                         <li>
+							<a class="fancybox" rel="Anatomy" lang="en" title="" href="pictures/AbstractNationalism_All/Anatomy_Large/14_AnatomyB_Large.jpg">
+								<img src="pictures/AbstractNationalism_All/Anatomy_Thumb/14_AnatomyB_Thumb.jpg" alt="">
+							</a>
+						</li>
+                         <li>
+							<a class="fancybox" rel="Anatomy" lang="en" title="" href="pictures/AbstractNationalism_All/Anatomy_Large/15_AnatomyB_Large.jpg">
+								<img src="pictures/AbstractNationalism_All/Anatomy_Thumb/15_AnatomyB_Thumb.jpg" alt="">
+							</a>
+						</li>
+                         <li>
+							<a class="fancybox" rel="Anatomy" lang="en" title="" href="pictures/AbstractNationalism_All/Anatomy_Large/16_AnatomyB_Large.jpg">
+								<img src="pictures/AbstractNationalism_All/Anatomy_Thumb/16_AnatomyB_Thumb.jpg" alt="">
+							</a>
+						</li>
+                         <li>
+							<a class="fancybox" rel="Anatomy" lang="en" title="" href="pictures/AbstractNationalism_All/Anatomy_Large/17_AnatomyB_Large.jpg">
+								<img src="pictures/AbstractNationalism_All/Anatomy_Thumb/17_AnatomyB_Thumb.jpg" alt="">
+							</a>
+						</li>
+                         <li>
+							<a class="fancybox" rel="Anatomy" lang="en" title="" href="pictures/AbstractNationalism_All/Anatomy_Large/18_AnatomyB_Large.jpg">
+								<img src="pictures/AbstractNationalism_All/Anatomy_Thumb/18_AnatomyB_Thumb.jpg" alt="">
+							</a>
+						</li>
+                         <li>
+							<a class="fancybox" rel="Anatomy" lang="en" title="" href="pictures/AbstractNationalism_All/Anatomy_Large/19_AnatomyB_Large.jpg">
+								<img src="pictures/AbstractNationalism_All/Anatomy_Thumb/19_AnatomyB_Thumb.jpg" alt="">
+							</a>
+						</li>
+                         <li>
+							<a class="fancybox" rel="Anatomy" lang="en" title="" href="pictures/AbstractNationalism_All/Anatomy_Large/20_AnatomyB_Large.jpg">
+								<img src="pictures/AbstractNationalism_All/Anatomy_Thumb/20_AnatomyB_Thumb.jpg" alt="">
+							</a>
+						</li>
+                        <li>
+							<a class="fancybox" rel="Anatomy" lang="en" title="" href="pictures/AbstractNationalism_All/Anatomy_Large/21_AnatomyB_Large.jpg">
+								<img src="pictures/AbstractNationalism_All/Anatomy_Thumb/21_AnatomyB_Thumb.jpg" alt="">
+							</a>
+						</li>
+                        <li>
+							<a class="fancybox" rel="Anatomy" lang="en" title="" href="pictures/AbstractNationalism_All/Anatomy_Large/22_AnatomyB_Large.jpg">
+								<img src="pictures/AbstractNationalism_All/Anatomy_Thumb/22_AnatomyB_Thumb.jpg" alt="">
+							</a>
+						</li>
+                        <li>
+							<a class="fancybox" rel="Anatomy" lang="en" title="" href="pictures/AbstractNationalism_All/Anatomy_Large/23_AnatomyB_Large.jpg">
+								<img src="pictures/AbstractNationalism_All/Anatomy_Thumb/23_AnatomyB_Thumb.jpg" alt="">
+							</a>
+						</li>
+                        <li>
+							<a class="fancybox" rel="Anatomy" lang="en" title="" href="pictures/AbstractNationalism_All/Anatomy_Large/24_AnatomyB_Large.jpg">
+								<img src="pictures/AbstractNationalism_All/Anatomy_Thumb/24_AnatomyB_Thumb.jpg" alt="">
+							</a>
+						</li>
+                        <li>
+							<a class="fancybox" rel="Anatomy" lang="en" title="" href="pictures/AbstractNationalism_All/Anatomy_Large/25_AnatomyB_Large.jpg">
+								<img src="pictures/AbstractNationalism_All/Anatomy_Thumb/25_AnatomyB_Thumb.jpg" alt="">
+							</a>
+						</li>
+                        <li>
+							<a class="fancybox" rel="Anatomy" lang="en" title="" href="pictures/AbstractNationalism_All/Anatomy_Large/26_AnatomyB_Large.jpg">
+								<img src="pictures/AbstractNationalism_All/Anatomy_Thumb/26_AnatomyB_Thumb.jpg" alt="">
+							</a>
+						</li>
+                        <li>
+							<a class="fancybox" rel="Anatomy" lang="en" title="" href="pictures/AbstractNationalism_All/Anatomy_Large/27_AnatomyB_Large.jpg">
+								<img src="pictures/AbstractNationalism_All/Anatomy_Thumb/27_AnatomyB_Thumb.jpg" alt="">
+							</a>
+						</li>
+                        <li>
+							<a class="fancybox" rel="Anatomy" lang="en" title="" href="pictures/AbstractNationalism_All/Anatomy_Large/28_AnatomyB_Large.jpg">
+								<img src="pictures/AbstractNationalism_All/Anatomy_Thumb/28_AnatomyB_Thumb.jpg" alt="">
+							</a>
+						</li>
+                        <li>
+							<a class="fancybox" rel="Anatomy" lang="en" title="" href="pictures/AbstractNationalism_All/Anatomy_Large/1_AnatomyB_Large.jpg">
+								<img src="pictures/AbstractNationalism_All/Anatomy_Thumb/1_AnatomyB_Thumb.jpg" alt="">
+							</a>
+						</li>
+                        <li>
+							<a class="fancybox" rel="Anatomy" lang="en" title="" href="pictures/AbstractNationalism_All/Anatomy_Large/2_AnatomyB_Large.jpg">
+								<img src="pictures/AbstractNationalism_All/Anatomy_Thumb/2_AnatomyB_Thumb.jpg" alt="">
+							</a>
+						</li>
+                        <li>
+							<a class="fancybox" rel="Anatomy" lang="en" title="" href="pictures/AbstractNationalism_All/Anatomy_Large/3_AnatomyB_Large.jpg">
+								<img src="pictures/AbstractNationalism_All/Anatomy_Thumb/3_AnatomyB_Thumb.jpg" alt="">
+							</a>
+						</li>
+                        <li>
+							<a class="fancybox" rel="Anatomy" lang="en" title="" href="pictures/AbstractNationalism_All/Anatomy_Large/4_AnatomyB_Large.jpg">
+								<img src="pictures/AbstractNationalism_All/Anatomy_Thumb/4_AnatomyB_Thumb.jpg" alt="">
+							</a>
+						</li>
+                        <li>
+							<a class="fancybox" rel="Anatomy" lang="en" title="" href="pictures/AbstractNationalism_All/Anatomy_Large/5_AnatomyB_Large.jpg">
+								<img src="pictures/AbstractNationalism_All/Anatomy_Thumb/5_AnatomyB_Thumb.jpg" alt="">
+							</a>
+						</li>
+                        <li>
+							<a class="fancybox" rel="Anatomy" lang="en" title="" href="pictures/AbstractNationalism_All/Anatomy_Large/6_AnatomyB_Large.jpg">
+								<img src="pictures/AbstractNationalism_All/Anatomy_Thumb/6_AnatomyB_Thumb.jpg" alt="">
+							</a>
+						</li>
+                        <li>
+							<a class="fancybox" rel="Anatomy" lang="en" title="" href="pictures/AbstractNationalism_All/Anatomy_Large/7_AnatomyB_Large.jpg">
+								<img src="pictures/AbstractNationalism_All/Anatomy_Thumb/7_AnatomyB_Thumb.jpg" alt="">
+							</a>
+						</li>
+                        <li>
+							<a class="fancybox" rel="Anatomy" lang="en" title="" href="pictures/AbstractNationalism_All/Anatomy_Large/8_AnatomyB_Large.jpg">
+								<img src="pictures/AbstractNationalism_All/Anatomy_Thumb/8_AnatomyB_Thumb.jpg" alt="">
+							</a>
+						</li>
+                        <li>
+							<a class="fancybox" rel="Anatomy" lang="en" title="" href="pictures/AbstractNationalism_All/Anatomy_Large/9_AnatomyB_Large.jpg">
+								<img src="pictures/AbstractNationalism_All/Anatomy_Thumb/9_AnatomyB_Thumb.jpg" alt="">
+							</a>
+						</li>
+                    
+                    </ul>
+				</div><!-- side -->
+				
+			</div><!-- colio-content # Anatomy -->
+        
+        
+        
+            <div id="ResistanceandBelonging" class="colio-content">
+									
+				<div class="main">
+					
+					<h3 lang="en">Seattle's Resistance and Belonging<br>(2017)</h3>
+
+					<p lang="en">An art exhibition at Seattle's historic King Street Station, including a series of workshops, discussions, art-making, and healing led by artist Pedro Lasch with representatives from regional artists and community organizations.
+                        <br><br>
+                        <a href="https://www.facebook.com/21Progress/">21 Progress</a><br>
+                        <a href="https://www.facebook.com/bpcmonroe/">Black Prisoners Caucus </a><br>
+                        <a href="https://www.facebook.com/maritadingus/">Marita Dingus</a> - healing through doll-making <br>
+                        <a href="https://www.facebook.com/artbyhenryluke/">Art of Henry Luke</a> - protest sign-making <br>
+                        <a href="https://www.facebook.com/NWIRP/">Northwest Immigrant Rights Project </a><br>
+                        <a href="https://www.facebook.com/Red.Eagle.Soaring/">Red Eagle Soaring</a><br><br>
+                    
+                    More information can be found at:
+<a href="https://www.seattle.gov/arts/borderlands">https://www.seattle.gov/arts/borderlands</a></p>		
+				</div><!-- main -->
+				
+				<div class="side">
+					<ul class="feed">
+						<li>
+							<a class="fancybox" rel="ResistanceandBelonging" lang="en" title="" href="pictures/AbstractNationalism_All/ResistanceandBelonging_Large/2_resistanceandbelonging_large.jpg">
+								<img src="pictures/AbstractNationalism_All/ResistanceandBelonging_Thumb/2_resistanceandbelonging_thumb.jpg" alt="">
+							</a>
+						</li>
+                        <li>
+							<a class="fancybox" rel="ResistanceandBelonging" lang="en" title="" href="pictures/AbstractNationalism_All/ResistanceandBelonging_Large/3_resistanceandbelonging_large.jpg">
+								<img src="pictures/AbstractNationalism_All/ResistanceandBelonging_Thumb/3_resistanceandbelonging_thumb.jpg" alt="">
+							</a>
+						</li>
+                    </ul>
+				</div><!-- side -->
+				
+			</div><!-- colio-content # ResistanceandBelonging -->
+        
+        
+			 <div id="VeniceBiennale" class="colio-content">
+									
+				<div class="main">
+					
+					<h3 lang="en"> HOW TO KNOW: The Protocols and Pedagogy <br> of National Abstraction<br></h3>
+					<p lang="en"> HOW TO KNOW, a new work by Pedro Lasch, frames the 2015 Creative Time Summit: The Curriculum at the Venice Biennale, and is part of a larger series. Social interventions, visual compositions, flag displays, and musical works enable audiences to understand national anthems of other countries in their own language, while their own anthem becomes incomprehensible. For those speaking several languages, or having strong associations with more than one anthem, the experience is even more layered and representative of today’s cultural pluralism. </p>
+
+					<br>
+ 
+                    <p> Each of the forty-eight flags of the installation at the Teatro alle Tese, in the Arsenale, combines four countries, so that all of the world’s countries are represented, in alphabetical order. The flags are set in motion through simple choreographed movements by members of a color guard, here called the curricular guard for the multilingual terms and phrases that appear on their shirts; together the flags and color guard propose a re-envisioned curriculum for All of the World’s Futures. The opening musical intervention is a live voice- ensemble rendition of Composition 20: Indonesia, Iran, Iraq, Ireland, composed by Craig DeAlmeida and performed by Fran Newark, Erica Dunkle, Cameron Aiken, and Larry Speakman. Conducted by Rodney Wynkoop, this piece presents the anthems of all four countries simultaneously, each sung in the language of the country that follows it alphabetically. The closing intervention includes a new array of anthems, this time presented in a temporal sequence and accompanied by a video projection and participatory elements for the audience to sing along as flags, anthems, and languages transition into each other. 
+                    </p>
+
+                    <br>
+
+                    <p>
+                    <br>
+                    Links:
+                    <hr>
+
+                    <a href="http://creativetime.org/summit/overview/overview-2015/special-projects/"> Information on Pedro Lasch's special project at the 2015 Venice Biennale &amp; Creative Time Summit </a>
+                    <hr>
+
+                    <a href="http://livestream.com/creativetime/biennalearte">  Video stream of Pedro Lasch Performance (Part 1) at the Venice Biennale &amp; Creative Time Summit can be seen here </a>
+
+                    <hr>
+
+                    <a href="http://creativetime.org/summit/venice-2015/"> More about the Creative Time Summit at the 2015 Venice Biennale here/</a> 
+                    </p>	
+
+				</div><!-- main -->
+				
+				<div class="side">
+					<ul class="feed">
+						<li>
+							<a class="fancybox" rel="VeniceBiennale" lang="en" title="" href="pictures/AbstractNationalism_All/VeniceBiennale_Large/01_CTSummit.jpeg">
+								<img src="pictures/AbstractNationalism_All/VeniceBiennale_Thumb/01_CTSummit_thumb.jpeg" alt="">
+							</a>
+						</li>
+                        <li>
+							<a class="fancybox" rel="VeniceBiennale" lang="en" title="" href="pictures/AbstractNationalism_All/VeniceBiennale_Large/02_CTSummit.jpeg">
+								<img src="pictures/AbstractNationalism_All/VeniceBiennale_Thumb/02_CTSummit_thumb.jpeg" alt="">
+							</a>
+						</li>
+                        <li>
+							<a class="fancybox" rel="VeniceBiennale" lang="en" title="" href="pictures/AbstractNationalism_All/VeniceBiennale_Large/03_CTSummit.jpeg">
+								<img src="pictures/AbstractNationalism_All/VeniceBiennale_Thumb/03_CTSummit_thumb.jpeg" alt="">
+							</a>
+						</li>
+                        <li>
+							<a class="fancybox" rel="VeniceBiennale" lang="en" title="" href="pictures/AbstractNationalism_All/VeniceBiennale_Large/04_CTSummit.jpeg">
+								<img src="pictures/AbstractNationalism_All/VeniceBiennale_Thumb/04_CTSummit_thumb.jpeg" alt="">
+							</a>
+						</li>
+                        <li>
+							<a class="fancybox" rel="VeniceBiennale" lang="en" title="" href="pictures/AbstractNationalism_All/VeniceBiennale_Large/05_CTSummit.jpeg">
+								<img src="pictures/AbstractNationalism_All/VeniceBiennale_Thumb/05_CTSummit_thumb.jpeg" alt="">
+							</a>
+						</li>
+                        <li>
+							<a class="fancybox" rel="VeniceBiennale" lang="en" title="" href="pictures/AbstractNationalism_All/VeniceBiennale_Large/06_CTSummit.jpeg">
+								<img src="pictures/AbstractNationalism_All/VeniceBiennale_Thumb/06_CTSummit_thumb.jpeg" alt="">
+							</a>
+						</li>
+                        <li>
+							<a class="fancybox" rel="VeniceBiennale" lang="en" title="" href="pictures/AbstractNationalism_All/VeniceBiennale_Large/07_CTSummit.jpeg">
+								<img src="pictures/AbstractNationalism_All/VeniceBiennale_Thumb/07_CTSummit_thumb.jpeg" alt="">
+							</a>
+						</li>
+                        <li>
+							<a class="fancybox" rel="VeniceBiennale" lang="en" title="" href="pictures/AbstractNationalism_All/VeniceBiennale_Large/08_CTSummit.jpeg">
+								<img src="pictures/AbstractNationalism_All/VeniceBiennale_Thumb/08_CTSummit_thumb.jpeg" alt="">
+							</a>
+						</li>
+                        <li>
+							<a class="fancybox" rel="VeniceBiennale" lang="en" title="" href="pictures/AbstractNationalism_All/VeniceBiennale_Large/09_CTSummit.jpeg">
+								<img src="pictures/AbstractNationalism_All/VeniceBiennale_Thumb/09_CTSummit_thumb.jpeg" alt="">
+							</a>
+						</li>
+                        <li>
+							<a class="fancybox" rel="VeniceBiennale" lang="en" title="" href="pictures/AbstractNationalism_All/VeniceBiennale_Large/10_CTSummit.jpeg">
+								<img src="pictures/AbstractNationalism_All/VeniceBiennale_Thumb/10_CTSummit_thumb.jpeg" alt="">
+							</a>
+						</li>
+                        <li>
+							<a class="fancybox" rel="VeniceBiennale" lang="en" title="" href="pictures/AbstractNationalism_All/VeniceBiennale_Large/11_CTSummit.jpeg">
+								<img src="pictures/AbstractNationalism_All/VeniceBiennale_Thumb/11_CTSummit_thumb.jpeg" alt="">
+							</a>
+						</li>
+                        <li>
+							<a class="fancybox" rel="VeniceBiennale" lang="en" title="" href="pictures/AbstractNationalism_All/VeniceBiennale_Large/12_CTSummit.jpeg">
+								<img src="pictures/AbstractNationalism_All/VeniceBiennale_Thumb/12_CTSummit_thumb.jpeg" alt="">
+							</a>
+						</li>
+                        <li>
+							<a class="fancybox" rel="VeniceBiennale" lang="en" title="" href="pictures/AbstractNationalism_All/VeniceBiennale_Large/14_CTSummit.jpeg">
+								<img src="pictures/AbstractNationalism_All/VeniceBiennale_Thumb/14_CTSummit_thumb.jpeg" alt="">
+							</a>
+						</li>
+                        <li>
+						<a class="fancybox" rel="VeniceBiennale" lang="en" title="" href="pictures/AbstractNationalism_All/VeniceBiennale_Large/28_CTSummit.jpeg">
+								<img src="pictures/AbstractNationalism_All/VeniceBiennale_Thumb/28_CTSummit_thumb.jpeg" alt="">
+							</a>
+						</li>
+                        <li>
+							<a class="fancybox" rel="VeniceBiennale" lang="en" title="" href="pictures/AbstractNationalism_All/VeniceBiennale_Large/16_CTSummit.jpeg">
+								<img src="pictures/AbstractNationalism_All/VeniceBiennale_Thumb/16_CTSummit_thumb.jpeg" alt="">
+							</a>
+						</li>
+                        <li>
+							<a class="fancybox" rel="VeniceBiennale" lang="en" title="" href="pictures/AbstractNationalism_All/VeniceBiennale_Large/17_CTSummit.jpeg">
+								<img src="pictures/AbstractNationalism_All/VeniceBiennale_Thumb/17_CTSummit_thumb.jpeg" alt="">
+							</a>
+						</li>
+                        <li>
+							<a class="fancybox" rel="VeniceBiennale" lang="en" title="" href="pictures/AbstractNationalism_All/VeniceBiennale_Large/18_CTSummit.jpeg">
+								<img src="pictures/AbstractNationalism_All/VeniceBiennale_Thumb/18_CTSummit_thumb.jpeg" alt="">
+							</a>
+						</li>
+                        <li>
+							<a class="fancybox" rel="VeniceBiennale" lang="en" title="" href="pictures/AbstractNationalism_All/VeniceBiennale_Large/19_CTSummit.jpeg">
+								<img src="pictures/AbstractNationalism_All/VeniceBiennale_Thumb/19_CTSummit_thumb.jpeg" alt="">
+							</a>
+						</li>
+                        <li>
+							<a class="fancybox" rel="VeniceBiennale" lang="en" title="" href="pictures/AbstractNationalism_All/VeniceBiennale_Large/20_CTSummit.jpeg">
+								<img src="pictures/AbstractNationalism_All/VeniceBiennale_Thumb/20_CTSummit_thumb.jpeg" alt="">
+							</a>
+						</li>
+                        <li>
+						<a class="fancybox" rel="VeniceBiennale" lang="en" title="" href="pictures/AbstractNationalism_All/VeniceBiennale_Large/21_CTSummit.jpeg">
+								<img src="pictures/AbstractNationalism_All/VeniceBiennale_Thumb/21_CTSummit_thumb.jpeg" alt="">
+							</a>
+						</li>
+                        <li>
+						<a class="fancybox" rel="VeniceBiennale" lang="en" title="" href="pictures/AbstractNationalism_All/VeniceBiennale_Large/22_CTSummit.jpeg">
+								<img src="pictures/AbstractNationalism_All/VeniceBiennale_Thumb/22_CTSummit_thumb.jpeg" alt="">
+							</a>
+						</li>
+                        <li>
+							<a class="fancybox" rel="VeniceBiennale" lang="en" title="" href="pictures/AbstractNationalism_All/VeniceBiennale_Large/24_CTSummit.jpeg">
+								<img src="pictures/AbstractNationalism_All/VeniceBiennale_Thumb/24_CTSummit_thumb.jpeg" alt="">
+							</a>
+						</li>
+						<li>
+							<a class="fancybox" rel="VeniceBiennale" lang="en" title="" href="pictures/AbstractNationalism_All/VeniceBiennale_Large/23_CTSummit.jpeg">
+								<img src="pictures/AbstractNationalism_All/VeniceBiennale_Thumb/23_CTSummit_thumb.jpeg" alt="">
+							</a>
+						</li>
+						<li>
+							<a class="fancybox" rel="VeniceBiennale" lang="en" title="" href="pictures/AbstractNationalism_All/VeniceBiennale_Large/26_CTSummit.jpeg">
+								<img src="pictures/AbstractNationalism_All/VeniceBiennale_Thumb/26_CTSummit_thumb.jpeg" alt="">
+							</a>
+						</li>
+						<li>
+							<a class="fancybox" rel="VeniceBiennale" lang="en" title="" href="pictures/AbstractNationalism_All/VeniceBiennale_Large/27_CTSummit.jpeg">
+								<img src="pictures/AbstractNationalism_All/VeniceBiennale_Thumb/27_CTSummit_thumb.jpeg" alt="">
+							</a>
+						</li>
+						<li>
+							<a class="fancybox" rel="VeniceBiennale" lang="en" title="" href="pictures/AbstractNationalism_All/VeniceBiennale_Large/29_CTSummit.jpeg">
+								<img src="pictures/AbstractNationalism_All/VeniceBiennale_Thumb/29_CTSummit_thumb.jpeg" alt="">
+							</a>
+						</li>
+						<li>
+							<a class="fancybox" rel="VeniceBiennale" lang="en" title="" href="pictures/AbstractNationalism_All/VeniceBiennale_Large/30_CTSummit.jpeg">
+								<img src="pictures/AbstractNationalism_All/VeniceBiennale_Thumb/30_CTSummit_thumb.jpeg" alt="">
+							</a>
+						</li>
+						<li>
+							<a class="fancybox" rel="VeniceBiennale" lang="en" title="" href="pictures/AbstractNationalism_All/VeniceBiennale_Large/13_CTSummit.jpeg">
+								<img src="pictures/AbstractNationalism_All/VeniceBiennale_Thumb/13_CTSummit_thumb.jpeg" alt="">
+							</a>
+						</li>
+						<li>
+							<a class="fancybox" rel="VeniceBiennale" lang="en" title="" href="pictures/AbstractNationalism_All/VeniceBiennale_Large/25_CTSummit.jpeg">
+								<img src="pictures/AbstractNationalism_All/VeniceBiennale_Thumb/25_CTSummit_thumb.jpeg" alt="">
+							</a>
+						</li>
+						<li>
+							<a class="fancybox" rel="VeniceBiennale" lang="en" title="" href="pictures/AbstractNationalism_All/VeniceBiennale_Large/31_CTSummit.jpeg">
+								<img src="pictures/AbstractNationalism_All/VeniceBiennale_Thumb/31_CTSummit_thumb.jpeg" alt="">
+							</a>
+						</li>
+						<li>
+							<a class="fancybox" rel="VeniceBiennale" lang="en" title="" href="pictures/AbstractNationalism_All/VeniceBiennale_Large/32_CTSummit.jpeg">
+								<img src="pictures/AbstractNationalism_All/VeniceBiennale_Thumb/32_CTSummit_thumb.jpeg" alt="">
+							</a>
+						</li>
+						<li>
+							<a class="fancybox" rel="VeniceBiennale" lang="en" title="" href="pictures/AbstractNationalism_All/VeniceBiennale_Large/33_CTSummit.jpeg">
+								<img src="pictures/AbstractNationalism_All/VeniceBiennale_Thumb/33_CTSummit_thumb.jpeg" alt="">
+							</a>
+						</li>
+					</ul>
+				</div><!-- side -->
+				
+			</div><!-- colio-content # VeniceBiennale -->
+            
+		</div><!-- sixteen columns -->
+        
+	</div><!-- container -->
+    
+    <div id="space"></div>
+    
+    <div id="TextContainer">
+      <p lang="en"><em><strong>Abstract Nationalism</strong></em> includes video works, visual scores, paintings, musical performances, and various media associated with socially engaged art. Channeling the intense emotional and cultural associations we have towards anthems and flags, the series addresses notions of independence, colonialism, (multi)nationalism, migrations, and mapping, all so deeply related to the history of nations and cultures. Conceived in 2001, but first presented at the The Phillips Collection in Washington, DC (2014) and its immediate Embassy Row neighborhood, the series has also been presented at the 56th Venice Biennale and Creative Time Summit, Seattle’s historic King Street Station, UNESCO’s InTransit, Laboratoires d’Aubervilliers in Paris, and many other sites around the world.<br /><br /></p>
+      
+	</div>
+    
+	<div id="TextContainer">
+    	<a href="works.html"><h2 lang="en">BACK TO ALL WORKS</h2></a>
+	</div>
+    
+
+<script src="js/MagnificPopup_call.js"></script>
+
+</body>
+</html>

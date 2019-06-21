@@ -1,0 +1,337 @@
+body,h2,h3,p,quote,small,form,input,ul,li,ol,label{
+	margin:0px;
+	padding:0px;
+}
+
+body{
+	background: #FFF;
+	line-height: normal;
+	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+	overflow-y: scroll;
+	overflow-x: hidden;
+	/*-webkit-font-smoothing: antialiased; /*Make font-weight consistent across browsers*/
+}
+
+a img
+{
+  border:none;
+}
+
+.WrapNav h1{
+	color:#000;
+	font-size:20px;
+	font-weight:400;
+	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+.WrapNav h2{
+	color:#000;
+	font-size:30px;
+	font-weight:400;
+	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+.WrapNav h3{
+	color:#000;
+	font-size:40px;
+	font-weight:400;
+	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+.WrapNav h4{
+	display:inline;
+	color:#000;
+	font-size:13px;
+	font-weight:400;
+	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+.WrapNav p{
+	color:#000;
+	font-size:15px;
+	font-weight:400;
+	font-family: Arial;
+}
+
+/*----------------------------------------  TEXT CONTAINERS  */
+
+#TextTitle {
+	width: 150px;
+}
+
+#TextTitle h1 {
+	display:inline;
+	font-weight:500;
+}
+
+#TextTitle p {
+	padding-top:5px;
+	padding-bottom:25px;
+}
+
+#TextTitle a:hover p, #TextTitle a:hover h1 {
+	color:#999;
+	-webkit-transition: color 0.3s ease-in-out;
+	-moz-transition: color 0.3s ease-in-out;
+	-ms-transition: color 0.3s ease-in-out;
+	-o-transition: color 0.3s ease-in-out;
+	transition: color 0.3s ease-in-out;
+}
+
+#TextTitle a p, #TextTitle a h1 {
+	color:#000;
+	-webkit-transition: color 0.3s ease-in-out;
+	-moz-transition: color 0.3s ease-in-out;
+	-ms-transition: color 0.3s ease-in-out;
+	-o-transition: color 0.3s ease-in-out;
+	transition: color 0.3s ease-in-out;
+}
+
+#TextContainer {
+  width: 92%;
+  /*max-width: 1170px;*/
+  max-width:1000px;
+  margin: 0 auto;
+  padding-bottom:30px;
+}
+
+#TextContainer p {
+	display:inline;
+	font-size:13px;
+	font-weight:400;
+	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+	color:#000;
+	line-height:normal;
+}
+
+#TextContainer h1 {
+	display:inline;
+	font-size:16px;
+    font-weight:500;
+	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+	color:#000;
+	line-height:normal;
+}
+
+#TextContainer h2 {
+	display:inline;
+	font-size:13px;
+	font-weight:500;
+	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+	color:#000;
+	line-height:normal;
+}
+
+#TextContainer a:hover {
+	opacity:0.6;
+}
+
+/*----------------------------------------  WRAP  */
+
+.WrapAll {
+}
+
+.WrapLanguage p {
+	color:#000;
+	font-size:12px;
+	padding-top:25px;
+}
+
+.WrapContent {
+	width: 100%;
+	max-width:1010px;
+	margin: 0 auto;
+	margin-bottom:5px;
+}
+
+.WrapNav {
+	padding-top:10px;
+	/*padding-top:25px;*/
+	padding-bottom:30px;
+}
+
+.WrapLangSwitch {
+	width: 92%;
+  	max-width:680px;
+  	margin: 0 auto;
+  	padding-top:0px;
+	padding-bottom:5px;
+	text-align:left;
+}
+
+.WrapContact {
+	padding-top: 10px;
+}
+
+.WrapTwitterParent {
+	width: 100%;
+	max-width:800px;
+	margin: 0 auto;
+	padding-bottom:10px;
+}
+
+.WrapTwitterChild {
+	margin-left:140px;
+	margin-right:100px;
+}
+
+.WrapContactForm {
+	width: 100%;
+	max-width:350px;
+	/*max-width:675px;*/
+	margin: 0 auto;
+	padding-left:20px;
+	padding-right:20px;
+}
+
+.WrapAboutText{
+	width: 92%;
+  	max-width:738px;
+  	margin: 0 auto;
+  	padding-bottom:30px;
+}	
+
+/*----------------------------------------  Thumbnails  */
+
+.WrapThumbnails{
+	margin-right:10px;
+}
+
+.Thumbnails{
+	width:100%;
+	max-width:620px;
+	float:right;
+	margin-left:-2px;
+	margin-top:-5px;
+	padding-left:10px;
+	padding-bottom:10px;
+}
+
+.Thumbnails .ThumbnailColumn1, .Thumbnails .ThumbnailColumn2, .Thumbnails .ThumbnailColumn3, .Thumbnails .ThumbnailExtra{
+	height:190px;
+	width:190px;
+	/*border:solid 2px #000;*/
+	margin:5px;
+	float:left;
+}
+
+/*----------------------------------------  Images  */
+
+.header img{
+	display: block;
+	position:relative;
+	width: 100%;
+	padding:0px;
+	margin:0 auto !important;
+	max-width:400px;
+	padding-bottom:10px;
+}
+
+#SocialMedia {
+	padding-top:10px;
+}
+
+/*----------------------------------------  LINKS  */
+
+.WrapNav a:link, .WrapAll a:link {
+	text-decoration: none;
+}
+.WrapNav a:visited, .WrapAll a:visited {
+	text-decoration: none;
+}
+.WrapNav a:hover, .WrapAll a:hover {
+	text-decoration: none;
+}
+.WrapNav a:active, .WrapAll a:active {
+	text-decoration: none;
+}
+
+.WrapContent a:link {
+	color: #000;
+}
+.WrapContent a:visited {
+	color: #000;
+}
+.WrapContent a:hover {
+	color: #707070;
+}
+.WrapContent a:active {
+	color: #000;
+}
+
+/*----------------------------------------  MISC  */
+
+.PrevNext {
+	padding-top:10px;
+}
+
+.PrevNext img{
+	padding-right:10px;
+}
+
+/*#NavLine{
+	width: 170px;
+	padding-bottom:12px;
+	margin-left:-20px;
+	border-top:solid 2px #FFF;
+}*/
+
+#Slider {
+	max-width:800px;
+	margin: 0 auto;
+	padding-left:20px;
+	padding-right:20px;
+}
+
+#WrapSlider {
+}
+
+#SocialMediaIcons {
+	padding-left:7px;
+}
+
+#SocialMediaIcons img {
+	padding-right:2px;
+}
+
+#EmailFormWrap {
+	margin-top:-30px;
+	margin-left:-20px;
+	padding-bottom:20px;
+}
+
+.outside {
+}
+
+#PaddingTop{
+	padding-top:2px;
+}
+
+#PaddingBottom{
+	padding-top:20px;
+}
+
+#indent{
+	text-indent:20px;
+}
+
+#space{
+	padding-top:10px;
+}
+
+/*----------------------------------------  FIX CONFLICTING CSS FROM OTHER STYLE SHEETS  */
+
+li, p {
+	line-height: normal;
+}
+
+.container{
+	padding-left:10px;
+}
+
+
+/* sarah styles */
+
+.strong {
+	font-weight: 800 !important;
+}

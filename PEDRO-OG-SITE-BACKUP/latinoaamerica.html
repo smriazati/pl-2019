@@ -1,0 +1,400 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"/>
+	<title>Pedro Lasch - Latino/a America</title>
+
+	<!-- CSS
+	================================================== -->
+    
+    <!--Coolio Plugin-->
+	<link rel="stylesheet" href="css/base.css">
+	<link rel="stylesheet" href="css/skeleton.css">
+	<link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/isotope.css">
+	<link rel="stylesheet" href="css/colio.css">
+    
+    <!--Custom-->
+    <link rel="stylesheet" type="text/css" href="css/PedroLasch_style.css"/>
+ 
+    <!-- Responsive Mobile Menu -->    
+    <link rel="stylesheet" href="css/responsivemobilemenu.css" type="text/css"/>
+    
+    <!--RS Slider-->
+    <link rel="stylesheet" type="text/css" href="css/responsiveslides.css"/>
+    <link rel="stylesheet" type="text/css" href="css/RS_Slider_mod.css"/>
+    
+    <!-- JS
+	================================================== -->
+    
+    <!--Misc-->
+    <script src="js/jquery-1.8.2.min.js"></script>
+    <script type="text/javascript" src="js/fade.js"></script>
+    
+    <!-- Responsive Mobile Menu -->    
+    <script type="text/javascript" src="js/responsivemobilemenu.js"></script>
+     
+    <!--RS Slider-->
+    <!--<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>-->
+    <script src="js/responsiveslides.min.js"></script>
+    <script src="js/RS_Slider_call.js"></script>
+    
+    <!--Coolio Plugin-->
+	<!--<script type="text/javascript" src="js/jquery.min.js"></script>-->
+	<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+	<script type="text/javascript" src="js/jquery.scrollUp.min.js"></script>
+    <script type="text/javascript" src="js/jquery.isotope.min.js"></script>
+	<script type="text/javascript" src="js/jquery.colio.min.js"></script>
+    
+    <!-- Colio Black Theme-->
+	<link rel="stylesheet" href="colio-black/style.css" />
+	<link rel="stylesheet" href="colio-black/fancybox/jquery.fancybox.css" />
+	<script type="text/javascript" src="colio-black/fancybox/jquery.fancybox.js"></script>
+    
+    <!-- Initialize Colio-->    
+	<script type="text/javascript">
+		$(document).ready(function(){
+			
+			// "scrollTop" plugin
+			$.scrollUp();
+			
+			// "colio" plugin
+			$('.portfolio .list').colio({
+				id: 'demo_1',
+				theme: 'black',
+				placement: 'inside',
+				onContent: function(content){
+					// init "fancybox" plugin
+					$('.fancybox').fancybox({
+						titlePosition : 'over',
+						cyclic : true
+					});
+				}
+			});
+			
+			// "isotope" plugin
+			var filter = '*', isotope_run = function(f) {
+				$('.portfolio .list').isotope({layoutMode : 'fitRows', filter: f}).
+				trigger('colio','excludeHidden');
+			};
+			
+			$('.portfolio .filters a').click(function(){
+				$(this).addClass('filter-active').siblings().removeClass('filter-active');
+				var href = $(this).attr('href').substr(1);
+				filter = href ? '.' + href : '*';
+				isotope_run(filter);
+				return false;
+			});
+			
+			isotope_run(filter);
+			
+		});
+	</script>
+
+    <!--Social Media-->
+    <script src="https://platform.twitter.com/widgets.js"></script>
+    
+    <!--Language Switcher-->
+    <script src="js/jquery-cookie.js" charset="utf-8" type="text/javascript"></script>
+	<script src="js/jquery-lang.js" charset="utf-8" type="text/javascript"></script>
+    <script src="js/JqueryLangJS_call.js" charset="utf-8" type="text/javascript"></script>
+    
+</head>
+
+<body>
+
+<div class="WrapAll">
+
+	<div class="WrapNav">
+    
+    	<div class="WrapLangSwitch">
+            <div id="langChanger"><a href="#" onclick="window.lang.change('en'); location.reload(); return false;"><h4>ENG</h4></a> | <a  href="#" onclick="window.lang.change('es'); return false;"><h4>ESP</h4></a>
+            </div>
+        </div>
+
+        <div class="header">
+             <a href="index.html"><img src="images/PedroTitle.jpg" alt=""></a>
+        </div>
+        
+        <div class="rmm" data-menu-style = "minimal">
+            <ul>
+                <li><a href="works.html"><p lang="en">WORKS</p></a></li>
+                <li><a href="publications.html"><p lang="en">PUBLICATIONS</p></a></li>
+                <li><a href="about.html"><p lang="en">BIO / CV</p></a></li>
+                <li><a href="current.html"><p lang="en">CURRENT</p></a></li>
+                <li><a href="subscribe.html"><p lang="en">SUBSCRIBE</p></a></li>
+            </ul>
+        </div>
+        
+	</div>
+    
+    <div class="WrapContent">
+    
+	<div id="TextContainer">
+    	<h1 lang="en">LATINO/A AMERICA </h1><p lang="en"> (2003, ongoing)</p>
+        <br/><br/><p lang="en">Time based, social, and multimedia</p>
+	</div>
+    
+	<div class="container">
+    
+		<div class="sixteen columns">
+							
+			<div class="portfolio clearfix">
+
+				<ul class="list">
+                    
+                    <li data-content="#RouteGuides">
+						<div class="thumb">
+							<div class="view">
+								<a class="button colio-link" href="#" lang="en">View Project</a>
+							</div>
+							<img src="pictures/LatinoaAmerica_ALL/RouteGuides_Thumb/1_RouteGuides_thumb.jpg" alt=""/>
+						</div>
+						<h4><a class="colio-link" href="#" lang="en">Route Guides</br></br></a></h4>
+					</li>
+
+					<li data-content="#MuralVersion">
+						<div class="thumb">
+							<div class="view">
+								<a class="button colio-link" href="#" lang="en">View Project</a>
+							</div>
+							<img src="pictures/LatinoaAmerica_ALL/MuralVersion_Thumb/1_MuralVersion_thumb.jpg" alt=""/>
+						</div>
+						<h4><a class="colio-link" href="#" lang="en">Mural Version</br></br></a></h4>
+					</li>
+					
+					<li data-content="#PamphletsPostersAndSpecialPublications">
+						<div class="thumb">
+							<div class="view">
+								<a class="button colio-link" href="#" lang="en">View Project</a>
+							</div>
+							<img src="pictures/LatinoaAmerica_ALL/PamphletsPostersAndSpecialPublications_Thumb/1_PamphletsPostersAndSpecialPublications_thumb.jpg" alt=""/>
+						</div>
+						<h4><a class="colio-link" href="#" lang="en">Pamphlets, Posters,</br>and Special Publications</a></h4>
+					</li>
+                    
+                    <li data-content="#ShirtsBannersAndPublicDisplays">
+						<div class="thumb">
+							<div class="view">
+								<a class="button colio-link" href="#" lang="en">View Project</a>
+							</div>
+							<img src="pictures/LatinoaAmerica_ALL/ShirtsBannersAndPublicDisplays_Thumb/1_ShirtsBannersAndPublicDisplays_thumb.jpg" alt=""/>
+						</div>
+						<h4><a class="colio-link" href="#" lang="en">Shirts, Banners,</br>and Public Displays</a></h4>
+					</li>
+					
+				</ul><!-- list -->
+
+			</div><!-- portfolio -->
+            		
+			
+			<div id="RouteGuides" class="colio-content">
+									
+				<div class="main">
+					
+					<h3 lang="en">Route Guides</br>(2003, ongoing)</h3>
+                    <p lang="en">New York Arrival Edition (concluded in 2006)</br>
+                    North Carolina Arrival Edition (concluded in 2008)</br>
+                    Los Angeles Arrival Edition (concluded in 2011)</br></br>
+					Premise of this version: Beginning in 2003, the artist has given two of these maps titled Road Maps to participating individuals he knew would cross the U.S.-Mexico border. One of the maps was for each participant to keep, and the other one for them to mail back to the artist upon arrival at their final destination (each suite is named after this destination). The artist has since received many maps in return that show various degrees of exposure to weather as well as wear and tear.</p>		
+				</div><!-- main -->
+				
+				<div class="side">
+					<ul class="feed">
+						<li>
+							<a class="fancybox" rel="RouteGuides" title="" href="pictures/LatinoaAmerica_ALL/RouteGuides_Large/1_RouteGuides.jpg">
+								<img src="pictures/LatinoaAmerica_ALL/RouteGuides_Thumb/1_RouteGuides_thumb.jpg" alt="">
+							</a>
+						</li>
+                        <li>
+							<a class="fancybox" rel="RouteGuides" title="" href="pictures/LatinoaAmerica_ALL/RouteGuides_Large/2_RouteGuides.jpg">
+								<img src="pictures/LatinoaAmerica_ALL/RouteGuides_Thumb/2_RouteGuides_thumb.jpg" alt="">
+							</a>
+						</li>
+                        <li>
+							<a class="fancybox" rel="RouteGuides" title="" href="pictures/LatinoaAmerica_ALL/RouteGuides_Large/3_RouteGuides.jpg">
+								<img src="pictures/LatinoaAmerica_ALL/RouteGuides_Thumb/3_RouteGuides_thumb.jpg" alt="">
+							</a>
+						</li>
+                        <li>
+							<a class="fancybox" rel="RouteGuides" title="" href="pictures/LatinoaAmerica_ALL/RouteGuides_Large/4_RouteGuides.jpg">
+								<img src="pictures/LatinoaAmerica_ALL/RouteGuides_Thumb/4_RouteGuides_thumb.jpg" alt="">
+							</a>
+						</li>
+                        <li>
+							<a class="fancybox" rel="RouteGuides" title="" href="pictures/LatinoaAmerica_ALL/RouteGuides_Large/5_RouteGuides.jpg">
+								<img src="pictures/LatinoaAmerica_ALL/RouteGuides_Thumb/5_RouteGuides_thumb.jpg" alt="">
+							</a>
+						</li>
+                        <li>
+							<a class="fancybox" rel="RouteGuides" title="" href="pictures/LatinoaAmerica_ALL/RouteGuides_Large/6_RouteGuides.jpg">
+								<img src="pictures/LatinoaAmerica_ALL/RouteGuides_Thumb/6_RouteGuides_thumb.jpg" alt="">
+							</a>
+						</li>
+					</ul>
+				</div><!-- side -->
+				
+			</div><!-- colio-content # RouteGuides -->
+            
+            <div id="MuralVersion" class="colio-content">
+									
+				<div class="main">
+					
+					<h3 lang="en">Mural version</br>(2002, ongoing)</h3>
+					<p lang="en">Ephemeral or permanent. Materials and dimensions variable: acrylic paint on wall, lipstick on window panes, etc.<br /><br />This version of the LATINO/A AMERICA map, most often painted with red house paint, is designed to be installed on walls in museums, restaurants, public spaces, schools, and community centers. It may exist as an ephemeral or permanent mural, depending on local conditions and who commissions it.</p>		
+				</div><!-- main -->
+				
+				<div class="side">
+					<ul class="feed">
+						<li>
+							<a class="fancybox" rel="MuralVersion" title="" href="pictures/LatinoaAmerica_ALL/MuralVersion_Large/1_MuralVersion.jpg">
+								<img src="pictures/LatinoaAmerica_ALL/MuralVersion_Thumb/1_MuralVersion_thumb.jpg" alt="">
+							</a>
+						</li>
+                        <li>
+							<a class="fancybox" rel="MuralVersion" title="" href="pictures/LatinoaAmerica_ALL/MuralVersion_Large/2_MuralVersion.jpg">
+								<img src="pictures/LatinoaAmerica_ALL/MuralVersion_Thumb/2_MuralVersion_thumb.jpg" alt="">
+							</a>
+						</li>
+                        <li>
+							<a class="fancybox" rel="MuralVersion" title="" href="pictures/LatinoaAmerica_ALL/MuralVersion_Large/3_MuralVersion.jpg">
+								<img src="pictures/LatinoaAmerica_ALL/MuralVersion_Thumb/3_MuralVersion_thumb.jpg" alt="">
+							</a>
+						</li>
+                        <li>
+							<a class="fancybox" rel="MuralVersion" title="" href="pictures/LatinoaAmerica_ALL/MuralVersion_Large/4_MuralVersion.jpg">
+								<img src="pictures/LatinoaAmerica_ALL/MuralVersion_Thumb/4_MuralVersion_thumb.jpg" alt="">
+							</a>
+						</li>
+                        <li>
+							<a class="fancybox" rel="MuralVersion" title="" href="pictures/LatinoaAmerica_ALL/MuralVersion_Large/5_MuralVersion.jpg">
+								<img src="pictures/LatinoaAmerica_ALL/MuralVersion_Thumb/5_MuralVersion_thumb.jpg" alt="">
+							</a>
+						</li>
+                        <li>
+							<a class="fancybox" rel="MuralVersion" title="" href="pictures/LatinoaAmerica_ALL/MuralVersion_Large/6_MuralVersion.jpg">
+								<img src="pictures/LatinoaAmerica_ALL/MuralVersion_Thumb/6_MuralVersion_thumb.jpg" alt="">
+							</a>
+						</li>
+                        <li>
+							<a class="fancybox" rel="MuralVersion" title="" href="pictures/LatinoaAmerica_ALL/MuralVersion_Large/7_MuralVersion.jpg">
+								<img src="pictures/LatinoaAmerica_ALL/MuralVersion_Thumb/7_MuralVersion_thumb.jpg" alt="">
+							</a>
+						</li>
+                        <li>
+							<a class="fancybox" rel="MuralVersion" title="" href="pictures/LatinoaAmerica_ALL/MuralVersion_Large/8_MuralVersion.jpg">
+								<img src="pictures/LatinoaAmerica_ALL/MuralVersion_Thumb/8_MuralVersion_thumb.jpg" alt="">
+							</a>
+						</li>
+                        <li>
+							<a class="fancybox" rel="MuralVersion" title="" href="pictures/LatinoaAmerica_ALL/MuralVersion_Large/9_MuralVersion.jpg">
+								<img src="pictures/LatinoaAmerica_ALL/MuralVersion_Thumb/9_MuralVersion_thumb.jpg" alt="">
+							</a>
+						</li>
+                        <li>
+							<a class="fancybox" rel="MuralVersion" title="" href="pictures/LatinoaAmerica_ALL/MuralVersion_Large/10_MuralVersion.jpg">
+								<img src="pictures/LatinoaAmerica_ALL/MuralVersion_Thumb/10_MuralVersion_thumb.jpg" alt="">
+							</a>
+						</li>
+                        <li>
+							<a class="fancybox" rel="MuralVersion" title="" href="pictures/LatinoaAmerica_ALL/MuralVersion_Large/11_MuralVersion.jpg">
+								<img src="pictures/LatinoaAmerica_ALL/MuralVersion_Thumb/11_MuralVersion_thumb.jpg" alt="">
+							</a>
+						</li>
+                        <li>
+							<a class="fancybox" rel="MuralVersion" title="" href="pictures/LatinoaAmerica_ALL/MuralVersion_Large/12_MuralVersion.jpg">
+								<img src="pictures/LatinoaAmerica_ALL/MuralVersion_Thumb/12_MuralVersion_thumb.jpg" alt="">
+							</a>
+						</li>
+					</ul>
+				</div><!-- side -->
+				
+			</div><!-- colio-content # MuralVersion -->
+            
+            <div id="PamphletsPostersAndSpecialPublications" class="colio-content">
+									
+				<div class="main">
+					
+					<h3 lang="en">Pamphlets, Posters, and Special Publications</br>(2003, ongoing)</h3>
+					<p lang="en">This version takes advantage of the graphic clarity of of the work and its viral potential, appearing in any variety of colors with an almost obsessive repetition in various book covers, magazines and journals, pamphlets, and posters, the public circulation of the map here offers different forms of exchange than that of the traditional art object or ephemeral museum intervention.</p>		
+				</div><!-- main -->
+				
+				<div class="side">
+					<ul class="feed">
+						<li>
+							<a class="fancybox" rel="PamphletsPostersAndSpecialPublications" title="" href="pictures/LatinoaAmerica_ALL/PamphletsPostersAndSpecialPublications_Large/1_PamphletsPostersAndSpecialPublications.jpg">
+								<img src="pictures/LatinoaAmerica_ALL/PamphletsPostersAndSpecialPublications_Thumb/1_PamphletsPostersAndSpecialPublications_thumb.jpg" alt="">
+							</a>
+						</li>
+                        <li>
+							<a class="fancybox" rel="PamphletsPostersAndSpecialPublications" title="" href="pictures/LatinoaAmerica_ALL/PamphletsPostersAndSpecialPublications_Large/2_PamphletsPostersAndSpecialPublications.jpg">
+								<img src="pictures/LatinoaAmerica_ALL/PamphletsPostersAndSpecialPublications_Thumb/2_PamphletsPostersAndSpecialPublications_thumb.jpg" alt="">
+							</a>
+						</li>
+                        <li>
+							<a class="fancybox" rel="PamphletsPostersAndSpecialPublications" title="" href="pictures/LatinoaAmerica_ALL/PamphletsPostersAndSpecialPublications_Large/3_PamphletsPostersAndSpecialPublications.jpg">
+								<img src="pictures/LatinoaAmerica_ALL/PamphletsPostersAndSpecialPublications_Thumb/3_PamphletsPostersAndSpecialPublications_thumb.jpg" alt="">
+							</a>
+						</li>
+                        <li>
+							<a class="fancybox" rel="PamphletsPostersAndSpecialPublications" title="" href="pictures/LatinoaAmerica_ALL/PamphletsPostersAndSpecialPublications_Large/4_PamphletsPostersAndSpecialPublications.jpg">
+								<img src="pictures/LatinoaAmerica_ALL/PamphletsPostersAndSpecialPublications_Thumb/4_PamphletsPostersAndSpecialPublications_thumb.jpg" alt="">
+							</a>
+						</li>
+                        <li>
+							<a class="fancybox" rel="PamphletsPostersAndSpecialPublications" title="" href="pictures/LatinoaAmerica_ALL/PamphletsPostersAndSpecialPublications_Large/5_PamphletsPostersAndSpecialPublications.jpg">
+								<img src="pictures/LatinoaAmerica_ALL/PamphletsPostersAndSpecialPublications_Thumb/5_PamphletsPostersAndSpecialPublications_thumb.jpg" alt="">
+							</a>
+						</li>
+					</ul>
+				</div><!-- side -->
+				
+			</div><!-- colio-content # PamphletsPostersAndSpecialPublications -->
+            
+            <div id="ShirtsBannersAndPublicDisplays" class="colio-content">
+									
+				<div class="main">
+					
+					<h3 lang="en">Shirts, Banners, and Public Displays</br>(2003, ongoing)</h3>
+					<p lang="en">This version exists to be worn or carried at rallies, protests, parties, and any other social events for which the image of the map may seem relevant.</p>		
+				</div><!-- main -->
+				
+				<div class="side">
+					<ul class="feed">
+						<li>
+							<a class="fancybox" rel="ShirtsBannersAndPublicDisplays" title="" href="pictures/LatinoaAmerica_ALL/ShirtsBannersAndPublicDisplays_Large/1_ShirtsBannersAndPublicDisplays.jpg">
+								<img src="pictures/LatinoaAmerica_ALL/ShirtsBannersAndPublicDisplays_Thumb/1_ShirtsBannersAndPublicDisplays_thumb.jpg" alt="">
+							</a>
+						</li>
+                        <li>
+							<a class="fancybox" rel="ShirtsBannersAndPublicDisplays" title="" href="pictures/LatinoaAmerica_ALL/ShirtsBannersAndPublicDisplays_Large/2_ShirtsBannersAndPublicDisplays.jpg">
+								<img src="pictures/LatinoaAmerica_ALL/ShirtsBannersAndPublicDisplays_Thumb/2_ShirtsBannersAndPublicDisplays_thumb.jpg" alt="">
+							</a>
+						</li>
+					</ul>
+				</div><!-- side -->
+				
+			</div><!-- colio-content # ShirtsBannersAndPublicDisplays -->
+            
+		</div><!-- sixteen columns -->
+        
+	</div><!-- container -->
+    
+    <div id="space"></div>
+    
+    <div id="TextContainer"><p lang="en">This conceptual series consists of the presentation and distribution of a new map of the American continent, and the development of public art forms that are dispersed in everyday social spaces and exchanges. While it may be seen as a monument to the epics of migration, its goal is also to critically reflect on the form and function of conventional monuments.<br /><br />
+    	The words “Latino/a” and “America” acquire different meanings depending on the context, and reflect on the deep impact of population shifts in our culture. The common tie between all of the different versions is the sharing of a new “Latinidad” that extends globally, and is redefining the English speaking world. We are changing what “America” means, and what it means to be “American.”</p>
+	</div>
+    
+	<div id="TextContainer">
+    	<a href="works.html"><h2 lang="en">BACK TO ALL WORKS</h2></a>
+	</div>
+    
+	</div>
+    
+</div>
+
+</body>
+</html>

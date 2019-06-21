@@ -1,0 +1,415 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"/>
+	<title>Pedro Lasch - Tianguis Transnacional</title>
+
+	<!-- CSS
+	================================================== -->
+
+    <!--Coolio Plugin-->
+	<link rel="stylesheet" href="css/base.css">
+	<link rel="stylesheet" href="css/skeleton.css">
+	<link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/isotope.css">
+	<link rel="stylesheet" href="css/colio.css">
+
+    <!--Custom-->
+    <link rel="stylesheet" type="text/css" href="css/PedroLasch_style.css"/>
+
+    <!-- Responsive Mobile Menu -->
+    <link rel="stylesheet" href="css/responsivemobilemenu.css" type="text/css"/>
+
+    <!--RS Slider-->
+    <link rel="stylesheet" type="text/css" href="css/responsiveslides.css"/>
+    <link rel="stylesheet" type="text/css" href="css/RS_Slider_mod.css"/>
+
+    <!-- JS
+	================================================== -->
+
+    <!--Misc-->
+    <script src="js/jquery-1.8.2.min.js"></script>
+    <script type="text/javascript" src="js/fade.js"></script>
+
+    <!-- Responsive Mobile Menu -->
+    <script type="text/javascript" src="js/responsivemobilemenu.js"></script>
+
+    <!--RS Slider-->
+    <!--<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>-->
+    <script src="js/responsiveslides.min.js"></script>
+    <script src="js/RS_Slider_call.js"></script>
+
+    <!--Coolio Plugin-->
+	<!--<script type="text/javascript" src="js/jquery.min.js"></script>-->
+	<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+	<script type="text/javascript" src="js/jquery.scrollUp.min.js"></script>
+    <script type="text/javascript" src="js/jquery.isotope.min.js"></script>
+	<script type="text/javascript" src="js/jquery.colio.min.js"></script>
+
+    <!-- Colio Black Theme-->
+	<link rel="stylesheet" href="colio-black/style.css" />
+	<link rel="stylesheet" href="colio-black/fancybox/jquery.fancybox.css" />
+	<script type="text/javascript" src="colio-black/fancybox/jquery.fancybox.js"></script>
+
+    <!-- Initialize Colio-->
+	<script type="text/javascript">
+		$(document).ready(function(){
+
+			// "scrollTop" plugin
+			$.scrollUp();
+
+			// "colio" plugin
+			$('.portfolio .list').colio({
+				id: 'demo_1',
+				theme: 'black',
+				placement: 'inside',
+				onContent: function(content){
+					// init "fancybox" plugin
+					$('.fancybox').fancybox({
+						titlePosition : 'over',
+						cyclic : true
+					});
+				}
+			});
+
+			// "isotope" plugin
+			var filter = '*', isotope_run = function(f) {
+				$('.portfolio .list').isotope({layoutMode : 'fitRows', filter: f}).
+				trigger('colio','excludeHidden');
+			};
+
+			$('.portfolio .filters a').click(function(){
+				$(this).addClass('filter-active').siblings().removeClass('filter-active');
+				var href = $(this).attr('href').substr(1);
+				filter = href ? '.' + href : '*';
+				isotope_run(filter);
+				return false;
+			});
+
+			isotope_run(filter);
+
+		});
+	</script>
+
+    <!--Social Media-->
+    <script src="https://platform.twitter.com/widgets.js"></script>
+
+    <!--Language Switcher-->
+    <script src="js/jquery-cookie.js" charset="utf-8" type="text/javascript"></script>
+	<script src="js/jquery-lang.js" charset="utf-8" type="text/javascript"></script>
+    <script src="js/JqueryLangJS_call.js" charset="utf-8" type="text/javascript"></script>
+
+</head>
+
+<body>
+
+<div class="WrapAll">
+
+	<div class="WrapNav">
+
+    	<div class="WrapLangSwitch">
+            <div id="langChanger"><a href="#" onclick="window.lang.change('en'); location.reload(); return false;"><h4>ENG</h4></a> | <a  href="#" onclick="window.lang.change('es'); return false;"><h4>ESP</h4></a>
+            </div>
+        </div>
+
+            <div class="header">
+             <a href="index.html"><img src="images/PedroTitle.jpg" alt=""></a>
+        </div>
+
+        <div class="rmm" data-menu-style = "minimal">
+            <ul>
+                <li><a href="works.html"><p lang="en">WORKS</p></a></li>
+                <li><a href="publications.html"><p lang="en">PUBLICATIONS</p></a></li>
+                <li><a href="about.html"><p lang="en">BIO / CV</p></a></li>
+                <li><a href="current.html"><p lang="en">CURRENT</p></a></li>
+                <li><a href="subscribe.html"><p lang="en">SUBSCRIBE</p></a></li>
+            </ul>
+        </div>
+
+	</div>
+
+    <div class="WrapContent">
+
+	<div id="TextContainer">
+    	<h1 lang="en">Tianguis Transnacional (2004-ongoing)</h1>
+    </div>
+
+	<div class="container">
+
+		<div class="sixteen columns">
+
+			<div class="portfolio clearfix">
+
+				<ul class="list">
+
+                    <li data-content="#project1">
+						<div class="thumb">
+							<div class="view">
+								<a class="button colio-link" href="#" lang="en">View Project</a>
+							</div>
+							<img src="pictures/Tianguis/tianguis_project1_thumb.jpg" alt=""/>
+						</div>
+						<h4><a class="colio-link" href="#" lang="en">Prototypes for informal <br> street structures</a></h4>
+					</li>
+
+					<li data-content="#project2">
+						<div class="thumb">
+							<div class="view">
+								<a class="button colio-link" href="#" lang="en">View Project</a>
+							</div>
+							<img src="pictures/Tianguis/tianguis_project2_thumb.jpg" alt=""/>
+						</div>
+						<h4><a class="colio-link" href="#" lang="en">Sonido Tianguis Transnacional</a></h4>
+					</li>
+
+				</ul><!-- list -->
+
+			</div><!-- portfolio -->
+
+
+			<div id="project1" class="colio-content">
+
+				<div class="main">
+
+					<h3 lang="en">Prototypes for informal street structures</h3>
+                    <p lang="en">This project consists of the design, elaboration, and production of a new kind of  joint for the easier, quicker, and more compact assembly of street stand structures. These structures mostly belong to the history and contemporary practice of informal
+					trade, broadly known as Tianguis throughout Mexico and the Mexican immigrant
+					population of the U.S. The design and production process of these joints
+					is inseparable from a chain of social exchanges and ongoing conversations with:
+					1) informal tradespeople and any other users of these stands; 2) industrial designers
+					and mechanical engineers; 3) intellectuals and activists who engage with the topic
+					of globalization and informal economies. These joints could solve very real problems for informal tradespeople who transport, assemble, and disassemble such structures on an everyday basis. As a formal construction and aesthetic manifestation, the joints will also allow for the
+					exploration and development of contemporary network theory, stressing the
+					understanding of nodes and rhyzomatic structures. The implications of an improved street stand joint are less evident in the U.S., where informal trade is strictly regulated and pushed back to the least visible areas
+					of the social fabric. The omnipresence of these stands in Third World countries such
+					as Mexico, however, is unquestiobable. About 50% of the Mexican economy
+					consists of informal trade, taking the form of entire metallic cities that are assembled
+					every morning and disassembled every evening. About 20% of Mexico City’s 22
+					millions inhabitants purchase the majority of their goods and services at such
+					make-shift markets. </p>
+				</div><!-- main -->
+
+				<div class="side">
+					<ul class="feed">
+						<li>
+							<a class="fancybox" rel="project1" title="" href="pictures/Tianguis/tianguis_project1_image1.jpg">
+								<img src="pictures/Tianguis/tianguis_project1_image1.jpg" alt="">
+							</a>
+						</li>
+						<li>
+							<a class="fancybox" rel="project1" title="" href="pictures/Tianguis/tianguis_project1_image2.jpg">
+								<img src="pictures/Tianguis/tianguis_project1_image2-sq.jpg" alt="">
+							</a>
+						</li>
+						<li>
+							<a class="fancybox" rel="project1" title="" href="pictures/Tianguis/tianguis_project1_image3.jpg">
+								<img src="pictures/Tianguis/tianguis_project1_image3-sq.jpg" alt="">
+							</a>
+						</li>
+					</ul>
+				</div><!-- side -->
+
+			</div><!-- colio-content #Project 1 -->
+
+            <div id="project2" class="colio-content">
+
+				<div class="main">
+
+					<h3 lang="en">Sonido Tianguis Transnacional, 2006, ongoing<br></h3>
+					<p lang="en">Sonido Tianguis Transnacional focuses on the culture of the sonidero/a, a kind of DJ or MC who has risen to prominence in the last few decades. A platform or booth, along with the video and sound players, serve as an ever changing repository for the gradual accumulation of materials gathered by local sonidero artists and fans. All of these materials are accessible to Museum visitors throughout the exhibition. They include posters, flyers, statements, pamphlets, journals, CDs, and videos. Every time the work moves to a new venue, the archive grows in relation to local and transnational migratory networks. The space where these productions are displayed also becomes a stage for a local series of sonidero/DJ gatherings (encuentros sonideros) and dance parties organized in coordination with the exhibition. </p>
+
+				</div><!-- main -->
+
+				<div class="side">
+					<ul class="feed">
+						<li>
+							<a class="fancybox" rel="FireAndIcePerformances" title="" href="pictures/Tianguis/tianguis_project2_image1.jpg">
+								<img src="pictures/Tianguis/tianguis_project2_image1-sq.jpg" alt="">
+							</a>
+						</li>
+
+						<li>
+							<a class="fancybox" rel="FireAndIcePerformances" title="" href="pictures/Tianguis/tianguis_project2_image2.jpg">
+								<img src="pictures/Tianguis/tianguis_project2_image2-sq.jpg" alt="">
+							</a>
+						</li>
+
+						<li>
+							<a class="fancybox" rel="FireAndIcePerformances" title="" href="pictures/Tianguis/tianguis_project2_image3.jpg">
+								<img src="pictures/Tianguis/tianguis_project2_image3-sq.jpg" alt="">
+							</a>
+						</li>
+
+						<li>
+							<a class="fancybox" rel="FireAndIcePerformances" title="" href="pictures/Tianguis/tianguis_project2_image4.jpg">
+								<img src="pictures/Tianguis/tianguis_project2_image4.jpg" alt="">
+							</a>
+						</li>
+
+						<li>
+							<a class="fancybox" rel="FireAndIcePerformances" title="" href="pictures/Tianguis/tianguis_project2_image5.jpg">
+								<img src="pictures/Tianguis/tianguis_project2_image5.jpg" alt="">
+							</a>
+						</li>
+
+						<li>
+							<a class="fancybox" rel="FireAndIcePerformances" title="" href="pictures/Tianguis/tianguis_project2_image6.jpg">
+								<img src="pictures/Tianguis/tianguis_project2_image6.jpg" alt="">
+							</a>
+						</li>
+
+						<li>
+							<a class="fancybox" rel="FireAndIcePerformances" title="" href="pictures/Tianguis/tianguis_project2_image7.jpg">
+								<img src="pictures/Tianguis/tianguis_project2_image7.jpg" alt="">
+							</a>
+						</li>
+
+						<li>
+							<a class="fancybox" rel="FireAndIcePerformances" title="" href="pictures/Tianguis/tianguis_project2_image8.jpg">
+								<img src="pictures/Tianguis/tianguis_project2_image8.jpg" alt="">
+							</a>
+						</li>
+
+						<li>
+							<a class="fancybox" rel="FireAndIcePerformances" title="" href="pictures/Tianguis/tianguis_project2_image9.jpg">
+								<img src="pictures/Tianguis/tianguis_project2_image9.jpg" alt="">
+							</a>
+						</li>
+
+						<li>
+							<a class="fancybox" rel="FireAndIcePerformances" title="" href="pictures/Tianguis/tianguis_project2_image10.jpg">
+								<img src="pictures/Tianguis/tianguis_project2_image10.jpg" alt="">
+							</a>
+						</li>
+
+						<li>
+							<a class="fancybox" rel="FireAndIcePerformances" title="" href="pictures/Tianguis/tianguis_project2_image11.jpg">
+								<img src="pictures/Tianguis/tianguis_project2_image11.jpg" alt="">
+							</a>
+						</li>
+
+						<li>
+							<a class="fancybox" rel="FireAndIcePerformances" title="" href="pictures/Tianguis/tianguis_project2_image12.jpg">
+								<img src="pictures/Tianguis/tianguis_project2_image12.jpg" alt="">
+							</a>
+						</li>
+
+						<li>
+							<a class="fancybox" rel="FireAndIcePerformances" title="" href="pictures/Tianguis/tianguis_project2_image13.jpg">
+								<img src="pictures/Tianguis/tianguis_project2_image13.jpg" alt="">
+							</a>
+						</li>
+
+						<li>
+							<a class="fancybox" rel="FireAndIcePerformances" title="" href="pictures/Tianguis/tianguis_project2_image14.jpg">
+								<img src="pictures/Tianguis/tianguis_project2_image14.jpg" alt="">
+							</a>
+						</li>
+
+						<li>
+							<a class="fancybox" rel="FireAndIcePerformances" title="" href="pictures/Tianguis/tianguis_project2_image15.jpg">
+								<img src="pictures/Tianguis/tianguis_project2_image15.jpg" alt="">
+							</a>
+						</li>
+
+						<li>
+							<a class="fancybox" rel="FireAndIcePerformances" title="" href="pictures/Tianguis/tianguis_project2_image16.jpg">
+								<img src="pictures/Tianguis/tianguis_project2_image16.jpg" alt="">
+							</a>
+						</li>
+
+						<li>
+							<a class="fancybox" rel="FireAndIcePerformances" title="" href="pictures/Tianguis/tianguis_project2_image17.jpg">
+								<img src="pictures/Tianguis/tianguis_project2_image17.jpg" alt="">
+							</a>
+						</li>
+
+
+					</ul>
+				</div><!-- side -->
+
+			</div><!-- colio-content # Project 2 -->
+
+		</div><!-- sixteen columns -->
+
+	</div><!-- container -->
+
+
+
+    <div id="TextContainer">
+
+
+
+<p lang="en">The Tianguis Transnacional series is defined by a steady exploration of the aesthetic, social, and political manifestations of informal trade. It pays particular attention to the informal economy’s social networks as they exist in the current context of globalization, and its related history of colonialism. </p>
+<br><br>
+		<p lang="en">The word Transnacional may be seen as a simple yet significant Spanish intervention in the globally recognizable Transnational. Drawing on the transformative power of the Spanish speaking immigrant population on the U.S., this one letter difference points at dramatically divergent experiences of globalization that are created by a &ldquo;free&rdquo; flow of goods and capital on the one hand, and a violent regulation of population flows on the other. </p>
+<br><br>
+		<p lang="en">The word Tianguis is more obscure. It is a Nahuatl (Mexican Indigenous language) word that has survived five hundred years of colonization, and in the process has undergone very meaningful transformations. Used in pre-Hispanic times by the inhabitants of the Aztec empire, this word simply meant &lsquo;market&rsquo; or the equivalent of our contemporary &lsquo;shopping mall&rsquo;. In contemporary Mexican Spanish, however, tianguis has become a prominent synonym of informal trade, illicit street stands, and the so-called black (or grey) market. The hegemonic Aztec &ldquo;mall&rdquo; has been thrown onto the street by the Spanish colony. The Indigenous street keeps fighting back, though, refusing to forget the meaning of the word, and insisting on the daily practice of a tianguis that threatens the very foundations of social and economic control, colonial urbanism and its State taxation system. </p>
+<br><br>
+		<p lang="en">Undocumented immigrants are criminalized in the U.S. just as informal tradespeople are criminalized in Mexico. These geographically dispersed populations are literally related by family bonds, social class, and ethnic background. Tianguis Transnacional is an homage to them, built in the immediate sites of their labor and daily cultural prodcution. </p>
+		<br><br>
+
+		<p lang="en" class="strong">Chapter 1: New York New Jersey
+		happened at The Queens Museum of Art, New York.
+		March 12th - July 8, 2006.</p>
+		<br><br>
+		<p lang="en">Participants and co-organizers included:
+		The Arts & Social Justice Youth Program at QMA, Mexicanos Unidos de
+		Queens, Onda Sonidera & Javier Juárez (New Jersey), La Chula Baby
+		(Laura Moreno). Sonidero artists from New York, New Jersey, and
+		Mexico (Diego Medina, Internacional Sonido Latino, Los Nukiis,
+		Sensación Fanny, Vikingo, Club Son Poquitos, Disneylandia, Ursus
+		Candela, Mercurio, Dania, Genesis 2, Magia Americana, Monarka,
+		Maxter Mix, Super Lucky, Caña Brava, Carismatico, Vicencio Marquez
+		y CMV, Baron Dandy, Machely, Marville, DJ Karissma y Juan Vidal /
+		Producciones Azteca. </p>
+		<br><br>
+
+
+		<p lang="en" class="strong">Chapter 2 - Tepito / CENART / Mexico City
+		happened at Centro Cultural Lagunilla-Tepito-Peralvillo and
+		Centro Nacional de las Artes, Mexico City. October 19 & 20, 2006. </p>
+		<br><br>
+
+		<p lang="en">Participants and co-organizers included:
+		Transitio_mx 02: Fronteras Nómadas el Festival Internacional de Artes
+		Electrónicas y Video del Centro Nacional de las Artes, Fundación BBVA
+		Bancomer y la Fundación Cultural México-Estados Unidos de América, A.C
+		Mariana Delgado & Fran Ilich for Proyecto Comunidades Transnacionales,
+		Marco Ramírez for Centro Cultural Lagunilla-Tepito-Peralvillo, Roberto Martínez
+		for la Fraternidad Universal de Sonideros de México, Carmen Jara, Onda
+		Sonidera & Javier Juárez (New Jersey), La Chula Baby (Laura Moreno), Rogelio
+		Silva Pallén y Producciones ANIMA. Sonidero artists and scholars (Catherine
+		Ragland, La Pequis, Duende, Corimbó Chambelé, Tropical Caribe, Timoleón,
+		Estereo Mofles, Exitos, Cristalito Porfis, Son Latino, Yesga, Maravilloso, Ciber,
+		Enigma, Continental 2000, Caballero, Disco Móvil Tauro, Master Denver y
+		Lupita La Cigarrita </p>
+
+		<br><br>
+
+		<p lang="en" class="strong">Chapter 3 - North Carolina
+		happened at the Arts Center, Carrboro, NC. March, 2008. </p>
+		<br><br>
+
+		<p lang="en">Participants and co-organizers included:
+		Los Artistas Collective at The Arts Center (Carrboro), UNC-
+		Chapel Hill Music Dept. & 2008 Festival on the Hill, Duke
+		Latino/a Studies, Chula Baby, Hermandad Sonidera, Andrés
+		Maqueda. Sonidos, DJs, Clubes, & scholars included: Kelley Tatro,
+		Catherine Ragland, Bandolero, Travieso, Cumbiambero, DJ Taz,
+		Enigma, Latido, Maracay, Consentido, Cobra, Forever, Junior,
+		Tazmania, Cango, Genesis 2, Pachanguero, Titanes del Sabor,
+		Ilusión, Sibaney, Emigrante Latino, Rey Horóscopo, Ritmo y Son,
+		Club Reyes de la PreSalsa, Club Son Poquitos. </p>
+
+		<br><br>
+
+    	<a href="works.html"><h2 lang="en">BACK TO ALL WORKS</h2></a>
+	</div>
+    </div>
+
+    </div>
+</body>
+</html>

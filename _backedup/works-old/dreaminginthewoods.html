@@ -1,0 +1,262 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"/>
+	<title>Pedro Lasch - Dreaming in the Woods</title>
+
+	<!-- CSS
+	================================================== -->
+    
+    <!--Coolio Plugin-->
+	<link rel="stylesheet" href="css/base.css">
+	<link rel="stylesheet" href="css/skeleton.css">
+	<link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/isotope.css">
+	<link rel="stylesheet" href="css/colio.css">
+    
+    <!--Custom-->
+    <link rel="stylesheet" type="text/css" href="css/PedroLasch_style.css"/>
+ 
+    <!-- Responsive Mobile Menu -->    
+    <link rel="stylesheet" href="css/responsivemobilemenu.css" type="text/css"/>
+    
+    <!--RS Slider-->
+    <link rel="stylesheet" type="text/css" href="css/responsiveslides.css"/>
+    <link rel="stylesheet" type="text/css" href="css/RS_Slider_mod.css"/>
+    
+    <!-- JS
+	================================================== -->
+    
+    <!--Misc-->
+    <script src="js/jquery-1.8.2.min.js"></script>
+    <script type="text/javascript" src="js/fade.js"></script>
+    
+    <!-- Responsive Mobile Menu -->    
+    <script type="text/javascript" src="js/responsivemobilemenu.js"></script>
+     
+    <!--RS Slider-->
+    <!--<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>-->
+    <script src="js/responsiveslides.min.js"></script>
+    <script src="js/RS_Slider_call.js"></script>
+    
+    <!--Coolio Plugin-->
+	<!--<script type="text/javascript" src="js/jquery.min.js"></script>-->
+	<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+	<script type="text/javascript" src="js/jquery.scrollUp.min.js"></script>
+    <script type="text/javascript" src="js/jquery.isotope.min.js"></script>
+	<script type="text/javascript" src="js/jquery.colio.min.js"></script>
+    
+    <!-- Colio Black Theme-->
+	<link rel="stylesheet" href="colio-black/style.css" />
+	<link rel="stylesheet" href="colio-black/fancybox/jquery.fancybox.css" />
+	<script type="text/javascript" src="colio-black/fancybox/jquery.fancybox.js"></script>
+    
+    <!-- Initialize Colio-->    
+	<script type="text/javascript">
+		$(document).ready(function(){
+			
+			// "scrollTop" plugin
+			$.scrollUp();
+			
+			// "colio" plugin
+			$('.portfolio .list').colio({
+				id: 'demo_1',
+				theme: 'black',
+				placement: 'inside',
+				onContent: function(content){
+					// init "fancybox" plugin
+					$('.fancybox').fancybox({
+						titlePosition : 'over',
+						cyclic : true
+					});
+				}
+			});
+			
+			// "isotope" plugin
+			var filter = '*', isotope_run = function(f) {
+				$('.portfolio .list').isotope({layoutMode : 'fitRows', filter: f}).
+				trigger('colio','excludeHidden');
+			};
+			
+			$('.portfolio .filters a').click(function(){
+				$(this).addClass('filter-active').siblings().removeClass('filter-active');
+				var href = $(this).attr('href').substr(1);
+				filter = href ? '.' + href : '*';
+				isotope_run(filter);
+				return false;
+			});
+			
+			isotope_run(filter);
+			
+		});
+	</script>
+
+    <!--Social Media-->
+    <script src="https://platform.twitter.com/widgets.js"></script>
+    
+    <!--Language Switcher-->
+    <script src="js/jquery-cookie.js" charset="utf-8" type="text/javascript"></script>
+	<script src="js/jquery-lang.js" charset="utf-8" type="text/javascript"></script>
+    <script src="js/JqueryLangJS_call.js" charset="utf-8" type="text/javascript"></script>
+    
+</head>
+
+<body>
+
+<div class="WrapAll">
+
+	<div class="WrapNav">
+    
+    	<div class="WrapLangSwitch">
+            <div id="langChanger"><a href="#" onclick="window.lang.change('en'); location.reload(); return false;"><h4>ENG</h4></a> | <a  href="#" onclick="window.lang.change('es'); return false;"><h4>ESP</h4></a>
+            </div>
+        </div>
+
+        <div class="header">
+             <a href="index.html"><img src="images/PedroTitle.jpg" alt=""></a>
+        </div>
+        
+        <div class="rmm" data-menu-style = "minimal">
+            <ul>
+                <li><a href="works.html"><p lang="en">WORKS</p></a></li>
+                <li><a href="publications.html"><p lang="en">PUBLICATIONS</p></a></li>
+                <li><a href="about.html"><p lang="en">BIO / CV</p></a></li>
+                <li><a href="current.html"><p lang="en">CURRENT</p></a></li>
+                <li><a href="subscribe.html"><p lang="en">SUBSCRIBE</p></a></li>
+            </ul>
+        </div>
+        
+	</div>
+    
+    <div class="WrapContent">
+    
+	<div id="TextContainer">
+    	<h1 lang="en">Dreaming in the Woods</h1><p lang="en">  (2016-2019)</p>
+        
+	</div>
+    
+	<div class="container">
+    
+		<div class="sixteen columns">
+							
+			<div class="portfolio clearfix">
+
+				<ul class="list">
+                    
+                    <li data-content="#DreamingintheWoods">
+						<div class="thumb">
+							<div class="view">
+								<a class="button colio-link" href="#" lang="en">View Project</a>
+							</div>
+							<img src="pictures/Works/DreamingintheWoods_thumb.jpg" alt=""/>
+						</div>
+						<h4><a class="colio-link" href="#" lang="en">Dreaming in the Woods</a></h4>
+					</li>
+					
+				</ul><!-- list -->
+
+			</div><!-- portfolio -->
+            		
+			
+			<div id="DreamingintheWoods" class="colio-content">
+									
+				<div class="main">
+					
+					<h3 lang="en">Dreaming in the Woods</h3>
+                      
+        <p lang="en"><em>Dreaming in the Woods</em> is a three-year-long collaboration between Pedro Lasch and the entire Usdan community of over 1,500 campers ages 4 to 18. During the 2017 research residency phase, Lasch used a short story he created in October 2016 to work with Usdan students, instructors, and staff on the development of collaborative ideas that would let us treat the entire campus as a stage for social action and contemporary art. Focusing on the themes of day and night, as well as dreaming and its techniques, all were encouraged to go beyond the areas they are usually bound to, in terms of art disciplines, as well as buildings. Organic gardening students envisioned mobile gardens and chicken ambassadors, dancers used the yellow buses to create choreographies to be performed inside them, just as our youngest Usdanites found ways to smuggle imaginary friends in and out of the camp, taking us beyond its walls.
+					</p>		
+				</div><!-- main -->
+				
+				<div class="side">
+					<ul class="feed">
+						<li>
+							<a class="fancybox" rel="DreamingintheWoods" title="" href="pictures/DreamingintheWoods_ALL/DreamingintheWoods_Large/1_DreamingintheWoods_Large.jpg">
+								<img src="pictures/DreamingintheWoods_ALL/DreamingintheWoods_Thumb/1_DreamingintheWoods_thumb.jpg" alt="">
+							</a>
+						</li>
+                        <li>
+							<a class="fancybox" rel="DreamingintheWoods" title="" href="pictures/DreamingintheWoods_ALL/DreamingintheWoods_Large/2_DreamingintheWoods_Large.jpg">
+								<img src="pictures/DreamingintheWoods_ALL/DreamingintheWoods_Thumb/2_DreamingintheWoods_thumb.jpg" alt="">
+							</a>
+						</li>
+                        <li>
+							<a class="fancybox" rel="DreamingintheWoods" title="" href="pictures/DreamingintheWoods_ALL/DreamingintheWoods_Large/3_DreamingintheWoods_Large.jpg">
+								<img src="pictures/DreamingintheWoods_ALL/DreamingintheWoods_Thumb/3_DreamingintheWoods_thumb.jpg" alt="">
+							</a>
+						</li>
+                        <li>
+							<a class="fancybox" rel="DreamingintheWoods" title="" href="pictures/DreamingintheWoods_ALL/DreamingintheWoods_Large/4_DreamingintheWoods_Large.jpg">
+								<img src="pictures/DreamingintheWoods_ALL/DreamingintheWoods_Thumb/4_DreamingintheWoods_thumb.jpg" alt="">
+							</a>
+						</li>
+                        <li>
+							<a class="fancybox" rel="DreamingintheWoods" title="" href="pictures/DreamingintheWoods_ALL/DreamingintheWoods_Large/5_DreamingintheWoods_Large.jpg">
+								<img src="pictures/DreamingintheWoods_ALL/DreamingintheWoods_Thumb/5_DreamingintheWoods_thumb.jpg" alt="">
+							</a>
+						</li>
+                        <li>
+							<a class="fancybox" rel="DreamingintheWoods" title="" href="pictures/DreamingintheWoods_ALL/DreamingintheWoods_Large/6_DreamingintheWoods_Large.jpg">
+								<img src="pictures/DreamingintheWoods_ALL/DreamingintheWoods_Thumb/6_DreamingintheWoods_thumb.jpg" alt="">
+							</a>
+						</li>
+                        <li>
+							<a class="fancybox" rel="DreamingintheWoods" title="" href="pictures/DreamingintheWoods_ALL/DreamingintheWoods_Large/7_DreamingintheWoods_Large.jpg">
+								<img src="pictures/DreamingintheWoods_ALL/DreamingintheWoods_Thumb/7_DreamingintheWoods_thumb.jpg" alt="">
+							</a>
+						</li>
+                        <li>
+							<a class="fancybox" rel="DreamingintheWoods" title="" href="pictures/DreamingintheWoods_ALL/DreamingintheWoods_Large/8_DreamingintheWoods_Large.jpg">
+								<img src="pictures/DreamingintheWoods_ALL/DreamingintheWoods_Thumb/8_DreamingintheWoods_thumb.jpg" alt="">
+							</a>
+						</li>
+                        <li>
+							<a class="fancybox" rel="DreamingintheWoods" title="" href="pictures/DreamingintheWoods_ALL/DreamingintheWoods_Large/9_DreamingintheWoods_Large.jpg">
+								<img src="pictures/DreamingintheWoods_ALL/DreamingintheWoods_Thumb/9_DreamingintheWoods_thumb.jpg" alt="">
+							</a>
+						</li>
+                        <li>
+							<a class="fancybox" rel="DreamingintheWoods" title="" href="pictures/DreamingintheWoods_ALL/DreamingintheWoods_Large/10_DreamingintheWoods_Large.jpg">
+								<img src="pictures/DreamingintheWoods_ALL/DreamingintheWoods_Thumb/10_DreamingintheWoods_thumb.jpg" alt="">
+							</a>
+						</li>
+                        <li>
+							<a class="fancybox" rel="DreamingintheWoods" title="" href="pictures/DreamingintheWoods_ALL/DreamingintheWoods_Large/11_DreamingintheWoods_Large.jpg">
+								<img src="pictures/DreamingintheWoods_ALL/DreamingintheWoods_Thumb/11_DreamintheWoods_thumb.jpg" alt="">
+							</a>
+						</li>
+                        <li>
+							<a class="fancybox" rel="DreamingintheWoods" title="" href="pictures/DreamingintheWoods_ALL/DreamingintheWoods_Large/12_DreamingintheWoods_Large.jpg">
+								<img src="pictures/DreamingintheWoods_ALL/DreamingintheWoods_Thumb/12_DreamingintheWoods_thumb.jpg" alt="">
+							</a>
+						</li>
+					</ul>
+				</div><!-- side -->
+				
+			</div><!-- colio-content # DreamingintheWoods -->
+            
+		</div><!-- sixteen columns -->
+        
+	</div><!-- container -->
+    
+    <div id="space"></div>
+    
+    <div id="TextContainer"><p lang="en"><em>Dreaming in the Woods</em> is a three-year-long collaboration between Pedro Lasch and the entire Usdan community of over 1,500 campers ages 4 to 18. During the 2017 research residency phase, Lasch used a short story he created in October 2016 to work with Usdan students, instructors, and staff on the development of collaborative ideas that would let us treat the entire campus as a stage for social action and contemporary art. Focusing on the themes of day and night, as well as dreaming and its techniques, all were encouraged to go beyond the areas they are usually bound to, in terms of art disciplines, as well as buildings. Organic gardening students envisioned mobile gardens and chicken ambassadors, dancers used the yellow buses to create choreographies to be performed inside them, just as our youngest Usdanites found ways to smuggle imaginary friends in and out of the camp, taking us beyond its walls.<br><br>
+ 
+In Summer 2018, these collective experiments, including theater, music, dance, and the visual arts, will come together in a wild, one-day aesthetic experience presented to the wider community as we celebrate Usdan’s 50th anniversary. Taking over a full day session, <em>The Big Plunge</em> presents artworks, actions, and performances produced by students throughout the entire campus. Audiences are invited to walk through the Usdan woods to experience any and all parts. Ending with a literal plunge and a human whirlpool, people of all ages will mingle and collaborate on this special day, as minds and bodies spin in circles to create a social web where past, present, and future are indistinguishable and beautiful. In Summer 2019, the work will conclude by opening Usdan and the many projects from ‘Dreaming in the Woods’ to the wider New York City public, also reaching beyond the city through social media and a final publication.<br><br>
+ 
+This <a href="
+https://www.usdan.org/our-program/artists-residence/dreaming
+">Usdan project page</a> provides updates and more images and information on the many projects and collaborations that are part of it this three-year-long artistic process.</p>
+	</div>
+    
+	<div id="TextContainer">
+    	<a href="works.html"><h2 lang="en">BACK TO ALL WORKS</h2></a>
+	</div>
+    </div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,212 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"/>
+	<title>Pedro Lasch - Made Elsewhere</title>
+
+	<!-- CSS
+	================================================== -->
+    
+    <!--Coolio Plugin-->
+	<link rel="stylesheet" href="css/base.css">
+	<link rel="stylesheet" href="css/skeleton.css">
+	<link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/isotope.css">
+	<link rel="stylesheet" href="css/colio.css">
+    
+    <!--Custom-->
+    <link rel="stylesheet" type="text/css" href="css/PedroLasch_style.css"/>
+ 
+    <!-- Responsive Mobile Menu -->    
+    <link rel="stylesheet" href="css/responsivemobilemenu.css" type="text/css"/>
+    
+    <!--RS Slider-->
+    <link rel="stylesheet" type="text/css" href="css/responsiveslides.css"/>
+    <link rel="stylesheet" type="text/css" href="css/RS_Slider_mod.css"/>
+    
+    <!-- JS
+	================================================== -->
+    
+    <!--Misc-->
+    <script src="js/jquery-1.8.2.min.js"></script>
+    <script type="text/javascript" src="js/fade.js"></script>
+    
+    <!-- Responsive Mobile Menu -->    
+    <script type="text/javascript" src="js/responsivemobilemenu.js"></script>
+     
+    <!--RS Slider-->
+    <!--<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>-->
+    <script src="js/responsiveslides.min.js"></script>
+    <script src="js/RS_Slider_call.js"></script>
+    
+    <!--Coolio Plugin-->
+	<!--<script type="text/javascript" src="js/jquery.min.js"></script>-->
+	<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+	<script type="text/javascript" src="js/jquery.scrollUp.min.js"></script>
+    <script type="text/javascript" src="js/jquery.isotope.min.js"></script>
+	<script type="text/javascript" src="js/jquery.colio.min.js"></script>
+    
+    <!-- Colio Black Theme-->
+	<link rel="stylesheet" href="colio-black/style.css" />
+	<link rel="stylesheet" href="colio-black/fancybox/jquery.fancybox.css" />
+	<script type="text/javascript" src="colio-black/fancybox/jquery.fancybox.js"></script>
+    
+    <!-- Initialize Colio-->    
+	<script type="text/javascript">
+		$(document).ready(function(){
+			
+			// "scrollTop" plugin
+			$.scrollUp();
+			
+			// "colio" plugin
+			$('.portfolio .list').colio({
+				id: 'demo_1',
+				theme: 'black',
+				placement: 'inside',
+				onContent: function(content){
+					// init "fancybox" plugin
+					$('.fancybox').fancybox({
+						titlePosition : 'over',
+						cyclic : true
+					});
+				}
+			});
+			
+			// "isotope" plugin
+			var filter = '*', isotope_run = function(f) {
+				$('.portfolio .list').isotope({layoutMode : 'fitRows', filter: f}).
+				trigger('colio','excludeHidden');
+			};
+			
+			$('.portfolio .filters a').click(function(){
+				$(this).addClass('filter-active').siblings().removeClass('filter-active');
+				var href = $(this).attr('href').substr(1);
+				filter = href ? '.' + href : '*';
+				isotope_run(filter);
+				return false;
+			});
+			
+			isotope_run(filter);
+			
+		});
+	</script>
+
+    <!--Social Media-->
+    <script src="https://platform.twitter.com/widgets.js"></script>
+    
+    <!--Language Switcher-->
+    <script src="js/jquery-cookie.js" charset="utf-8" type="text/javascript"></script>
+	<script src="js/jquery-lang.js" charset="utf-8" type="text/javascript"></script>
+    <script src="js/JqueryLangJS_call.js" charset="utf-8" type="text/javascript"></script>
+    
+</head>
+
+<body>
+
+<div class="WrapAll">
+
+	<div class="WrapNav">
+    
+    	<div class="WrapLangSwitch">
+            <div id="langChanger"><a href="#" onclick="window.lang.change('en'); location.reload(); return false;"><h4>ENG</h4></a> | <a  href="#" onclick="window.lang.change('es'); return false;"><h4>ESP</h4></a>
+            </div>
+        </div>
+
+         <div class="header">
+             <a href="index.html"><img src="images/PedroTitle.jpg" alt=""></a>
+        </div>
+        
+        <div class="rmm" data-menu-style = "minimal">
+            <ul>
+                <li><a href="works.html"><p lang="en">WORKS</p></a></li>
+                <li><a href="publications.html"><p lang="en">PUBLICATIONS</p></a></li>
+                <li><a href="about.html"><p lang="en">BIO / CV</p></a></li>
+                <li><a href="current.html"><p lang="en">CURRENT</p></a></li>
+                <li><a href="subscribe.html"><p lang="en">SUBSCRIBE</p></a></li>
+            </ul>
+        </div>
+        
+	</div>
+    
+    <div class="WrapContent">
+    
+	<div id="TextContainer">
+    	<h1 lang="en">Made Elsewhere</h1><p> (2000)</p>
+	</div>
+    
+	<div class="container">
+    
+		<div class="sixteen columns">
+							
+			<div class="portfolio clearfix">
+
+				<ul class="list">
+                    
+                    <li data-content="#MadeElsewhere">
+						<div class="thumb">
+							<div class="view">
+								<a class="button colio-link" href="#" lang="en">View Project</a>
+							</div>
+							<img src="pictures/MadeElsewhere_ALL/MadeElsewhere_Thumb/1_MadeElsewhere_thumb.jpg" alt=""/>
+						</div>
+						<h4><a class="colio-link" href="#" lang="en">Made Elsewhere</a></h4>
+					</li>
+					
+				</ul><!-- list -->
+
+			</div><!-- portfolio -->
+            		
+			
+			<div id="MadeElsewhere" class="colio-content">
+									
+				<div class="main">
+					
+					<h3 lang="en">Made Elsewhere</br>1998-1999</h3>
+					<p lang="en">
+                        C-prints<br />
+                        Each print in Suite of 20 slightly<br />
+                        different size. Average size 18 x 24 in<br />
+                        Suite of 20 Prints, Edition of 10
+					</p>		
+				</div><!-- main -->
+				
+				<div class="side">
+					<ul class="feed">
+						<li>
+							<a class="fancybox" rel="MadeElsewhere" title="" href="pictures/MadeElsewhere_ALL/MadeElsewhere_Large/1_MadeElsewhere.jpg">
+								<img src="pictures/MadeElsewhere_ALL/MadeElsewhere_Thumb/1_MadeElsewhere_thumb.jpg" alt="">
+							</a>
+						</li>
+                        <li>
+							<a class="fancybox" rel="MadeElsewhere" title="" href="pictures/MadeElsewhere_ALL/MadeElsewhere_Large/2_MadeElsewhere.jpg">
+								<img src="pictures/MadeElsewhere_ALL/MadeElsewhere_Thumb/2_MadeElsewhere_thumb.jpg" alt="">
+							</a>
+						</li>
+					</ul>
+				</div><!-- side -->
+				
+			</div><!-- colio-content # MadeElsewhere -->
+            
+		</div><!-- sixteen columns -->
+        
+	</div><!-- container -->
+    
+    <div id="space"></div>
+    
+    <div id="TextContainer"><p lang="en">This work consists of extreme photographic close-ups of various Statue of Liberty figurines, all made outside of New York and the U.S., the large majority made in China. The cropping and composition of all photographs in the set is consistent with the most common tourist postcard of the Statue of Liberty's face in three quarters.<br /><br />
+
+An alternate edition brings all 20 works together in a standard postcard accordion publication.</p>
+	</div>
+    
+	<div id="TextContainer">
+    	<a href="works.html"><h2 lang="en">BACK TO ALL WORKS</h2></a>
+	</div>
+    
+	</div>
+    
+</div>
+
+</body>
+</html>

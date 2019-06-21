@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<!-- saved from url=(0032)http://pedrolasch.com/works.html -->
+<html lang="en" class="csstransforms csstransforms3d csstransitions"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<title>Pedro Lasch - Works</title>
+
+	<!-- CSS
+	================================================== -->
+
+    <!--Coolio Plugin-->
+	<link rel="stylesheet" href="./works-old_files/base.css">
+	<link rel="stylesheet" href="./works-old_files/skeleton.css">
+	<link rel="stylesheet" href="./works-old_files/layout.css">
+    <link rel="stylesheet" href="./works-old_files/isotope.css">
+	<link rel="stylesheet" href="./works-old_files/colio.css">
+
+    <!--Custom-->
+    <link rel="stylesheet" type="text/css" href="./works-old_files/PedroLasch_style.css">
+
+    <!-- Responsive Mobile Menu -->
+    <link rel="stylesheet" href="./works-old_files/responsivemobilemenu.css" type="text/css">
+
+    <!--RS Slider-->
+    <link rel="stylesheet" type="text/css" href="./works-old_files/responsiveslides.css">
+    <link rel="stylesheet" type="text/css" href="./works-old_files/RS_Slider_mod.css">
+
+    <!-- JS
+	================================================== -->
+
+    <!--Misc-->
+    <script src="./works-old_files/jquery-1.8.2.min.js"></script>
+    <script type="text/javascript" src="./works-old_files/fade.js"></script>
+
+    <!-- Responsive Mobile Menu -->
+    <script type="text/javascript" src="./works-old_files/responsivemobilemenu.js"></script>
+
+    <!--RS Slider-->
+    <!--<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>-->
+    <script src="./works-old_files/responsiveslides.min.js"></script>
+    <script src="./works-old_files/RS_Slider_call.js"></script>
+
+    <!--Coolio Plugin-->
+	<!--<script type="text/javascript" src="js/jquery.min.js"></script>-->
+	<script type="text/javascript" src="./works-old_files/jquery.easing.1.3.js"></script>
+	<script type="text/javascript" src="./works-old_files/jquery.scrollUp.min.js"></script>
+    <script type="text/javascript" src="./works-old_files/jquery.isotope.min.js"></script>
+	<script type="text/javascript" src="./works-old_files/jquery.colio.min.js"></script>
+
+    <!-- Colio Black Theme-->
+	<link rel="stylesheet" href="./works-old_files/style.css">
+	<link rel="stylesheet" href="./works-old_files/jquery.fancybox.css">
+	<script type="text/javascript" src="./works-old_files/jquery.fancybox.js"></script>
+
+    <!-- Initialize Colio-->
+	<script type="text/javascript">
+		$(document).ready(function(){
+
+			// "scrollTop" plugin
+			$.scrollUp();
+
+			// "colio" plugin
+			$('.portfolio .list').colio({
+				id: 'demo_1',
+				theme: 'black',
+				placement: 'inside',
+				onContent: function(content){
+					// init "fancybox" plugin
+					$('.fancybox').fancybox({
+						titlePosition : 'over',
+						cyclic : true
+					});
+				}
+			});
+
+			// "isotope" plugin
+			var filter = '*', isotope_run = function(f) {
+				$('.portfolio .list').isotope({layoutMode : 'fitRows', filter: f}).
+				trigger('colio','excludeHidden');
+			};
+
+			$('.portfolio .filters a').click(function(){
+				$(this).addClass('filter-active').siblings().removeClass('filter-active');
+				var href = $(this).attr('href').substr(1);
+				filter = href ? '.' + href : '*';
+				isotope_run(filter);
+				return false;
+			});
+
+			isotope_run(filter);
+
+		});
+	</script>
+
+    <!--Social Media-->
+    <script src="./works-old_files/widgets.js"></script>
+
+    <!--Language Switcher-->
+    <script src="./works-old_files/jquery-cookie.js" charset="utf-8" type="text/javascript"></script>
+	<script src="./works-old_files/jquery-lang.js" charset="utf-8" type="text/javascript"></script>
+    <script src="./works-old_files/JqueryLangJS_call.js" charset="utf-8" type="text/javascript"></script>
+
+</head>
+
+<body>
+
+<div class="WrapAll">
+
+	<div class="WrapNav">
+
+    	<div class="WrapLangSwitch">
+            <div id="langChanger"><a href="http://pedrolasch.com/works.html#" onclick="window.lang.change(&#39;en&#39;); location.reload(); return false;"><h4>ENG</h4></a> | <a href="http://pedrolasch.com/works.html#" onclick="window.lang.change(&#39;es&#39;); return false;"><h4>ESP</h4></a>
+            </div>
+        </div>
+
+        <div class="header">
+            <a href="http://pedrolasch.com/index.html"><img src="./works-old_files/PedroTitle.jpg" alt=""></a>
+        </div>
+
+        <div class="rmm minimal" data-menu-style="minimal" style="max-width: 688.8px;"><div class="rmm-toggled rmm-closed" style=""><div class="rmm-toggled-controls"><div class="rmm-toggled-title">Menu</div><div class="rmm-button"><span>&nbsp;</span><span>&nbsp;</span><span>&nbsp;</span></div></div><ul>
+                <li><a id="current" href="http://pedrolasch.com/works.html#" onclick="return false;"><p lang="en">WORKS</p></a></li>
+                <li><a href="http://pedrolasch.com/publications.html"><p lang="en">PUBLICATIONS</p></a></li>
+                <li><a href="http://pedrolasch.com/about.html"><p lang="en">BIO / CV</p></a></li>
+                <li><a href="http://pedrolasch.com/current.html"><p lang="en">CURRENT</p></a></li>
+                <li><a href="http://pedrolasch.com/subscribe.html"><p lang="en">SUBSCRIBE</p></a></li>
+            </ul></div>
+            <ul class="rmm-main-list" style="">
+                <li><a id="current" href="http://pedrolasch.com/works.html#" onclick="return false;"><p lang="en">WORKS</p></a></li>
+                <li><a href="http://pedrolasch.com/publications.html"><p lang="en">PUBLICATIONS</p></a></li>
+                <li><a href="http://pedrolasch.com/about.html"><p lang="en">BIO / CV</p></a></li>
+                <li><a href="http://pedrolasch.com/current.html"><p lang="en">CURRENT</p></a></li>
+                <li><a href="http://pedrolasch.com/subscribe.html"><p lang="en">SUBSCRIBE</p></a></li>
+            </ul>
+        </div>
+
+
+
+        </div>
+
+	</div>
+
+    <div class="WrapContent">
+
+        <div class="container">
+
+            <div class="sixteen columns">
+
+                <div class="portfolio clearfix">
+
+                    <ul class="list isotope" style="position: relative; overflow: hidden; height: 905px;">
+
+                      <li class="colio-item isotope-item" style="position: absolute; left: 0px; top: 0px; transform: translate3d(0px, 0px, 0px);">
+                          <div class="thumb">
+                              <div class="view">
+                                  <a class="button" href="http://pedrolasch.com/fireandice.html" lang="en">View Project</a>
+                              </div>
+                              <img src="./works-old_files/1_FireAndIce_thumb.jpg" alt="">
+                          </div>
+                          <h4><a href="http://pedrolasch.com/fireandice.html" lang="en">Fire &amp; Ice<br> (In Memory of Heather Heyer)</a></h4>
+                      </li>
+
+                      <li class="colio-item isotope-item" style="position: absolute; left: 0px; top: 0px; transform: translate3d(235px, 0px, 0px);">
+                          <div class="thumb">
+                              <div class="view">
+                                  <a class="button" href="http://pedrolasch.com/asculpturalproposalforthezocalo.html" lang="en">View Project</a>
+                              </div>
+                              <img src="./works-old_files/ASculpturalProposalForTheZocalo_thumb.jpg" alt="">
+                          </div>
+                          <h4><a href="http://pedrolasch.com/asculpturalproposalforthezocalo.html" lang="en">A Sculptural Proposal<br>for the Zocalo</a></h4>
+                      </li>
+
+                      <li class="colio-item isotope-item" style="position: absolute; left: 0px; top: 0px; transform: translate3d(470px, 0px, 0px);">
+                          <div class="thumb">
+                              <div class="view">
+                                  <a class="button" href="http://pedrolasch.com/artbiennialsandotherglobaldisasters.html" lang="en">View Project</a>
+                              </div>
+                              <img src="./works-old_files/ArtBiennialsAndOtherGlobalDisasters_thumb.jpg" alt="">
+                          </div>
+                          <h4><a href="http://pedrolasch.com/artbiennialsandotherglobaldisasters.html" lang="en">Art Biennials &amp;<br>Other Global Disasters</a></h4>
+                      </li>
+
+                      <li class="colio-item isotope-item" style="position: absolute; left: 0px; top: 0px; transform: translate3d(705px, 0px, 0px);">
+                          <div class="thumb">
+                              <div class="view">
+                                  <a class="button" href="http://pedrolasch.com/blackmirror.html" lang="en">View Project</a>
+                              </div>
+                              <img src="./works-old_files/BlackMirror_thumb.jpg" alt="">
+                          </div>
+                          <h4><a href="http://pedrolasch.com/blackmirror.html" lang="en">Black Mirror</a></h4>
+                      </li>
+
+                      <li class="colio-item isotope-item" style="position: absolute; left: 0px; top: 0px; transform: translate3d(0px, 190px, 0px);">
+                          <div class="thumb">
+                              <div class="view">
+                                  <a class="button" href="http://pedrolasch.com/naturalizations.html" lang="en">View Project</a>
+                              </div>
+                              <img src="./works-old_files/Naturalizations_thumb.jpg" alt="">
+                          </div>
+                          <h4><a href="http://pedrolasch.com/naturalizations.html" lang="en">Naturalizations</a></h4>
+                      </li>
+
+                      <li class="colio-item isotope-item" style="position: absolute; left: 0px; top: 0px; transform: translate3d(235px, 190px, 0px);">
+                          <div class="thumb">
+                              <div class="view">
+                                  <a class="button" href="http://pedrolasch.com/abstractnationalism.html" lang="en">View Project</a>
+                              </div>
+                              <img src="./works-old_files/AbstractNationalism_thumb.jpg" alt="">
+                          </div>
+                          <h4><a href="http://pedrolasch.com/abstractnationalism.html" lang="en">Abstract Nationalism</a></h4>
+                      </li>
+
+                        <li class="colio-item isotope-item" style="position: absolute; left: 0px; top: 0px; transform: translate3d(470px, 190px, 0px);">
+                          <div class="thumb">
+                              <div class="view">
+                                  <a href="http://pedrolasch.com/artofthemooc.html" class="button" lang="en">View Project</a>
+                              </div>
+                              <img src="./works-old_files/AoM_thumb.jpg" alt="">
+                          </div>
+                          <h4> <a href="http://pedrolasch.com/artofthemooc.html" target="_blank" lang="en">Art of the MOOC</a></h4>
+                      </li>
+
+                      <li class="colio-item isotope-item" style="position: absolute; left: 0px; top: 0px; transform: translate3d(705px, 190px, 0px);">
+                          <div class="thumb">
+                              <div class="view">
+                                  <a class="button" href="http://pedrolasch.com/dreaminginthewoods.html" lang="en">View Project</a>
+                              </div>
+                              <img src="./works-old_files/DreamingintheWoods_thumb.jpg" alt="">
+                          </div>
+                          <h4><a href="http://pedrolasch.com/latinoaamerica.html" lang="en">Dreaming in the Woods</a></h4>
+                      </li>
+
+                      <!--
+                      <li>
+                          <div class="thumb">
+                              <div class="view">
+                                  <a href="http://www.experimentalcommunities.net/international-day-without-english/" target="_blank" class="button" lang="en">View Project</a>
+                              </div>
+                              <img src="pictures/Works/ExperimentalCommunities_thumb.jpg" alt=""/>
+                          </div>
+                          <h4> <a href="http://www.experimentalcommunities.net/international-day-without-english/" target="_blank" lang="en">Experimental Communities</a></h4>
+                      </li>
+                      -->
+
+                      <li class="colio-item isotope-item" style="position: absolute; left: 0px; top: 0px; transform: translate3d(0px, 365px, 0px);">
+                          <div class="thumb">
+                              <div class="view">
+                                  <a href="http://pedrolasch.com/weeklymonster.html" target="_blank" class="button" lang="en">View Project</a>
+                              </div>
+                              <img src="./works-old_files/WeeklyMonster_thumb.jpg" alt="">
+                          </div>
+                          <h4> <a href="http://pedrolasch.com/weeklymonster.html" lang="en">Weekly Monster</a></h4>
+                      </li>
+
+                      <li class="colio-item isotope-item" style="position: absolute; left: 0px; top: 0px; transform: translate3d(235px, 365px, 0px);">
+                          <div class="thumb">
+                              <div class="view">
+                                  <a href="http://pedrolasch.com/phantomlimbs.html" class="button" lang="en">View Project</a>
+                              </div>
+                              <img src="./works-old_files/PhantomLimbsAndTwinTowersGoGlobal_thumb.jpg" alt="">
+                          </div>
+                          <h4><a href="http://pedrolasch.com/phantomlimbs.html" lang="en">Phantom Limbs &amp;<br>Twin Towers Go Global</a></h4>
+                      </li>
+
+                       <li class="colio-item isotope-item" style="position: absolute; left: 0px; top: 0px; transform: translate3d(470px, 365px, 0px);">
+                          <div class="thumb">
+                              <div class="view">
+                                  <a class="button" href="http://pedrolasch.com/latinoaamerica.html" lang="en">View Project</a>
+                              </div>
+                              <img src="./works-old_files/LatinoaAmerica_thumb.jpg" alt="">
+                          </div>
+                          <h4><a href="http://pedrolasch.com/latinoaamerica.html" lang="en">Latino/a America</a></h4>
+                      </li>
+
+                      <li class="colio-item isotope-item" style="position: absolute; left: 0px; top: 0px; transform: translate3d(705px, 365px, 0px);">
+                         <div class="thumb">
+                             <div class="view">
+                                 <a class="button" href="http://pedrolasch.com/tianguis.html" lang="en">View Project</a>
+                             </div>
+                             <img src="./works-old_files/Tianguis_thumb.jpg" alt="">
+                         </div>
+                         <h4><a href="http://pedrolasch.com/tianguis.html" lang="en">Tianguis Transnacional</a></h4>
+                      </li>
+
+                      <li class="colio-item isotope-item" style="position: absolute; left: 0px; top: 0px; transform: translate3d(0px, 555px, 0px);">
+                          <div class="thumb">
+                              <div class="view">
+                                  <a class="button" href="http://pedrolasch.com/laschvs.html" lang="en">View Project</a>
+                              </div>
+                              <img src="./works-old_files/LaschVsPassarotti_thumb.jpg" alt="">
+                          </div>
+                          <h4><a href="http://pedrolasch.com/laschvs.html" lang="en">Lasch vs ...</a></h4>
+                      </li>
+
+
+                      <li class="colio-item isotope-item" style="position: absolute; left: 0px; top: 0px; transform: translate3d(235px, 555px, 0px);">
+                          <div class="thumb">
+                              <div class="view">
+                                  <a class="button" href="http://pedrolasch.com/comepaintthewhitehouse.html" lang="en">View Project</a>
+                              </div>
+                              <img src="./works-old_files/ComePaintTheWhiteHouse_thumb.jpg" alt="">
+                          </div>
+                          <h4><a href="http://pedrolasch.com/comepaintthewhitehouse.html" lang="en">Come Paint the White House</a></h4>
+                      </li>
+
+                      <li class="colio-item isotope-item" style="position: absolute; left: 0px; top: 0px; transform: translate3d(470px, 555px, 0px);">
+                          <div class="thumb">
+                              <div class="view">
+                                  <a class="button" href="http://pedrolasch.com/crumbs.html" lang="en">View Project</a>
+                              </div>
+                              <img src="./works-old_files/Crumbs_thumb.jpg" alt="">
+                          </div>
+                          <h4><a href="http://pedrolasch.com/crumbs.html" lang="en">Crumbs</a></h4>
+                      </li>
+
+                      <li class="colio-item isotope-item" style="position: absolute; left: 0px; top: 0px; transform: translate3d(705px, 555px, 0px);">
+                          <div class="thumb">
+                              <div class="view">
+                                  <a class="button" href="http://pedrolasch.com/madeelsewhere.html" lang="en">View Project</a>
+                              </div>
+                              <img src="./works-old_files/MadeElsewhere_thumb.jpg" alt="">
+                          </div>
+                          <h4><a href="http://pedrolasch.com/madeelsewhere.html" lang="en">Made Elsewhere</a></h4>
+                      </li>
+
+                      <li class="colio-item isotope-item" style="position: absolute; left: 0px; top: 0px; transform: translate3d(0px, 730px, 0px);">
+                          <div class="thumb">
+                              <div class="view">
+                                  <a class="button" href="http://pedrolasch.com/hexagonalinvestigations.html" lang="en">View Project</a>
+                              </div>
+                              <img src="./works-old_files/HexagonalInvestigations_thumb.jpg" alt="">
+                          </div>
+                          <h4><a href="http://pedrolasch.com/hexagonalinvestigations.html" lang="en">Hexagonal Investigations</a></h4>
+                      </li>
+
+                    <!-- THUMBS/LINKS TO OLDER UNDERGRAD WORK
+                        <li>
+                            <div class="thumb">
+                                <div class="view">
+                                    <a class="button" href="eightvisualdialogues.html" lang="en">View Project</a>
+                                </div>
+                                <img src="pictures/Works/EightVisualDialogues_thumb.jpg" alt=""/>
+                            </div>
+                            <h4><a href="eightvisualdialogues.html" lang="en">Eight Visual Dialogues</a></h4>
+                        </li>
+
+                        <li>
+                            <div class="thumb">
+                                <div class="view">
+                                    <a class="button" href="asystematicreadingofsomepoemsbybertoltbrecht.html" lang="en">View Project</a>
+                                </div>
+                                <img src="pictures/Works/ASystematicReadingOfSomePoemsByBertoltBrecht_thumb.jpg" alt=""/>
+                            </div>
+                            <h4><a href="asystematicreadingofsomepoemsbybertoltbrecht.html" lang="en">A Systematic Reading of Some<br>Poems by Bertolt Brecht</a></h4>
+                        </li>
+
+                        <li>
+                            <div class="thumb">
+                                <div class="view">
+                                    <a class="button" href="stripe.html" lang="en">View Project</a>
+                                </div>
+                                <img src="pictures/Works/Stripe_thumb.jpg" alt=""/>
+                            </div>
+                            <h4><a href="stripe.html" lang="en">Stripe</a></h4>
+                        </li>
+                        -->
+
+                    </ul><!-- list -->
+
+                </div><!-- portfolio -->
+
+            </div><!-- sixteen columns -->
+
+        </div><!-- container -->
+
+	<!-- WrapContent -->
+
+
+</div><!-- WrapAll -->
+
+
+
+<div id="fancybox-tmp"></div><div id="fancybox-loading"><div></div></div><div id="fancybox-overlay"></div><div id="fancybox-wrap"><div id="fancybox-outer"><div class="fancybox-bg" id="fancybox-bg-n"></div><div class="fancybox-bg" id="fancybox-bg-ne"></div><div class="fancybox-bg" id="fancybox-bg-e"></div><div class="fancybox-bg" id="fancybox-bg-se"></div><div class="fancybox-bg" id="fancybox-bg-s"></div><div class="fancybox-bg" id="fancybox-bg-sw"></div><div class="fancybox-bg" id="fancybox-bg-w"></div><div class="fancybox-bg" id="fancybox-bg-nw"></div><div id="fancybox-content"></div><a id="fancybox-close"></a><div id="fancybox-title"></div><a href="javascript:;" id="fancybox-left"><span class="fancy-ico" id="fancybox-left-ico"></span></a><a href="javascript:;" id="fancybox-right"><span class="fancy-ico" id="fancybox-right-ico"></span></a></div></div><a id="scrollUp" href="http://pedrolasch.com/works.html#top" title="Scroll to top" style="display: none; position: fixed; z-index: 2147483647;">Scroll to top</a><div class="colio colio-has-navigation colio-placement-inside colio-theme-black" id="demo_1" style="position: absolute; top: 0px; left: 0px;"><div class="colio-container"></div><div class="colio-navigation"><a class="colio-prev" href="http://pedrolasch.com/works.html#"><span>Prev</span></a><a class="colio-next" href="http://pedrolasch.com/works.html#"><span>Next</span></a></div><a class="colio-close" href="http://pedrolasch.com/works.html#"><span>Close</span></a></div><iframe scrolling="no" frameborder="0" allowtransparency="true" src="./works-old_files/widget_iframe.1dcb9052029dec42394397b936b6c31a.html" title="Twitter settings iframe" style="display: none;"></iframe><iframe id="rufous-sandbox" scrolling="no" frameborder="0" allowtransparency="true" allowfullscreen="true" style="position: absolute; visibility: hidden; display: none; width: 0px; height: 0px; padding: 0px; border: none;" title="Twitter analytics iframe" src="./works-old_files/saved_resource.html"></iframe></body></html>

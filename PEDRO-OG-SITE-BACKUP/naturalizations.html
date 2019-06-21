@@ -1,0 +1,1203 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"/>
+	<title>Pedro Lasch - Naturalizations</title>
+
+	<!-- CSS
+	================================================== -->
+    
+    <!--Coolio Plugin-->
+	<link rel="stylesheet" href="css/base.css">
+	<link rel="stylesheet" href="css/skeleton.css">
+	<link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/isotope.css">
+	<link rel="stylesheet" href="css/colio.css">
+    
+    <!--Custom-->
+    <link rel="stylesheet" type="text/css" href="css/PedroLasch_style.css"/>
+ 
+    <!-- Responsive Mobile Menu -->    
+    <link rel="stylesheet" href="css/responsivemobilemenu.css" type="text/css"/>
+    
+    <!--RS Slider-->
+    <link rel="stylesheet" type="text/css" href="css/responsiveslides.css"/>
+    <link rel="stylesheet" type="text/css" href="css/RS_Slider_mod.css"/>
+    
+    <!-- JS
+	================================================== -->
+    
+    <!--Misc-->
+    <script src="js/jquery-1.8.2.min.js"></script>
+    <script type="text/javascript" src="js/fade.js"></script>
+    
+    <!-- Responsive Mobile Menu -->    
+    <script type="text/javascript" src="js/responsivemobilemenu.js"></script>
+     
+    <!--RS Slider-->
+    <!--<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>-->
+    <script src="js/responsiveslides.min.js"></script>
+    <script src="js/RS_Slider_call.js"></script>
+    
+    <!--Coolio Plugin-->
+	<!--<script type="text/javascript" src="js/jquery.min.js"></script>-->
+	<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+	<script type="text/javascript" src="js/jquery.scrollUp.min.js"></script>
+    <script type="text/javascript" src="js/jquery.isotope.min.js"></script>
+	<script type="text/javascript" src="js/jquery.colio.min.js"></script>
+    
+    <!-- Colio Black Theme-->
+	<link rel="stylesheet" href="colio-black/style.css" />
+	<link rel="stylesheet" href="colio-black/fancybox/jquery.fancybox.css" />
+	<script type="text/javascript" src="colio-black/fancybox/jquery.fancybox.js"></script>
+    
+    <!-- Initialize Colio-->    
+	<script type="text/javascript">
+		$(document).ready(function(){
+			
+			// "scrollTop" plugin
+			$.scrollUp();
+			
+			// "colio" plugin
+			$('.portfolio .list').colio({
+				id: 'demo_1',
+				theme: 'black',
+				placement: 'inside',
+				onContent: function(content){
+					// init "fancybox" plugin
+					$('.fancybox').fancybox({
+						titlePosition : 'over',
+						cyclic : true
+					});
+				}
+			});
+			
+			// "isotope" plugin
+			var filter = '*', isotope_run = function(f) {
+				$('.portfolio .list').isotope({layoutMode : 'fitRows', filter: f}).
+				trigger('colio','excludeHidden');
+			};
+			
+			$('.portfolio .filters a').click(function(){
+				$(this).addClass('filter-active').siblings().removeClass('filter-active');
+				var href = $(this).attr('href').substr(1);
+				filter = href ? '.' + href : '*';
+				isotope_run(filter);
+				return false;
+			});
+			
+			isotope_run(filter);
+			
+		});
+	</script>
+
+    <!--Social Media-->
+    <script src="https://platform.twitter.com/widgets.js"></script>
+    
+    <!--Language Switcher-->
+    <script src="js/jquery-cookie.js" charset="utf-8" type="text/javascript"></script>
+	<script src="js/jquery-lang.js" charset="utf-8" type="text/javascript"></script>
+    <script src="js/JqueryLangJS_call.js" charset="utf-8" type="text/javascript"></script>
+    
+</head>
+
+<body>
+
+<div class="WrapAll">
+
+	<div class="WrapNav">
+    
+    	<div class="WrapLangSwitch">
+            <div id="langChanger"><a href="#" onclick="window.lang.change('en'); location.reload(); return false;"><h4>ENG</h4></a> | <a  href="#" onclick="window.lang.change('es'); return false;"><h4>ESP</h4></a>
+            </div>
+        </div>
+
+        <div class="header">
+             <a href="index.html"><img src="images/PedroTitle.jpg" alt=""></a>
+        </div>
+        
+        <div class="rmm" data-menu-style = "minimal">
+            <ul>
+                <li><a href="works.html"><p lang="en">WORKS</p></a></li>
+                <li><a href="publications.html"><p lang="en">PUBLICATIONS</p></a></li>
+                <li><a href="about.html"><p lang="en">BIO / CV</p></a></li>
+                <li><a href="current.html"><p lang="en">CURRENT</p></a></li>
+                <li><a href="subscribe.html"><p lang="en">SUBSCRIBE</p></a></li>
+            </ul>
+        </div>
+        
+	</div>
+
+    <div class="WrapContent">
+    
+    <div id="TextContainer">
+    	<h1 lang="en">Naturalizations </h1><p lang="en"> (2002-present)</p>
+	</div>
+    
+	<div class="container">
+    
+		<div class="sixteen columns">
+							
+			<div class="portfolio clearfix">
+
+				<ul class="list">
+                    
+                    <li> 
+                        <div class="thumb">
+                                <div class="view">
+                                    <a class="button" href="https://smile.amazon.com/What-Are-We-Before-Naturalized/dp/0692525262/ref=sr_1_5" lang="en">View Book</a>
+                                </div>
+                                <img src="pictures/CV/book_whatarewebeforewearenaturalized_pedrolasch.jpg" alt=""/>
+                            </div>
+                            <h4><a href="https://smile.amazon.com/What-Are-We-Before-Naturalized/dp/0692525262/ref=sr_1_5" lang="en">Provisions Book <br>&amp; DC Interventions</a></h4>
+                        </li>
+
+					<li data-content="#InteractionRitual">
+						<div class="thumb">
+							<div class="view">
+								<a class="button colio-link" href="#" lang="en">View Project</a>
+							</div>
+							<img src="pictures/Naturalizations_ALL/InteractionRitual_Thumb/1_InteractionRitual_thumb.jpg" alt=""/>
+						</div>
+						<h4><a class="colio-link" href="#" lang="en">Interaction Ritual<br><br></a></h4>
+					</li>
+					
+					<li data-content="#DanceOfMirrors">
+						<div class="thumb">
+							<div class="view">
+								<a class="button colio-link" href="#" lang="en">View Project</a>
+							</div>
+							<img src="pictures/Naturalizations_ALL/DanceOfMirrors_Thumb/1_DanceOfMirrors_thumb.jpg" alt=""/>
+						</div>
+						<h4><a class="colio-link" href="#" lang="en">The Dance of Mirrors<br><br></a></h4>
+					</li>
+					
+					<li data-content="#MediaDefacements">
+						<div class="thumb">
+							<div class="view">
+								<a class="button colio-link" href="#" lang="en">View Project</a>
+							</div>
+							<img src="pictures/Naturalizations_ALL/MediaDefacements_Thumb/1_MediaDefacements_thumb.jpg" alt=""/>
+						</div>
+						<h4><a class="colio-link" href="#" lang="en">Media Defacements<br><br></a></h4>
+					</li>
+					
+					<li data-content="#MechanismOf">
+						<div class="thumb">
+							<div class="view">
+								<a class="button colio-link" href="#" lang="en">View Project</a>
+							</div>
+							<img src="pictures/Naturalizations_ALL/MechanismOf_Thumb/1_MechanismOf_thumb.jpg" alt=""/>
+						</div>
+						<h4><a class="colio-link" href="#" lang="en">The Mechanism of<br>Facial Expression</a></h4>
+					</li>
+					
+					<li data-content="#PointCounterpoint">
+						<div class="thumb">
+							<div class="view">
+								<a class="button colio-link" href="#" lang="en">View Project</a>
+							</div>
+							<img src="pictures/Naturalizations_ALL/PointCounterpoint_Thumb/1_PointCounterpoint_thumb.jpg" alt=""/>
+						</div>
+						<h4><a class="colio-link" href="#" lang="en">Point-Counterpoint-Fusion<br><br></a></h4>
+					</li>
+					
+					<li data-content="#ExecutionOfMaximilian">
+						<div class="thumb">
+							<div class="view">
+								<a class="button colio-link" href="#" lang="en">View Project</a>
+							</div>
+							<img src="pictures/Naturalizations_ALL/ExecutionOfMaximilian_Thumb/1_ExecutionOfMaximilian_thumb.jpg" alt=""/>
+						</div>
+						<h4><a class="colio-link" href="#" lang="en">The Execution of Maximilian<br>(Parts 1 &amp; 2)</a></h4>
+					</li>
+					
+					<li data-content="#StatementsOnMasks">
+						<div class="thumb">
+							<div class="view">
+								<a class="button colio-link" href="#" lang="en">View Project</a>
+							</div>
+							<img src="pictures/Naturalizations_ALL/StatementsOnMasks_Thumb/1_StatementsOnMasks_thumb.jpg" alt=""/>
+						</div>
+						<h4><a class="colio-link" href="#" lang="en">Statements on Masks<br><br></a></h4>
+					</li>
+                    
+                    <li data-content="#ExperimentalKit">
+						<div class="thumb">
+							<div class="view">
+								<a class="button colio-link" href="#" lang="en">View Project</a>
+							</div>
+							<img src="pictures/Naturalizations_ALL/ExperimentalKit_Thumb/1_ExperimentalKit_thumb.jpg" alt=""/>
+						</div>
+						<h4><a class="colio-link" href="#" lang="en">The Experimental Kit<br><br></a></h4>
+					</li>
+                    
+                    <li data-content="#CanYouRephrase">
+						<div class="thumb">
+							<div class="view">
+								<a class="button colio-link" href="#" lang="en">View Project</a>
+							</div>
+							<img src="pictures/Naturalizations_ALL/CanYouRephrase_Thumb/1_CanYouRephrase_thumb.jpg" alt=""/>
+						</div>
+						<h4><a class="colio-link" href="#" lang="en">Can You Rephrase That<br>in the Form of a Question</a></h4>
+					</li>
+                    
+                    <li data-content="#MissingReflection">
+						<div class="thumb">
+							<div class="view">
+								<a class="button colio-link" href="#" lang="en">View Project</a>
+							</div>
+							<img src="pictures/Naturalizations_ALL/MissingReflection_Thumb/1_MissingReflection_thumb.jpg" alt=""/>
+						</div>
+						<h4><a class="colio-link" href="#" lang="en">Missing Reflection:<br>A Photoessay on Masking</a></h4>
+					</li>
+                    
+                    <li data-content="#VerticalFlaneur">
+						<div class="thumb">
+							<div class="view">
+								<a class="button colio-link" href="#" lang="en">View Project</a>
+							</div>
+							<img src="pictures/Naturalizations_ALL/VerticalFlaneur_Thumb/1_VerticalFlaneur_thumb.jpg" alt=""/>
+						</div>
+						<h4><a class="colio-link" href="#" lang="en">Vertical Flâneur<br><br></a></h4>
+					</li>
+                    
+                    <li data-content="#NaturalizationsQuestionsStatementsPropositions">
+						<div class="thumb">
+							<div class="view">
+								<a class="button colio-link" href="#" lang="en">View Project</a>
+							</div>
+							<img src="pictures/Naturalizations_ALL/NaturalizationsQuestionsStatementsPropositions_Thumb/NaturalizationsQuestionsStatementsPropositions_thumb.jpg" alt=""/>
+						</div>
+						<h4><a class="colio-link" href="#" lang="en">Naturalizations: Questions,<br>Statements, &amp; Propositions</a></h4>
+					</li>
+                    
+                    <li data-content="#GedankenDieNie">
+						<div class="thumb">
+							<div class="view">
+								<a class="button colio-link" href="#" lang="en">View Project</a>
+							</div>
+							<img src="pictures/Naturalizations_ALL/GedankenDieNie_Thumb/1_GedankenDieNie_thumb.jpg" alt=""/>
+						</div>
+						<h4><a class="colio-link" href="#" lang="en">Gedanken Die Nie<br>Aneinaner Rührenn</a></h4>
+					</li>
+					
+				</ul><!-- list -->
+
+			</div><!-- portfolio -->
+            		
+			
+			<div id="GedankenDieNie" class="colio-content">
+									
+				<div class="main">
+					
+					<h3 lang="en">Gedanken Die Nie Aneinaner Rühren<br>1996</h3>
+					<p lang="en">Experimental opera, text by Elias Canetti, music by Matthias Hinke, set and costume design by Pedro Lasch<br><br>
+                    This work included the first iteration of the mirror masks, originally designed as theatrical props for specific characters in the opera. While the visuals and music were completed, the opera was never presented to the public. Neither were the mirror masks until 2002, when they were radically reenvisioned as works to exist in everyday life.</p>		
+				</div><!-- main -->
+				
+				<div class="side">
+					<ul class="feed">
+						<li>
+							<a class="fancybox" title="" href="pictures/Naturalizations_ALL/GedankenDieNie_Large/1_GedankenDieNie.jpg">
+								<img src="pictures/Naturalizations_ALL/GedankenDieNie_Thumb/1_GedankenDieNie_thumb.jpg" alt="">
+							</a>
+						</li>
+					</ul>
+				</div><!-- side -->
+				
+			</div><!-- colio-content # GedankenDieNie -->
+            
+            <div id="InteractionRitual" class="colio-content">
+									
+				<div class="main">
+					
+					<h3 lang="en">Interaction Ritual<br>2002-2014</h3>
+					<p lang="en">Dialogues, intimate conversations, and small group interactions with use of mirror masks, duration variable (ongoing)<br><br>
+                    Paradoxically, the most public use of these mirror masks has also been its most intimate. Over the many years, they have been worn first and foremost in the context of the everyday. Hundreds of conversations, café gatherings, parties, security checkpoints, and other such small group settings with or without a specific agenda have added up to constitute an unlikely mass medium, this one being non-linear, multi-vocal, and decentralized. It is in this highly adaptable and intimate context that the work shows its closest links to network society and radical pedagogy. Just like a teacher who hates mass gatherings may cherish deep conversations with thousands of students - if we account for a life of teaching, it is this ‘interaction ritual’ that may account for Naturalization’s most significant social and perceptual intervention.</p>		
+				</div><!-- main -->
+				
+				<div class="side">
+					<ul class="feed">
+						<li>
+							<a class="fancybox" rel="InteractionRitual" title="" href="pictures/Naturalizations_ALL/InteractionRitual_Large/1_InteractionRitual.jpg">
+								<img src="pictures/Naturalizations_ALL/InteractionRitual_Thumb/1_InteractionRitual_thumb.jpg" alt="">
+							</a>
+						</li>
+                        <li>
+							<a class="fancybox" rel="InteractionRitual" title="" href="pictures/Naturalizations_ALL/InteractionRitual_Large/2_InteractionRitual.jpg">
+								<img src="pictures/Naturalizations_ALL/InteractionRitual_Thumb/2_InteractionRitual_thumb.jpg" alt="">
+							</a>
+						</li>
+                        <li>
+							<a class="fancybox" rel="InteractionRitual" title="" href="pictures/Naturalizations_ALL/InteractionRitual_Large/3_InteractionRitual.jpg">
+								<img src="pictures/Naturalizations_ALL/InteractionRitual_Thumb/3_InteractionRitual_thumb.jpg" alt="">
+							</a>
+						</li>
+                        <li>
+							<a class="fancybox" rel="InteractionRitual" title="" href="pictures/Naturalizations_ALL/InteractionRitual_Large/4_InteractionRitual.jpg">
+								<img src="pictures/Naturalizations_ALL/InteractionRitual_Thumb/4_InteractionRitual_thumb.jpg" alt="">
+							</a>
+						</li>
+                        <li>
+							<a class="fancybox" rel="InteractionRitual" title="" href="pictures/Naturalizations_ALL/InteractionRitual_Large/5_InteractionRitual.jpg">
+								<img src="pictures/Naturalizations_ALL/InteractionRitual_Thumb/5_InteractionRitual_thumb.jpg" alt="">
+							</a>
+						</li>
+                        <li>
+							<a class="fancybox" rel="InteractionRitual" title="" href="pictures/Naturalizations_ALL/InteractionRitual_Large/6_InteractionRitual.jpg">
+								<img src="pictures/Naturalizations_ALL/InteractionRitual_Thumb/6_InteractionRitual_thumb.jpg" alt="">
+							</a>
+						</li>
+                        <li>
+							<a class="fancybox" rel="InteractionRitual" title="" href="pictures/Naturalizations_ALL/InteractionRitual_Large/7_InteractionRitual.jpg">
+								<img src="pictures/Naturalizations_ALL/InteractionRitual_Thumb/7_InteractionRitual_thumb.jpg" alt="">
+							</a>
+						</li>
+                        <li>
+							<a class="fancybox" rel="InteractionRitual" title="" href="pictures/Naturalizations_ALL/InteractionRitual_Large/8_InteractionRitual.jpg">
+								<img src="pictures/Naturalizations_ALL/InteractionRitual_Thumb/8_InteractionRitual_thumb.jpg" alt="">
+							</a>
+						</li>
+                        <li>
+							<a class="fancybox" rel="InteractionRitual" title="" href="pictures/Naturalizations_ALL/InteractionRitual_Large/9_InteractionRitual.jpg">
+								<img src="pictures/Naturalizations_ALL/InteractionRitual_Thumb/9_InteractionRitual_thumb.jpg" alt="">
+							</a>
+						</li>
+                        <li>
+							<a class="fancybox" rel="InteractionRitual" title="" href="pictures/Naturalizations_ALL/InteractionRitual_Large/10_InteractionRitual.jpg">
+								<img src="pictures/Naturalizations_ALL/InteractionRitual_Thumb/10_InteractionRitual_thumb.jpg" alt="">
+							</a>
+						</li>
+                        <li>
+							<a class="fancybox" rel="InteractionRitual" title="" href="pictures/Naturalizations_ALL/InteractionRitual_Large/11_InteractionRitual.jpg">
+								<img src="pictures/Naturalizations_ALL/InteractionRitual_Thumb/11_InteractionRitual_thumb.jpg" alt="">
+							</a>
+						</li>
+                        <li>
+							<a class="fancybox" rel="InteractionRitual" title="" href="pictures/Naturalizations_ALL/InteractionRitual_Large/12_InteractionRitual.jpg">
+								<img src="pictures/Naturalizations_ALL/InteractionRitual_Thumb/12_InteractionRitual_thumb.jpg" alt="">
+							</a>
+						</li>
+                        <li>
+							<a class="fancybox" rel="InteractionRitual" title="" href="pictures/Naturalizations_ALL/InteractionRitual_Large/13_InteractionRitual.jpg">
+								<img src="pictures/Naturalizations_ALL/InteractionRitual_Thumb/13_InteractionRitual_thumb.jpg" alt="">
+							</a>
+						</li>
+					</ul>
+				</div><!-- side -->
+				
+			</div><!-- colio-content # InteractionRitual -->
+            
+            <div id="DanceOfMirrors" class="colio-content">
+									
+				<div class="main">
+					
+					<h3 lang="en">The Dance of Mirrors<br>2003</h3>
+					<p lang="en">Digital video, color, sound. Duration 3min, Edition of 12 (DVD), Collection of Gilberto Cárdenas Collection (#3 of 12)<br><br>
+                    This artwork documents an experimental dance with over sixty children wearing mirror-masks that happened in 2002 in Queens, NY. Staged as part of the experimental program ‘Art, Story-Telling, and the Five Senses’ that Lasch founded and directed between 2000 and 2005, the video has a soundtrack co-produced by the children. The centrality of folkloric ballet in immigrant communities is here fused with processes inspired by figures as wide as John Cage, Lygia Clark, Subcomandante Marcos, and Helio Oiticica. The result resembles a sci-fi, avant-garde folkloric ballet. The event was produced in collaboration with: Ballet Teopochtli, Encontrando Nuestras Raíces Afterschool Program, Mexicanos Unidos de Queens, and Asociación Tepeyac de New York, with additional support from Dedalus Foundation and a special performance by Ricardo Dominguez.</p>		
+				</div><!-- main -->
+				
+				<div class="side">
+					<ul class="feed">
+						<li>
+							<a class="fancybox" rel="DanceOfMirrors" title="" href="pictures/Naturalizations_ALL/DanceOfMirrors_Large/1_DanceOfMirrors.jpg">
+								<img src="pictures/Naturalizations_ALL/DanceOfMirrors_Thumb/1_DanceOfMirrors_thumb.jpg" alt="">
+							</a>
+						</li>
+                        <li>
+							<a class="fancybox" rel="DanceOfMirrors" title="" href="pictures/Naturalizations_ALL/DanceOfMirrors_Large/2_DanceOfMirrors.jpg">
+								<img src="pictures/Naturalizations_ALL/DanceOfMirrors_Thumb/2_DanceOfMirrors_thumb.jpg" alt="">
+							</a>
+						</li>
+                        <li>
+							<a class="fancybox" rel="DanceOfMirrors" title="" href="pictures/Naturalizations_ALL/DanceOfMirrors_Large/3_DanceOfMirrors.jpg">
+								<img src="pictures/Naturalizations_ALL/DanceOfMirrors_Thumb/3_DanceOfMirrors_thumb.jpg" alt="">
+							</a>
+						</li>
+                        <li>
+							<a class="fancybox" rel="DanceOfMirrors" title="" href="pictures/Naturalizations_ALL/DanceOfMirrors_Large/4_DanceOfMirrors.jpg">
+								<img src="pictures/Naturalizations_ALL/DanceOfMirrors_Thumb/4_DanceOfMirrors_thumb.jpg" alt="">
+							</a>
+						</li>
+                        <li>
+							<a class="fancybox" rel="DanceOfMirrors" title="" href="pictures/Naturalizations_ALL/DanceOfMirrors_Large/5_DanceOfMirrors.jpg">
+								<img src="pictures/Naturalizations_ALL/DanceOfMirrors_Thumb/5_DanceOfMirrors_thumb.jpg" alt="">
+							</a>
+						</li>
+                        <li>
+							<a class="fancybox" rel="DanceOfMirrors" title="" href="pictures/Naturalizations_ALL/DanceOfMirrors_Large/6_DanceOfMirrors.jpg">
+								<img src="pictures/Naturalizations_ALL/DanceOfMirrors_Thumb/6_DanceOfMirrors_thumb.jpg" alt="">
+							</a>
+						</li>
+                        <li>
+							<a class="fancybox" rel="DanceOfMirrors" title="" href="pictures/Naturalizations_ALL/DanceOfMirrors_Large/7_DanceOfMirrors.jpg">
+								<img src="pictures/Naturalizations_ALL/DanceOfMirrors_Thumb/7_DanceOfMirrors_thumb.jpg" alt="">
+							</a>
+						</li>
+                        <li>
+							<a class="fancybox" rel="DanceOfMirrors" title="" href="pictures/Naturalizations_ALL/DanceOfMirrors_Large/8_DanceOfMirrors.jpg">
+								<img src="pictures/Naturalizations_ALL/DanceOfMirrors_Thumb/8_DanceoOfMirrors_thumb.jpg" alt="">
+							</a>
+						</li>
+                        <li>
+							<a class="fancybox" rel="DanceOfMirrors" title="" href="pictures/Naturalizations_ALL/DanceOfMirrors_Large/9_DanceOfMirrors.jpg">
+								<img src="pictures/Naturalizations_ALL/DanceOfMirrors_Thumb/9_DanceOfMirrors_thumb.jpg" alt="">
+							</a>
+						</li>
+                        <li>
+							<a class="fancybox" rel="DanceOfMirrors" title="" href="pictures/Naturalizations_ALL/DanceOfMirrors_Large/10_DanceOfMirrors.jpg">
+								<img src="pictures/Naturalizations_ALL/DanceOfMirrors_Thumb/10_DanceOfMirrors_thumb.jpg" alt="">
+							</a>
+						</li>
+					</ul>
+				</div><!-- side -->
+				
+			</div><!-- colio-content # DanceOfMirrors -->
+            
+            <div id="MediaDefacements" class="colio-content">
+									
+				<div class="main">
+					
+					<h3 lang="en">Media Defacements<br>2004</h3>
+					<p lang="en">Photo version: C-prints from b&w digital simulations, Suite of 20, Edition of 10 & 2 AP, originally published in Journal Rethinking Marxism - Vol.4, #16, October, 2004. Video version: 3 minutes, black-and-white, sound<br><br>
+                    The journalistic images that appear in this work have been significantly altered by the artist to open an internal dialogue between seemingly disparate areas of the contemporary world stage. The original photographs all share a common icon: human defacement. Indigenous zapatistas wearing black ski-masks in southern Mexico, women wearing blue burqas in Kabul or black abayas in Saudi Arabia, Iraqi torture victims wearing green or black hoods at Abu Ghraib, Michael Jackson wearing a mask in Russia, and black bloc members covering their face in Seattle, are but a few examples of the refusal of the face which has become the paradoxical icon of our generation.</p>		
+				</div><!-- main -->
+				
+				<div class="side">
+					<ul class="feed">
+						<li>
+							<a class="fancybox" rel="MediaDefacements" title="" href="pictures/Naturalizations_ALL/MediaDefacements_Large/1_MediaDefacements.jpg">
+								<img src="pictures/Naturalizations_ALL/MediaDefacements_Thumb/1_MediaDefacements_thumb.jpg" alt="">
+							</a>
+						</li>
+                        <li>
+							<a class="fancybox" rel="MediaDefacements" title="" href="pictures/Naturalizations_ALL/MediaDefacements_Large/2_MediaDefacements.jpg">
+								<img src="pictures/Naturalizations_ALL/MediaDefacements_Thumb/2_MediaDefacements_thumb.jpg" alt="">
+							</a>
+						</li>
+                        <li>
+							<a class="fancybox" rel="MediaDefacements" title="" href="pictures/Naturalizations_ALL/MediaDefacements_Large/3_MediaDefacements.jpg">
+								<img src="pictures/Naturalizations_ALL/MediaDefacements_Thumb/3_MediaDefacements_thumb.jpg" alt="">
+							</a>
+						</li>
+                        <li>
+							<a class="fancybox" rel="MediaDefacements" title="" href="pictures/Naturalizations_ALL/MediaDefacements_Large/4_MediaDefacements.jpg">
+								<img src="pictures/Naturalizations_ALL/MediaDefacements_Thumb/4_MediaDefacements_thumb.jpg" alt="">
+							</a>
+						</li>
+                        <li>
+							<a class="fancybox" rel="MediaDefacements" title="" href="pictures/Naturalizations_ALL/MediaDefacements_Large/5_MediaDefacements.jpg">
+								<img src="pictures/Naturalizations_ALL/MediaDefacements_Thumb/5_MediaDefacements_thumb.jpg" alt="">
+							</a>
+						</li>
+                        <li>
+							<a class="fancybox" rel="MediaDefacements" title="" href="pictures/Naturalizations_ALL/MediaDefacements_Large/6_MediaDefacements.jpg">
+								<img src="pictures/Naturalizations_ALL/MediaDefacements_Thumb/6_MediaDefacements_thumb.jpg" alt="">
+							</a>
+						</li>
+                        <li>
+							<a class="fancybox" rel="MediaDefacements" title="" href="pictures/Naturalizations_ALL/MediaDefacements_Large/7_MediaDefacements.jpg">
+								<img src="pictures/Naturalizations_ALL/MediaDefacements_Thumb/7_MediaDefacements_thumb.jpg" alt="">
+							</a>
+						</li>
+                        <li>
+							<a class="fancybox" rel="MediaDefacements" title="" href="pictures/Naturalizations_ALL/MediaDefacements_Large/8_MediaDefacements.jpg">
+								<img src="pictures/Naturalizations_ALL/MediaDefacements_Thumb/8_MediaDefacements_thumb.jpg" alt="">
+							</a>
+						</li>
+                        <li>
+							<a class="fancybox" rel="MediaDefacements" title="" href="pictures/Naturalizations_ALL/MediaDefacements_Large/9_MediaDefacements.jpg">
+								<img src="pictures/Naturalizations_ALL/MediaDefacements_Thumb/9_MediaDefacements_thumb.jpg" alt="">
+							</a>
+						</li>
+                        <li>
+							<a class="fancybox" rel="MediaDefacements" title="" href="pictures/Naturalizations_ALL/MediaDefacements_Large/10_MediaDefacements.jpg">
+								<img src="pictures/Naturalizations_ALL/MediaDefacements_Thumb/10_MediaDefacements_thumb.jpg" alt="">
+							</a>
+						</li>
+                        <li>
+							<a class="fancybox" rel="MediaDefacements" title="" href="pictures/Naturalizations_ALL/MediaDefacements_Large/11_MediaDefacements.jpg">
+								<img src="pictures/Naturalizations_ALL/MediaDefacements_Thumb/11_MediaDefacements_thumb.jpg" alt="">
+							</a>
+						</li>
+                        <li>
+							<a class="fancybox" rel="MediaDefacements" title="" href="pictures/Naturalizations_ALL/MediaDefacements_Large/12_MediaDefacements.jpg">
+								<img src="pictures/Naturalizations_ALL/MediaDefacements_Thumb/12_MediaDefacements_thumb.jpg" alt="">
+							</a>
+						</li>
+					</ul>
+				</div><!-- side -->
+				
+			</div><!-- colio-content # MediaDefacements -->
+            
+            <div id="MechanismOf" class="colio-content">
+									
+				<div class="main">
+					
+					<h3 lang="en">The Mechanism of Facial Expression<br>2004</h3>
+					<p lang="en">Projection, photographic installation, and masks for public use<br><br>
+                    This installation presents an abstract scientific narrative with slide projections, or alternately, a photographic installation of adaptable scale. In both cases, the mirror masks provided for public use here split the users’ face into six distinct areas of transparency and reflection, creating complex spatial and psychological rhythms as visitors move through the building with the masks. Devised as a critical homage to the 1864 publication of Dr. Duchenne de Bolougne’s studies on ‘the mechanism of human facial emotion,’ this installation was first produced for the extraordinary setting of medical history displays at the Mütter Museum in Philadelphia, for an exhibition of contemporary art curated there by Tanya Leighton.</p>		
+				</div><!-- main -->
+				
+				<div class="side">
+					<ul class="feed">
+						<li>
+							<a class="fancybox" rel="MechanismOf" title="" href="pictures/Naturalizations_ALL/MechanismOf_Large/1_MechanismOf.jpg">
+								<img src="pictures/Naturalizations_ALL/MechanismOf_Thumb/1_MechanismOf_thumb.jpg" alt="">
+							</a>
+						</li>
+                        <li>
+							<a class="fancybox" rel="MechanismOf" title="" href="pictures/Naturalizations_ALL/MechanismOf_Large/2_MechanismOf.jpg">
+								<img src="pictures/Naturalizations_ALL/MechanismOf_Thumb/2_MechanismOf_thumb.jpg" alt="">
+							</a>
+						</li>
+                        <li>
+							<a class="fancybox" rel="MechanismOf" title="" href="pictures/Naturalizations_ALL/MechanismOf_Large/3_MechanismOf.jpg">
+								<img src="pictures/Naturalizations_ALL/MechanismOf_Thumb/3_MechanismOf_thumb.jpg" alt="">
+							</a>
+						</li>
+                        <li>
+							<a class="fancybox" rel="MechanismOf" title="" href="pictures/Naturalizations_ALL/MechanismOf_Large/4_MechanismOf.jpg">
+								<img src="pictures/Naturalizations_ALL/MechanismOf_Thumb/4_MechanismOf_thumb.jpg" alt="">
+							</a>
+						</li>
+                        <li>
+							<a class="fancybox" rel="MechanismOf" title="" href="pictures/Naturalizations_ALL/MechanismOf_Large/5_MechanismOf.jpg">
+								<img src="pictures/Naturalizations_ALL/MechanismOf_Thumb/5_MechanismOf_thumb.jpg" alt="">
+							</a>
+						</li>
+                        <li>
+							<a class="fancybox" rel="MechanismOf" title="" href="pictures/Naturalizations_ALL/MechanismOf_Large/7_MechanismOf.jpg">
+								<img src="pictures/Naturalizations_ALL/MechanismOf_Thumb/7_MechanismOf_thumb.jpg" alt="">
+							</a>
+						</li>
+                        <li>
+							<a class="fancybox" rel="MechanismOf" title="" href="pictures/Naturalizations_ALL/MechanismOf_Large/8_MechanismOf.jpg">
+								<img src="pictures/Naturalizations_ALL/MechanismOf_Thumb/8_MechanismOf_thumb.jpg" alt="">
+							</a>
+						</li>
+                        <li>
+							<a class="fancybox" rel="MechanismOf" title="" href="pictures/Naturalizations_ALL/MechanismOf_Large/9_MechanismOf.jpg">
+								<img src="pictures/Naturalizations_ALL/MechanismOf_Thumb/9_MechanismOf_thumb.jpg" alt="">
+							</a>
+						</li>
+                        <li>
+							<a class="fancybox" rel="MechanismOf" title="" href="pictures/Naturalizations_ALL/MechanismOf_Large/10_MechanismOf.jpg">
+								<img src="pictures/Naturalizations_ALL/MechanismOf_Thumb/10_MechanismOf_thumb.jpg" alt="">
+							</a>
+						</li>
+                        <li>
+							<a class="fancybox" rel="MechanismOf" title="" href="pictures/Naturalizations_ALL/MechanismOf_Large/11_MechanismOf.jpg">
+								<img src="pictures/Naturalizations_ALL/MechanismOf_Thumb/11_MechanismOf_thumb.jpg" alt="">
+							</a>
+						</li>
+                        <li>
+							<a class="fancybox" rel="MechanismOf" title="" href="pictures/Naturalizations_ALL/MechanismOf_Large/12_MechanismOf.jpg">
+								<img src="pictures/Naturalizations_ALL/MechanismOf_Thumb/12_MechanismOf_thumb.jpg" alt="">
+							</a>
+						</li>
+                        <li>
+							<a class="fancybox" rel="MechanismOf" title="" href="pictures/Naturalizations_ALL/MechanismOf_Large/13_MechanismOf.jpg">
+								<img src="pictures/Naturalizations_ALL/MechanismOf_Thumb/13_MechanismOf_thumb.jpg" alt="">
+							</a>
+						</li>
+                        <li>
+							<a class="fancybox" rel="MechanismOf" title="" href="pictures/Naturalizations_ALL/MechanismOf_Large/14_MechanismOf.jpg">
+								<img src="pictures/Naturalizations_ALL/MechanismOf_Thumb/14_MechanismOf_thumb.jpg" alt="">
+							</a>
+						</li>
+                        <li>
+							<a class="fancybox" rel="MechanismOf" title="" href="pictures/Naturalizations_ALL/MechanismOf_Large/15_MechanismOf.jpg">
+								<img src="pictures/Naturalizations_ALL/MechanismOf_Thumb/15_MechanismOf_thumb.jpg" alt="">
+							</a>
+						</li>
+                        <li>
+							<a class="fancybox" rel="MechanismOf" title="" href="pictures/Naturalizations_ALL/MechanismOf_Large/16_MechanismOf.jpg">
+								<img src="pictures/Naturalizations_ALL/MechanismOf_Thumb/16_MechanismOf_thumb.jpg" alt="">
+							</a>
+						</li>
+                        <li>
+							<a class="fancybox" rel="MechanismOf" title="" href="pictures/Naturalizations_ALL/MechanismOf_Large/17_MechanismOf.jpg">
+								<img src="pictures/Naturalizations_ALL/MechanismOf_Thumb/17_MechanismOf_thumb.jpg" alt="">
+							</a>
+						</li>
+                        <li>
+							<a class="fancybox" rel="MechanismOf" title="" href="pictures/Naturalizations_ALL/MechanismOf_Large/18_MechanismOf.jpg">
+								<img src="pictures/Naturalizations_ALL/MechanismOf_Thumb/18_MechanismOf_thumb.jpg" alt="">
+							</a>
+						</li>
+                        <li>
+							<a class="fancybox" rel="MechanismOf" title="" href="pictures/Naturalizations_ALL/MechanismOf_Large/19_MechanismOf.jpg">
+								<img src="pictures/Naturalizations_ALL/MechanismOf_Thumb/19_MechanismOf_thumb.jpg" alt="">
+							</a>
+						</li>
+                        <li>
+							<a class="fancybox" rel="MechanismOf" title="" href="pictures/Naturalizations_ALL/MechanismOf_Large/20_MechanismOf.jpg">
+								<img src="pictures/Naturalizations_ALL/MechanismOf_Thumb/20_MechanismOf_thumb.jpg" alt="">
+							</a>
+						</li>
+                        <li>
+							<a class="fancybox" rel="MechanismOf" title="" href="pictures/Naturalizations_ALL/MechanismOf_Large/21_MechanismOf.jpg">
+								<img src="pictures/Naturalizations_ALL/MechanismOf_Thumb/21_MechanismOf_thumb.jpg" alt="">
+							</a>
+						</li>
+					</ul>
+				</div><!-- side -->
+				
+			</div><!-- colio-content # MechanismOf -->
+            
+            <div id="PointCounterpoint" class="colio-content">
+									
+				<div class="main">
+					
+					<h3 lang="en">Point-Counterpoint-Fusion (Homage to Daniel Buren)<br>2004 / 2006</h3>
+					<p lang="en">C-print installation and mirror masks for public use<br><br>
+                    This work deals with the various forms of identification we experience in our daily encounters: the sound of our names in relation to each other and what we associate with them, how our bodies measure up against one another, our nationalities, our age, gender, and the color of our skin. One crucial mechanism of the work is that our own identity is always dependent and relative to that of others. The musical analogy of the title refers to the fluctuating heights of the masks and their viewers (point - counterpoint), as well as the desires and anxieties experienced by the confusion of identity generated by the mask (fusion). The striped mask is a direct reference to French artist Daniel Buren’s decades long exploration of the social and physical structures around the production, perception and distribution of art, but they also contain a darker set of ideas related to some societies’ imposition of a uniform standard to measure us all. The history of phrenology, census categories, racialized notions of beauty and intelligence, and even the fashion and cosmetics industry, can all be seen to participate in this often violent history.<br><br>
+                    All portraits are hung at the height of the person represented:<br>
+Danielle Terrazas Williams (United States/México), 67 in. (170 cm)<br>
+Ariel Dorfman (Chile), 73 in. (186cm)<br>
+Guillermo Trejo (México), 70 in. (178 cm)<br>
+Beatriz Rodriguez Balanta (Colombia), 65 in. (165 cm)<br>
+Mateo Parrado (Argentina), 45 in. (115 cm)<br>
+Carmen Yareli Yañez (México), 61 in. (155 cm)<br>
+Marcelo Fernandez Osco (Bolivia), 69 in. (175 cm)<br></p>		
+				</div><!-- main -->
+				
+				<div class="side">
+					<ul class="feed">
+						<li>
+							<a class="fancybox" rel="PointCounterpoint" title="" href="pictures/Naturalizations_ALL/PointCounterpoint_Large/1_PointCounterpoint.jpg">
+								<img src="pictures/Naturalizations_ALL/PointCounterpoint_Thumb/1_PointCounterpoint_thumb.jpg" alt="">
+							</a>
+						</li>
+                        <li>
+							<a class="fancybox" rel="PointCounterpoint" title="" href="pictures/Naturalizations_ALL/PointCounterpoint_Large/2_PointCounterpoint.jpg">
+								<img src="pictures/Naturalizations_ALL/PointCounterpoint_Thumb/2_PointCounterpoint_thumb.jpg" alt="">
+							</a>
+						</li>
+                        <li>
+							<a class="fancybox" rel="PointCounterpoint" title="" href="pictures/Naturalizations_ALL/PointCounterpoint_Large/3_PointCounterpoint.jpg">
+								<img src="pictures/Naturalizations_ALL/PointCounterpoint_Thumb/3_PointCounterpoint_thumb.jpg" alt="">
+							</a>
+						</li>
+                        <li>
+							<a class="fancybox" rel="PointCounterpoint" title="" href="pictures/Naturalizations_ALL/PointCounterpoint_Large/4_PointCounterpoint.jpg">
+								<img src="pictures/Naturalizations_ALL/PointCounterpoint_Thumb/4_PointCounterpoint_thumb.jpg" alt="">
+							</a>
+						</li>
+                        <li>
+							<a class="fancybox" rel="PointCounterpoint" title="" href="pictures/Naturalizations_ALL/PointCounterpoint_Large/5_PointCounterpoint.jpg">
+								<img src="pictures/Naturalizations_ALL/PointCounterpoint_Thumb/5_PointCounterpoint_thumb.jpg" alt="">
+							</a>
+						</li>
+                        <li>
+							<a class="fancybox" rel="PointCounterpoint" title="" href="pictures/Naturalizations_ALL/PointCounterpoint_Large/6_PointCounterpoint.jpg">
+								<img src="pictures/Naturalizations_ALL/PointCounterpoint_Thumb/6_PointCounterpoint_thumb.jpg" alt="">
+							</a>
+						</li>
+                        <li>
+							<a class="fancybox" rel="PointCounterpoint" title="" href="pictures/Naturalizations_ALL/PointCounterpoint_Large/7_PointCounterpoint.jpg">
+								<img src="pictures/Naturalizations_ALL/PointCounterpoint_Thumb/7_PointCounterpoint_thumb.jpg" alt="">
+							</a>
+						</li>
+                        <li>
+							<a class="fancybox" rel="PointCounterpoint" title="" href="pictures/Naturalizations_ALL/PointCounterpoint_Large/8_PointCounterpoint.jpg">
+								<img src="pictures/Naturalizations_ALL/PointCounterpoint_Thumb/8_PointCounterpoint_thumb.jpg" alt="">
+							</a>
+						</li>
+                        <li>
+							<a class="fancybox" rel="PointCounterpoint" title="" href="pictures/Naturalizations_ALL/PointCounterpoint_Large/9_PointCounterpoint.jpg">
+								<img src="pictures/Naturalizations_ALL/PointCounterpoint_Thumb/9_PointCounterpoint_thumb.jpg" alt="">
+							</a>
+						</li>
+					</ul>
+				</div><!-- side -->
+				
+			</div><!-- colio-content # PointCounterpoint -->
+            
+            <div id="ExecutionOfMaximilian" class="colio-content">
+									
+				<div class="main">
+					
+					<h3 lang="en">The Execution of Maximilian: Tableau Vivant for Ten Participants</br>(Parts 1 & 2)</br>2006</h3>
+					<p lang="en">Part 1: Oil paintings for wall and floor, mirror masks and reproduction of Edouard Manet’s The Execution of Emperor Maximilian, 1867 (Städtische Kunsthalle, Mannheim). Part 2: Oil painting on wood and drawing on paper.</br></br>
+                    Museum visitors are here encouraged to reenact The Execution of Maximilian by wearing the masks provided on the wall boards, and standing on the platforms on the floor. Instead of using rifles as is done by their models, visitors are invited to shoot with their cameras, creating multi-perspective renditions of the famous painting. The reenactment can also be done with fewer than ten people. Two preparatory drawings and a painting showing the patterns that result from the view of figure #3 (Tomás Mejía in Manet’s painting) constitute part 2 of the project. Manet’s orginally banned masterwork is again placed at the center of anti-colonial struggles, just as its reincarnation in the present foregrounds the ongoing relevance of political executions as a form of spectacle. During its first public viewing in New York for Lasch’s Queens Museum solo exhibition, for example, this topic highly resonated with webcast beheadings of journalists and other intentionally spectacular executions, staged in Fallujah and other places by those fighting against the US-led invasion and occupation of Iraq. Only a few months later, we would all witness the global broadcasting of Saddam Hussein’s unlikely death ‘by hanging.’</p>		
+				</div><!-- main -->
+				
+				<div class="side">
+					<ul class="feed">
+						<li>
+							<a class="fancybox" rel="ExecutionOfMaximilian" title="" href="pictures/Naturalizations_ALL/ExecutionOfMaximilian_Large/1_ExecutionOfMaximilian.jpg">
+								<img src="pictures/Naturalizations_ALL/ExecutionOfMaximilian_Thumb/1_ExecutionOfMaximilian_thumb.jpg" alt="">
+							</a>
+						</li>
+                        <li>
+							<a class="fancybox" rel="ExecutionOfMaximilian" title="" href="pictures/Naturalizations_ALL/ExecutionOfMaximilian_Large/2_ExecutionOfMaximilian.jpg">
+								<img src="pictures/Naturalizations_ALL/ExecutionOfMaximilian_Thumb/2_ExecutionOfMaximilian_thumb.jpg" alt="">
+							</a>
+						</li>
+                        <li>
+							<a class="fancybox" rel="ExecutionOfMaximilian" title="" href="pictures/Naturalizations_ALL/ExecutionOfMaximilian_Large/3_ExecutionOfMaximilian.jpg">
+								<img src="pictures/Naturalizations_ALL/ExecutionOfMaximilian_Thumb/3_ExecutionOfMaximilian_thumb.jpg" alt="">
+							</a>
+						</li>
+                        <li>
+							<a class="fancybox" rel="ExecutionOfMaximilian" title="" href="pictures/Naturalizations_ALL/ExecutionOfMaximilian_Large/4_ExecutionOfMaximilian.jpg">
+								<img src="pictures/Naturalizations_ALL/ExecutionOfMaximilian_Thumb/4_ExecutionOfMaximilian_thumb.jpg" alt="">
+							</a>
+						</li>
+                        <li>
+							<a class="fancybox" rel="ExecutionOfMaximilian" title="" href="pictures/Naturalizations_ALL/ExecutionOfMaximilian_Large/5_ExecutionOfMaximilian.jpg">
+								<img src="pictures/Naturalizations_ALL/ExecutionOfMaximilian_Thumb/5_ExecutionOfMaximilian_thumb.jpg" alt="">
+							</a>
+						</li>
+                        <li>
+							<a class="fancybox" rel="ExecutionOfMaximilian" title="" href="pictures/Naturalizations_ALL/ExecutionOfMaximilian_Large/6_ExecutionOfMaximilian.jpg">
+								<img src="pictures/Naturalizations_ALL/ExecutionOfMaximilian_Thumb/6_ExecutionOfMaximilian_thumb.jpg" alt="">
+							</a>
+						</li>
+                        <li>
+							<a class="fancybox" rel="ExecutionOfMaximilian" title="" href="pictures/Naturalizations_ALL/ExecutionOfMaximilian_Large/7_ExecutionOfMaximilian.jpg">
+								<img src="pictures/Naturalizations_ALL/ExecutionOfMaximilian_Thumb/7_ExecutionOfMaximilian_thumb.jpg" alt="">
+							</a>
+						</li>
+                        <li>
+							<a class="fancybox" rel="ExecutionOfMaximilian" title="" href="pictures/Naturalizations_ALL/ExecutionOfMaximilian_Large/9_ExecutionOfMaximilian.jpg">
+								<img src="pictures/Naturalizations_ALL/ExecutionOfMaximilian_Thumb/9_ExecutionOfMaximilian_thumb.jpg" alt="">
+							</a>
+						</li>
+                        <li>
+							<a class="fancybox" rel="ExecutionOfMaximilian" title="" href="pictures/Naturalizations_ALL/ExecutionOfMaximilian_Large/10_ExecutionOfMaximilian.jpg">
+								<img src="pictures/Naturalizations_ALL/ExecutionOfMaximilian_Thumb/10_ExecutionOfMaximilian_thumb.jpg" alt="">
+							</a>
+						</li>
+                        <li>
+							<a class="fancybox" rel="ExecutionOfMaximilian" title="" href="pictures/Naturalizations_ALL/ExecutionOfMaximilian_Large/11_ExecutionOfMaximilian.jpg">
+								<img src="pictures/Naturalizations_ALL/ExecutionOfMaximilian_Thumb/11_ExecutionOfMaximilian_thumb.jpg" alt="">
+							</a>
+						</li>
+					</ul>
+				</div><!-- side -->
+				
+			</div><!-- colio-content # ExecutionOfMaximilian -->
+            
+            <div id="StatementsOnMasks" class="colio-content">
+									
+				<div class="main">
+					
+					<h3 lang="en">Statements on Masks<br>2005</h3>
+					<p lang="en">Installation and optional performance (ongoing)<br><br>
+                    This piece consists of an installation and optional live bilingual art action. The installation presents the objects used during the art action, inviting participants to inhabit a space that merges the classroom, the TV show room, and the temple. Statements are read in one language by the person behind the table, and another language by the public facing him or her. The statements have been written in relation to the practice of masking or the notion of what we call ‘natural.’ One mask is worn by the person behind the table, while the other one circulates to a new member of the public at the reading of each new statement.</p>		
+				</div><!-- main -->
+				
+				<div class="side">
+					<ul class="feed">
+						<li>
+							<a class="fancybox" rel="StatementsOnMasks" title="" href="pictures/Naturalizations_ALL/StatementsOnMasks_Large/1_StatementsOnMasks.jpg">
+								<img src="pictures/Naturalizations_ALL/StatementsOnMasks_Thumb/1_StatementsOnMasks_thumb.jpg" alt="">
+							</a>
+						</li>
+                        <li>
+							<a class="fancybox" rel="StatementsOnMasks" title="" href="pictures/Naturalizations_ALL/StatementsOnMasks_Large/2_StatementsOnMasks.jpg">
+								<img src="pictures/Naturalizations_ALL/StatementsOnMasks_Thumb/2_StatementsOnMasks_thumb.jpg" alt="">
+							</a>
+						</li>
+                        <li>
+							<a class="fancybox" rel="StatementsOnMasks" title="" href="pictures/Naturalizations_ALL/StatementsOnMasks_Large/3_StatementsOnMasks.jpg">
+								<img src="pictures/Naturalizations_ALL/StatementsOnMasks_Thumb/3_StatementsOnMasks_thumb.jpg" alt="">
+							</a>
+						</li>
+                        <li>
+							<a class="fancybox" rel="StatementsOnMasks" title="" href="pictures/Naturalizations_ALL/StatementsOnMasks_Large/4_StatementsOnMasks.jpg">
+								<img src="pictures/Naturalizations_ALL/StatementsOnMasks_Thumb/4_StatementsOnMasks_thumb.jpg" alt="">
+							</a>
+						</li>
+                        <li>
+							<a class="fancybox" rel="StatementsOnMasks" title="" href="pictures/Naturalizations_ALL/StatementsOnMasks_Large/5_StatementsOnMasks.jpg">
+								<img src="pictures/Naturalizations_ALL/StatementsOnMasks_Thumb/5_StatementsOnMasks_thumb.jpg" alt="">
+							</a>
+						</li>
+                        <li>
+							<a class="fancybox" rel="StatementsOnMasks" title="" href="pictures/Naturalizations_ALL/StatementsOnMasks_Large/6_StatementsOnMasks.jpg">
+								<img src="pictures/Naturalizations_ALL/StatementsOnMasks_Thumb/6_StatementsOnMasks_thumb.jpg" alt="">
+							</a>
+						</li>
+                        <li>
+							<a class="fancybox" rel="StatementsOnMasks" title="" href="pictures/Naturalizations_ALL/StatementsOnMasks_Large/7_StatementsOnMasks.jpg">
+								<img src="pictures/Naturalizations_ALL/StatementsOnMasks_Thumb/7_StatementsOnMasks_thumb.jpg" alt="">
+							</a>
+						</li>
+					</ul>
+				</div><!-- side -->
+				
+			</div><!-- colio-content # StatementsOnMasks -->
+            
+            <div id="ExperimentalKit" class="colio-content">
+									
+				<div class="main">
+					
+					<h3 lang="en">The Experimental Kit<br>2006</h3>
+					<p lang="en">Box on wheels with 12 mirror masks of various designs, including sample instructions sheet. Collection of Gilberto Cárdenas (#3 of 6)<br><br>
+                    Designed for project participants, teachers, collectors, and the artist himself in his ongoing ‘Naturalizations’ workshops, these boxes allow for the easy transportation of mirror masks for slightly larger activities and installations. In some cases, they have also been used by groups and individuals through a special ‘check out’ system, much like a book may be borrowed from a library.</p>		
+				</div><!-- main -->
+				
+				<div class="side">
+					<ul class="feed">
+						<li>
+							<a class="fancybox" rel="ExperimentalKit" title="" href="pictures/Naturalizations_ALL/ExperimentalKit_Large/1_ExperimentalKit.jpg">
+								<img src="pictures/Naturalizations_ALL/ExperimentalKit_Thumb/1_ExperimentalKit_thumb.jpg" alt="">
+							</a>
+						</li>
+                        <li>
+							<a class="fancybox" rel="ExperimentalKit" title="" href="pictures/Naturalizations_ALL/ExperimentalKit_Large/2_ExperimentalKit.jpg">
+								<img src="pictures/Naturalizations_ALL/ExperimentalKit_Thumb/2_ExperimentalKit_thumb.jpg" alt="">
+							</a>
+						</li>
+                        <li>
+							<a class="fancybox" rel="ExperimentalKit" title="" href="pictures/Naturalizations_ALL/ExperimentalKit_Large/3_ExperimentalKit.jpg">
+								<img src="pictures/Naturalizations_ALL/ExperimentalKit_Thumb/3_ExperimentalKit_thumb.jpg" alt="">
+							</a>
+						</li>
+                        <li>
+							<a class="fancybox" rel="ExperimentalKit" title="" href="pictures/Naturalizations_ALL/ExperimentalKit_Large/4_ExperimentalKit.jpg">
+								<img src="pictures/Naturalizations_ALL/ExperimentalKit_Thumb/4_ExperimentalKit_thumb.jpg" alt="">
+							</a>
+						</li>
+                        <li>
+							<a class="fancybox" rel="ExperimentalKit" title="" href="pictures/Naturalizations_ALL/ExperimentalKit_Large/5_ExperimentalKit.jpg">
+								<img src="pictures/Naturalizations_ALL/ExperimentalKit_Thumb/5_ExperimentalKit_thumb.jpg" alt="">
+							</a>
+						</li>
+                        <li>
+							<a class="fancybox" rel="ExperimentalKit" title="" href="pictures/Naturalizations_ALL/ExperimentalKit_Large/6_ExperimentalKit.jpg">
+								<img src="pictures/Naturalizations_ALL/ExperimentalKit_Thumb/6_ExperimentalKit_thumb.jpg" alt="">
+							</a>
+						</li>
+                        <li>
+							<a class="fancybox" rel="ExperimentalKit" title="" href="pictures/Naturalizations_ALL/ExperimentalKit_Large/7_ExperimentalKit.jpg">
+								<img src="pictures/Naturalizations_ALL/ExperimentalKit_Thumb/7_ExperimentalKit_thumb.jpg" alt="">
+							</a>
+						</li>
+                        <li>
+							<a class="fancybox" rel="ExperimentalKit" title="" href="pictures/Naturalizations_ALL/ExperimentalKit_Large/8_ExperimentalKit.jpg">
+								<img src="pictures/Naturalizations_ALL/ExperimentalKit_Thumb/8_ExperimentalKit_thumb.jpg" alt="">
+							</a>
+						</li>
+                        <li>
+							<a class="fancybox" rel="ExperimentalKit" title="" href="pictures/Naturalizations_ALL/ExperimentalKit_Large/9_ExperimentalKit.jpg">
+								<img src="pictures/Naturalizations_ALL/ExperimentalKit_Thumb/9_ExperimentalKit_thumb.jpg" alt="">
+							</a>
+						</li>
+                        <li>
+							<a class="fancybox" rel="ExperimentalKit" title="" href="pictures/Naturalizations_ALL/ExperimentalKit_Large/10_ExperimentalKit.jpg">
+								<img src="pictures/Naturalizations_ALL/ExperimentalKit_Thumb/10_ExperimentalKit_thumb.jpg" alt="">
+							</a>
+						</li>
+					</ul>
+				</div><!-- side -->
+				
+			</div><!-- colio-content # ExperimentalKit -->
+            
+            <div id="CanYouRephrase" class="colio-content">
+									
+				<div class="main">
+					
+					<h3 lang="en">Can You Rephrase That in the Form of a Question<br>2009</h3>
+					<p lang="en">This site specific choreography was created by Mark Dendy for the Durham Performing Arts Center in the context of the 2009 American Dance Festival. Dancers wearing Lasch’s mirror masks engaged the audience in hallways, bars, staircases, and other spaces of the building not conventionally used for dance and performance.</p>		
+				</div><!-- main -->
+				
+				<div class="side">
+					<ul class="feed">
+						<li>
+							<a class="fancybox" rel="CanYouRephrase" title="" href="pictures/Naturalizations_ALL/CanYouRephrase_Large/1_CanYouRephrase.jpg">
+								<img src="pictures/Naturalizations_ALL/CanYouRephrase_Thumb/1_CanYouRephrase_thumb.jpg" alt="">
+							</a>
+						</li>
+                        <li>
+							<a class="fancybox" rel="CanYouRephrase" title="" href="pictures/Naturalizations_ALL/CanYouRephrase_Large/2_CanYouRephrase.jpg">
+								<img src="pictures/Naturalizations_ALL/CanYouRephrase_Thumb/2_CanYouRephrase_thumb.jpg" alt="">
+							</a>
+						</li>
+                        <li>
+							<a class="fancybox" rel="CanYouRephrase" title="" href="pictures/Naturalizations_ALL/CanYouRephrase_Large/3_CanYouRephrase.jpg">
+								<img src="pictures/Naturalizations_ALL/CanYouRephrase_Thumb/3_CanYouRephrase_thumb.jpg" alt="">
+							</a>
+						</li>
+                        <li>
+							<a class="fancybox" rel="CanYouRephrase" title="" href="pictures/Naturalizations_ALL/CanYouRephrase_Large/4_CanYouRephrase.jpg">
+								<img src="pictures/Naturalizations_ALL/CanYouRephrase_Thumb/4_CanYouRephrase_thumb.jpg" alt="">
+							</a>
+						</li>
+                        <li>
+							<a class="fancybox" rel="CanYouRephrase" title="" href="pictures/Naturalizations_ALL/CanYouRephrase_Large/5_CanYouRephrase.jpg">
+								<img src="pictures/Naturalizations_ALL/CanYouRephrase_Thumb/5_CanYouRephrase_thumb.jpg" alt="">
+							</a>
+						</li>
+                        <li>
+							<a class="fancybox" rel="CanYouRephrase" title="" href="pictures/Naturalizations_ALL/CanYouRephrase_Large/6_CanYouRephrase.jpg">
+								<img src="pictures/Naturalizations_ALL/CanYouRephrase_Thumb/6_CanYouRephrase_thumb.jpg" alt="">
+							</a>
+						</li>
+                        <li>
+							<a class="fancybox" rel="CanYouRephrase" title="" href="pictures/Naturalizations_ALL/CanYouRephrase_Large/7_CanYouRephrase.jpg">
+								<img src="pictures/Naturalizations_ALL/CanYouRephrase_Thumb/7_CanYouRephrase_thumb.jpg" alt="">
+							</a>
+						</li>
+					</ul>
+				</div><!-- side -->
+				
+			</div><!-- colio-content # CanYouRephrase -->
+            
+            <div id="MissingReflection" class="colio-content">
+									
+				<div class="main">
+					
+					<h3 lang="en">Missing Reflection: A Photoessay on Masking<br>2009 / 2010</h3>
+					<p lang="en">The images presented here are documents and artworks related to a series of workshops in Port-Au-Prince, Haiti in the context of the first edition of The Ghetto Biennale (2009). Created in collaboration with Esther Gabara, the workshops and their related photoessay also address the unspeakable loss experienced by friends and collaborators in Haiti only a few weeks later, during the tragic earthquake of 2010 and its lingering aftermath.</p>		
+				</div><!-- main -->
+				
+				<div class="side">
+					<ul class="feed">
+						<li>
+							<a class="fancybox" rel="MissingReflection" title="" href="pictures/Naturalizations_ALL/MissingReflection_Large/1_MissingReflection.jpg">
+								<img src="pictures/Naturalizations_ALL/MissingReflection_Thumb/1_MissingReflection_thumb.jpg" alt="">
+							</a>
+						</li>
+                        <li>
+							<a class="fancybox" rel="MissingReflection" title="" href="pictures/Naturalizations_ALL/MissingReflection_Large/2_MissingReflection.jpg">
+								<img src="pictures/Naturalizations_ALL/MissingReflection_Thumb/2_MissingReflection_thumb.jpg" alt="">
+							</a>
+						</li>
+                        <li>
+							<a class="fancybox" rel="MissingReflection" title="" href="pictures/Naturalizations_ALL/MissingReflection_Large/3_MissingReflection.jpg">
+								<img src="pictures/Naturalizations_ALL/MissingReflection_Thumb/3_MissingReflection_thumb.jpg" alt="">
+							</a>
+						</li>
+                        <li>
+							<a class="fancybox" rel="MissingReflection" title="" href="pictures/Naturalizations_ALL/MissingReflection_Large/4_MissingReflection.jpg">
+								<img src="pictures/Naturalizations_ALL/MissingReflection_Thumb/4_MissingReflection_thumb.jpg" alt="">
+							</a>
+						</li>
+                        <li>
+							<a class="fancybox" rel="MissingReflection" title="" href="pictures/Naturalizations_ALL/MissingReflection_Large/5_MissingReflection.jpg">
+								<img src="pictures/Naturalizations_ALL/MissingReflection_Thumb/5_MissingReflection_thumb.jpg" alt="">
+							</a>
+						</li>
+                        <li>
+							<a class="fancybox" rel="MissingReflection" title="" href="pictures/Naturalizations_ALL/MissingReflection_Large/6_MissingReflection.jpg">
+								<img src="pictures/Naturalizations_ALL/MissingReflection_Thumb/6_MissingReflection_thumb.jpg" alt="">
+							</a>
+						</li>
+					</ul>
+				</div><!-- side -->
+				
+			</div><!-- colio-content # MissingReflection -->
+            
+            <div id="VerticalFlaneur" class="colio-content">
+									
+				<div class="main">
+					
+					<h3 lang="en">Vertical Flâneur<br>2012</h3>
+					<p lang="en">Site-specific workshop for 2 London Eye rotations (60mins), consecutive installation, dimensions variable<br><br>
+                    Produced for Hayward Gallery’s ‘Wide Open School’ exhibition, and held on board of a capsule of the London Eye, this experimental workshop on non-linear space and time combined live aerial views from the London Eye with the use of optical and perceptual devices. Also addressed was London’s historical role - as the heart of a naval empire, and the place that set the global clock by Greenwich Mean Time - as the leading manufacturer and exporter of rational, linear time. As this workshop unfolded during the Eye's ascent and descent, consideration of key London landmarks in the history of time were contrasted with a collective experiment against the temporal linearity they have instilled.</p>		
+				</div><!-- main -->
+				
+				<div class="side">
+					<ul class="feed">
+						<li>
+							<a class="fancybox" rel="VerticalFlaneur" title="" href="pictures/Naturalizations_ALL/VerticalFlaneur_Large/1_VerticalFlaneur.jpg">
+								<img src="pictures/Naturalizations_ALL/VerticalFlaneur_Thumb/1_VerticalFlaneur_thumb.jpg" alt="">
+							</a>
+						</li>
+                        <li>
+							<a class="fancybox" rel="VerticalFlaneur" title="" href="pictures/Naturalizations_ALL/VerticalFlaneur_Large/2_VerticalFlaneur.jpg">
+								<img src="pictures/Naturalizations_ALL/VerticalFlaneur_Thumb/2_VerticalFlaneur_thumb.jpg" alt="">
+							</a>
+						</li>
+                        <li>
+							<a class="fancybox" rel="VerticalFlaneur" title="" href="pictures/Naturalizations_ALL/VerticalFlaneur_Large/3_VerticalFlaneur.jpg">
+								<img src="pictures/Naturalizations_ALL/VerticalFlaneur_Thumb/3_VerticalFlaneur_thumb.jpg" alt="">
+							</a>
+						</li>
+                        <li>
+							<a class="fancybox" rel="VerticalFlaneur" title="" href="pictures/Naturalizations_ALL/VerticalFlaneur_Large/4_VerticalFlaneur.jpg">
+								<img src="pictures/Naturalizations_ALL/VerticalFlaneur_Thumb/4_VerticalFlaneur_thumb.jpg" alt="">
+							</a>
+						</li>
+                        <li>
+							<a class="fancybox" rel="VerticalFlaneur" title="" href="pictures/Naturalizations_ALL/VerticalFlaneur_Large/5_VerticalFlaneur.jpg">
+								<img src="pictures/Naturalizations_ALL/VerticalFlaneur_Thumb/5_VerticalFlaneur_thumb.jpg" alt="">
+							</a>
+						</li>
+                        <li>
+							<a class="fancybox" rel="VerticalFlaneur" title="" href="pictures/Naturalizations_ALL/VerticalFlaneur_Large/6_VerticalFlaneur.jpg">
+								<img src="pictures/Naturalizations_ALL/VerticalFlaneur_Thumb/6_VerticalFlaneur_thumb.jpg" alt="">
+							</a>
+						</li>
+                        <li>
+							<a class="fancybox" rel="VerticalFlaneur" title="" href="pictures/Naturalizations_ALL/VerticalFlaneur_Large/7_VerticalFlaneur.jpg">
+								<img src="pictures/Naturalizations_ALL/VerticalFlaneur_Thumb/7_VerticalFlaneur_thumb.jpg" alt="">
+							</a>
+						</li>
+                        <li>
+							<a class="fancybox" rel="VerticalFlaneur" title="" href="pictures/Naturalizations_ALL/VerticalFlaneur_Large/8_VerticalFlaneur.jpg">
+								<img src="pictures/Naturalizations_ALL/VerticalFlaneur_Thumb/8_VerticalFlaneur_thumb.jpg" alt="">
+							</a>
+						</li>
+                        <li>
+							<a class="fancybox" rel="VerticalFlaneur" title="" href="pictures/Naturalizations_ALL/VerticalFlaneur_Large/9_VerticalFlaneur.jpg">
+								<img src="pictures/Naturalizations_ALL/VerticalFlaneur_Thumb/9_VerticalFlaneur_thumb.jpg" alt="">
+							</a>
+						</li>
+                        <li>
+							<a class="fancybox" rel="VerticalFlaneur" title="" href="pictures/Naturalizations_ALL/VerticalFlaneur_Large/10_VerticalFlaneur.jpg">
+								<img src="pictures/Naturalizations_ALL/VerticalFlaneur_Thumb/10_VerticalFlaneur_thumb.jpg" alt="">
+							</a>
+						</li>
+					</ul>
+				</div><!-- side -->
+				
+			</div><!-- colio-content # VerticalFlaneur -->
+            
+            <div id="NaturalizationsQuestionsStatementsPropositions" class="colio-content">
+									
+				<div class="main">
+					
+					<h3 lang="en">Naturalizations: Questions, Statements, and Propositions<br>(2002-2014)</h3>
+					<p lang="en">Short, fragmentary writings for collective inquiry<br><br>
+                    The intentionally non-linear and fragmentary writing process of these texts has been developed over the years for the many workshops, events, installations, and actions that are part of the Naturalizations series. Depending on the context, selections of these may appear on walls, in publications, engraved on the mirror masks themselves, or simply exchanged verbally by a group of participants. The order in which they appear has no relationship to chronology, hierarchy, importance, or subject matter.<br><br>
+                    
+QUESTIONS<br><br>
+
+What are we before we are naturalized?<br><br>
+
+How do we write the biographies and histories of the unnamed?<br><br>
+
+Can there be a portrait without facial representation?<br><br>
+
+Can there be portraiture without individuals?<br><br>
+
+What is an abstract portrait? (or is there no such thing?)<br><br>
+
+What is an anti-portrait?<br><br>
+
+What is a visual question?<br><br>
+
+What is collective citizenship?<br><br>
+
+Who is excluded from the tradition of biography and how exactly?<br><br>
+
+What is implied by our grand historical narratives and artistic canons?<br><br>
+
+How exactly do museums include and exclude their subjects?<br><br>
+
+Other than religious, ethnic or national identity, what structures may help sustain and exhibit the art of those considered outside or beneath the Western canon?<br><br>
+
+Can we think of representative museums that intentionally refuse the use of biography, geography, or chronology as their main organizational categories? What may we gain by doing so?<br><br>
+
+What is abstraction in politics? A flag? A constitution? Four powers? Representatives of the people?<br><br>
+
+What forms of government rely most heavily on the power of visual and linguistic abstraction?<br><br>
+
+If voting is secret and anonymous in modern democracies, why is it so deeply anchored in facial identification?<br><br>
+
+Can a militant viewership re-inscribe power in the faces of those who refuse to be stripped of all dignity?<br><br>
+
+What are worthwhile aesthetic and scientific experiments in the struggle for social justice?<br><br>
+
+Why does it seem startling, absurd, or even offensive, to copy a painting by Jackson Pollock or Mark Rothko, when we are faced everyday with their endless repetition?<br><br>
+
+Where exactly are the borders between the historical, the modern, and the contemporary? How porous or rigid are they? May we use these mirror masks as tools for creative border crossing?<br><br>
+
+Must all dialogue be premised on mutual acknowledgment and recognition, or may some forms of it benefit from an intentional mutual erasure? What social and physical conditions allow for such temporary suspensions of our ego?<br><br>
+
+What are ideal tools and methods for the social transformation of our public cultural institutions, be it for aesthetic or political purposes?<br><br>
+
+How do we explain the fact that so many of the most radical manifestations of contemporary art are produced and incubated within education and public program departments? How may our answers lead to a reevaluation of the role of objects, collections, exhibitions, and curators, so central to the life of these cultural institutions?<br><br>
+
+As a creator and collector of experiences, how may I donate my collection? To whom, in what forms, to which bodies and institutions?<br><br>
+
+
+PROPOSITIONS<br><br>
+
+The mask erases the division between portrait and landscape.<br><br>
+
+We play with the mask and discover new spaces, formerly closed by the history of our faces.<br><br>
+
+The ontological self is impossible in the logic of the mask.<br><br>
+
+The face’s frame does not allow linear narratives.<br><br>
+
+The mask distributes power among those who use it.<br><br>
+
+The mask is our entryway to collective being.<br><br>
+
+Whether called animism or phenomenology, the masks enact our animation of inanimate objects: in icons and mirrors, in sculptures and altars, in stories and journals. (with E. Gabara)<br><br>
+
+The mask is the / in the s/he, at once photographer and subject, author and participant, victim and perpetrator. An aesthetics, and perhaps the beginning of a politics, of liberation through error, confusion, and refraction. (with E. Gabara)<br><br>
+
+Black skins...white masks...white skins...black masks...white masks...masked black. (with E. Gabara)<br><br>
+
+Each mask is the page of a book that cannot be read alone, a book whose pages have been spread out over time and space, only to be rejoined through imagination or death.<br><br>
+
+If there is avant-garde folklore, then mirror masks should be part of it.<br><br>
+
+
+
+STATEMENTS<br><br>
+
+Our mask denounces our invisibility.<br><br>
+
+The world’s worst criminals do not wear masks.<br><br>
+
+They say the camera is a mirror with a memory. The mask inevitably incorporates the agent and apparatus of this memory.<br><br>
+
+It’s about mythologies, naturally.<br><br>
+
+Warning: The mask may reflect the ugly face of power.<br><br>
+
+The royalties and copyright assumed to belong to he or she who holds the camera are denied to the he or she who is depicted, unless, of course, the camera looks up to the hand that feeds it.<br><br>
+
+Give me your life and land. I will give you mirrors and trinkets.<br><br>
+
+Undocumented mass migration is a war that happened, and continues to happen, without the middle and upper classes even noticing. With armed resistance struggles these classes are at least forced to pay attention, but without that, and without the power of remittances, migrants would be as ignored and vulnerable in their home countries today, as they were when they were first forced to leave.<br><br>
+
+Having multiple passports and speaking several languages has never been a problem for the cosmopolitan elites. Multilingualism and multiculturalism only become a problem when they apply to a transnational working class.<br><br>
+
+The mirror mask deflects all gazes from its user. In a perverse sense, this is much like whiteness remains invisible and unaccountable for in the global production of gendered and racialized minorities. Women and colored people may find temporary relief in the mask’s reflections, and even use them as a tool for solidarity. But at the end of the day we must strip white culture of its mask, call it by its name, and point to it as the powerfully entrenched minority that it is.<br><br>
+
+Goethe once referred to symmetry as the aesthetics of fools. Even when they incorporate processes of reproduction, modern and contemporary art practices have likewise assumed a pejorative, dismissive, or ironic stance toward the power of replicas and direct copying.<br><br>
+
+Roland Barthes proposed a new art of listening that would supplant the modes of listening of the disciple, the patient, and the believer. If we want to create an analogous revolution of the act of seeing, we must identify and supplant the hierarchical ways of seeing that connect our bodies with the current world picture.</p>		
+				</div><!-- main -->
+				
+			</div><!-- colio-content # NaturalizationsQuestionsStatementsPropositions -->
+            
+		</div><!-- sixteen columns -->
+        
+	</div><!-- container -->
+    
+    <div id="space"></div>
+    
+     <div id="TextContainer"><p lang="en">“Naturalizations” is a work in progress based on the production and distribution of a set of masks, which are used in specific social situations. The masks are rectangular mirrors with slits in the eye and mouth area, and velcro suspenders, which enable the users to move around freely while wearing them. Over the years, the series has included interventions in public spaces, schools, grassroots settings, university seminars, publications, museum installations, as well as artworks in traditional media such as photography, painting, sculpture, dance, and theater. Taking place in many cities and countries around the world, Naturalizations projects have included hundreds of participants and dozens of partnering institutions.<br><br>
+     
+     The initial perception created by these masks is one of spatial and psychological confusion. Subjects are reversed if only one person is wearing the mask. If several people wear them and look at each other, their faces disappear and transform into an endless set of reflections of other mirrors, other faces, environments, and objects. Landscape and subject are one and many. Architecture merges with the body. Subjects are inseparable from each other, their bodies dismembered by rectangular planes departing and arriving through reflected gazes. Light breaks and travels on these masks with unpredictable speed and variety. Space and movement become counter-intuitive.<br><br>
+     
+     The masks force us to adapt to a new physical reality, one which denies what has become “natural.” The substitution of the facial marker of individuality for a sign of constant change and reflection results in the erasure of one kind of subjectivity, only to formulate a new set of social conditions. The hierarchical address of the observer, the photographer, and the interviewer is turned upon itself. The space behind the camera is made visible. A dancing group wearing the masks decides to perform for its own pleasure, or for the reflection of their audience. The daily balance between extroverted and introverted actions becomes a tangible visual rhythm. The mask is the new stage, framed by the theater of the everyday.<br><br>
+     
+     The temporary opening of these spatial constructions where viewers and authors are free to switch places, may also reflect on the merit of collective efforts and the fallacy of ontology. The process and title of the series “Naturalizations” also invites to constantly question “the natural” and those institutions - religious, mythological or governmental, which claim not only to know what is “natural,” but are even ready to issue their own stamps of “naturalization.”</p>
+	</div>
+    
+	<div id="TextContainer">
+    	<a href="works.html"><h2 lang="en">BACK TO ALL WORKS</h2></a>
+	</div>
+    
+	</div>
+    
+</div>
+
+</body>
+</html>

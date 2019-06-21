@@ -1,0 +1,496 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"/>
+	<title>Pedro Lasch - Art Biennials & Other Global Disasters</title>
+
+	<!-- CSS
+	================================================== -->
+    
+    <!--Coolio Plugin-->
+	<link rel="stylesheet" href="css/base.css">
+	<link rel="stylesheet" href="css/skeleton.css">
+	<link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/isotope.css">
+	<link rel="stylesheet" href="css/colio.css">
+    
+    <!--Custom-->
+    <link rel="stylesheet" type="text/css" href="css/PedroLasch_style.css"/>
+ 
+    <!-- Responsive Mobile Menu -->    
+    <link rel="stylesheet" href="css/responsivemobilemenu.css" type="text/css"/>
+    
+    <!--RS Slider-->
+    <link rel="stylesheet" type="text/css" href="css/responsiveslides.css"/>
+    <link rel="stylesheet" type="text/css" href="css/RS_Slider_mod.css"/>
+    
+    <!-- JS
+	================================================== -->
+    
+    <!--Misc-->
+    <script src="js/jquery-1.8.2.min.js"></script>
+    <script type="text/javascript" src="js/fade.js"></script>
+    
+    <!-- Responsive Mobile Menu -->    
+    <script type="text/javascript" src="js/responsivemobilemenu.js"></script>
+     
+    <!--RS Slider-->
+    <!--<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>-->
+    <script src="js/responsiveslides.min.js"></script>
+    <script src="js/RS_Slider_call.js"></script>
+    
+    <!--Coolio Plugin-->
+	<!--<script type="text/javascript" src="js/jquery.min.js"></script>-->
+	<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+	<script type="text/javascript" src="js/jquery.scrollUp.min.js"></script>
+    <script type="text/javascript" src="js/jquery.isotope.min.js"></script>
+	<script type="text/javascript" src="js/jquery.colio.min.js"></script>
+    
+    <!-- Colio Black Theme-->
+	<link rel="stylesheet" href="colio-black/style.css" />
+	<link rel="stylesheet" href="colio-black/fancybox/jquery.fancybox.css" />
+	<script type="text/javascript" src="colio-black/fancybox/jquery.fancybox.js"></script>
+    
+    <!-- Initialize Colio-->    
+	<script type="text/javascript">
+		$(document).ready(function(){
+			
+			// "scrollTop" plugin
+			$.scrollUp();
+			
+			// "colio" plugin
+			$('.portfolio .list').colio({
+				id: 'demo_1',
+				theme: 'black',
+				placement: 'inside',
+				onContent: function(content){
+					// init "fancybox" plugin
+					$('.fancybox').fancybox({
+						titlePosition : 'over',
+						cyclic : true
+					});
+				}
+			});
+			
+			// "isotope" plugin
+			var filter = '*', isotope_run = function(f) {
+				$('.portfolio .list').isotope({layoutMode : 'fitRows', filter: f}).
+				trigger('colio','excludeHidden');
+			};
+			
+			$('.portfolio .filters a').click(function(){
+				$(this).addClass('filter-active').siblings().removeClass('filter-active');
+				var href = $(this).attr('href').substr(1);
+				filter = href ? '.' + href : '*';
+				isotope_run(filter);
+				return false;
+			});
+			
+			isotope_run(filter);
+			
+		});
+	</script>
+
+    <!--Social Media-->
+    <script src="https://platform.twitter.com/widgets.js"></script>
+    
+    <!--Language Switcher-->
+    <script src="js/jquery-cookie.js" charset="utf-8" type="text/javascript"></script>
+	<script src="js/jquery-lang.js" charset="utf-8" type="text/javascript"></script>
+    <script src="js/JqueryLangJS_call.js" charset="utf-8" type="text/javascript"></script>
+   
+</head>
+
+<body>
+
+<div class="WrapAll">
+
+	<div class="WrapNav">
+    
+    	<div class="WrapLangSwitch">
+            <div id="langChanger"><a href="#" onclick="window.lang.change('en'); location.reload(); return false;"><h4>ENG</h4></a> | <a  href="#" onclick="window.lang.change('es'); return false;"><h4>ESP</h4></a>
+            </div>
+        </div>
+
+           <div class="header">
+             <a href="index.html"><img src="images/PedroTitle.jpg" alt=""></a>
+        </div>
+        
+        <div class="rmm" data-menu-style = "minimal">
+            <ul>
+                <li><a href="works.html"><p lang="en">WORKS</p></a></li>
+                <li><a href="publications.html"><p lang="en">PUBLICATIONS</p></a></li>
+                <li><a href="about.html"><p lang="en">BIO / CV</p></a></li>
+                <li><a href="current.html"><p lang="en">CURRENT</p></a></li>
+                <li><a href="subscribe.html"><p lang="en">SUBSCRIBE</p></a></li>
+            </ul>
+        </div>
+        
+	</div>
+    
+    <div class="WrapContent">
+    
+	<div id="TextContainer">
+    	<h1 lang="en">Art Biennials & Other Global Disasters </h1><p lang="en"> (2013-ongoing)</p>
+        <br><br>
+        <p lang="en">Physical and digital banners, installations, paintings, diagrams, collective research and production workshops.</p>
+	</div>
+    
+	<div class="container">
+    
+		<div class="sixteen columns">
+							
+			<div class="portfolio clearfix">
+
+				<ul class="list">
+                    
+                    <li data-content="#ArtWorldDisaster">
+						<div class="thumb">
+							<div class="view">
+								<a class="button colio-link" href="#" lang="en">View Project</a>
+							</div>
+							<img src="pictures/ArtBiennialsAndOtherGlobalDisasters_ALL/ArtWorldDisaster_Thumb/2_ArtWorldDisaster_thumb.jpg" alt=""/>
+						</div>
+						<h4><a class="colio-link" href="#" lang="en">Art / World / Disaster</a></h4>
+					</li>
+
+					<li data-content="#BannersAndPairings">
+						<div class="thumb">
+							<div class="view">
+								<a class="button colio-link" href="#" lang="en">View Project</a>
+							</div>
+							<img src="pictures/ArtBiennialsAndOtherGlobalDisasters_ALL/BannersAndPairings_Thumb/1_BannersAndPairings_thumb.jpg" alt=""/>
+						</div>
+						<h4><a class="colio-link" href="#" lang="en">Banners & Pairings</a></h4>
+					</li>
+					
+					<li data-content="#GulfLabor">
+						<div class="thumb">
+							<div class="view">
+								<a class="button colio-link" href="#" lang="en">View Project</a>
+							</div>
+							<img src="pictures/ArtBiennialsAndOtherGlobalDisasters_ALL/GulfLabor_Thumb/1_GulfLabor_thumb.jpg" alt=""/>
+						</div>
+						<h4><a class="colio-link" href="#" lang="en">Gulf Labor</a></h4>
+					</li>
+                    
+                    <li data-content="#IslandsOfFantasyAndTragedy">
+						<div class="thumb">
+							<div class="view">
+								<a class="button colio-link" href="#" lang="en">View Project</a>
+							</div>
+							<img src="pictures/ArtBiennialsAndOtherGlobalDisasters_ALL/IslandsOfFantasyAndTragedy_Thumb/8_IslandsOfFantasyAndTragedy_thumb.jpg" alt=""/>
+						</div>
+						<h4><a class="colio-link" href="#" lang="en">Islands of<br>Tragedy And Fantasy</a></h4>
+					</li>
+                    
+                    <li data-content="#ResearchDiagramsAndMaterials">
+						<div class="thumb">
+							<div class="view">
+								<a class="button colio-link" href="#" lang="en">View Project</a>
+							</div>
+							<img src="pictures/ArtBiennialsAndOtherGlobalDisasters_ALL/ResearchDiagramsAndMaterials_Thumb/1_ResearchDiagramsAndMaterials_thumb.jpg" alt=""/>
+						</div>
+						<h4><a class="colio-link" href="#" lang="en">Research Diagrams<br>& Materials</a></h4>
+					</li>
+					
+				</ul><!-- list -->
+
+			</div><!-- portfolio -->
+            		
+			
+			<div id="ArtWorldDisaster" class="colio-content">
+									
+				<div class="main">
+					
+					<h3 lang="en">Art / World / Disaster</br>2013</h3>
+					<p lang="en"><em lang="en">ART / WORLD / DISASTER</em> is the first installment of a series entitled <em lang="en">Art Biennials & Other Global Disasters.</em> It was produced for the Byblos Bank Art Gallery Beirut, Lebanon (2013). The seemingly celebratory corporate banners were used to initiate dialogues with local participants by means of a series of workshops and public discussions. They also served as the cohesive element bringing together social and curatorial projects produced by local artists, students, curators, activists, and scholars.</p>		
+				</div><!-- main -->
+				
+				<div class="side">
+					<ul class="feed">
+						<li>
+							<a class="fancybox" rel="ArtWorldDisaster" title="" href="pictures/ArtBiennialsAndOtherGlobalDisasters_ALL/ArtWorldDisaster_Large/1_ArtWorldDisaster.jpg">
+								<img src="pictures/ArtBiennialsAndOtherGlobalDisasters_ALL/ArtWorldDisaster_Thumb/1_ArtWorldDisaster_thumb.jpg" alt="">
+							</a>
+						</li>
+                        <li>
+							<a class="fancybox" rel="ArtWorldDisaster" title="" href="pictures/ArtBiennialsAndOtherGlobalDisasters_ALL/ArtWorldDisaster_Large/2_ArtWorldDisaster.jpg">
+								<img src="pictures/ArtBiennialsAndOtherGlobalDisasters_ALL/ArtWorldDisaster_Thumb/2_ArtWorldDisaster_thumb.jpg" alt="">
+							</a>
+						</li>
+                        <li>
+							<a class="fancybox" rel="ArtWorldDisaster" title="" href="pictures/ArtBiennialsAndOtherGlobalDisasters_ALL/ArtWorldDisaster_Large/3_ArtWorldDisaster.jpg">
+								<img src="pictures/ArtBiennialsAndOtherGlobalDisasters_ALL/ArtWorldDisaster_Thumb/3_ArtWorldDisaster_thumb.jpg" alt="">
+							</a>
+						</li>
+                        <li>
+							<a class="fancybox" rel="ArtWorldDisaster" title="" href="pictures/ArtBiennialsAndOtherGlobalDisasters_ALL/ArtWorldDisaster_Large/4_ArtWorldDisaster.jpg">
+								<img src="pictures/ArtBiennialsAndOtherGlobalDisasters_ALL/ArtWorldDisaster_Thumb/4_ArtWorldDisaster_thumb.jpg" alt="">
+							</a>
+						</li>
+                        <li>
+							<a class="fancybox" rel="ArtWorldDisaster" title="" href="pictures/ArtBiennialsAndOtherGlobalDisasters_ALL/ArtWorldDisaster_Large/5_ArtWorldDisaster.jpg">
+								<img src="pictures/ArtBiennialsAndOtherGlobalDisasters_ALL/ArtWorldDisaster_Thumb/5_ArtWorldDisaster_thumb.jpg" alt="">
+							</a>
+						</li>
+                        <li>
+							<a class="fancybox" rel="ArtWorldDisaster" title="" href="pictures/ArtBiennialsAndOtherGlobalDisasters_ALL/ArtWorldDisaster_Large/6_ArtWorldDisaster.jpg">
+								<img src="pictures/ArtBiennialsAndOtherGlobalDisasters_ALL/ArtWorldDisaster_Thumb/6_ArtWorldDisaster_thumb.jpg" alt="">
+							</a>
+						</li>
+                        <li>
+							<a class="fancybox" rel="ArtWorldDisaster" title="" href="pictures/ArtBiennialsAndOtherGlobalDisasters_ALL/ArtWorldDisaster_Large/7_ArtWorldDisaster.jpg">
+								<img src="pictures/ArtBiennialsAndOtherGlobalDisasters_ALL/ArtWorldDisaster_Thumb/7_ArtWorldDisaster_thumb.jpg" alt="">
+							</a>
+						</li>
+					</ul>
+				</div><!-- side -->
+				
+			</div><!-- colio-content # ArtWorldDisaster -->
+            
+            <div id="BannersAndPairings" class="colio-content">
+									
+				<div class="main">
+					
+					<h3 lang="en">Banners And Pairings</br></h3>
+					<p></p>		
+				</div><!-- main -->
+				
+				<div class="side">
+					<ul class="feed">
+						<li>
+							<a class="fancybox" rel="BannersAndPairings" title="" href="pictures/ArtBiennialsAndOtherGlobalDisasters_ALL/BannersAndPairings_Large/1_BannersAndPairings.jpg">
+								<img src="pictures/ArtBiennialsAndOtherGlobalDisasters_ALL/BannersAndPairings_Thumb/1_BannersAndPairings_thumb.jpg" alt="">
+							</a>
+						</li>
+                        <li>
+							<a class="fancybox" rel="BannersAndPairings" title="" href="pictures/ArtBiennialsAndOtherGlobalDisasters_ALL/BannersAndPairings_Large/2_BannersAndPairings.jpg">
+								<img src="pictures/ArtBiennialsAndOtherGlobalDisasters_ALL/BannersAndPairings_Thumb/2_BannersAndPairings_thumb.jpg" alt="">
+							</a>
+						</li>
+                        <li>
+							<a class="fancybox" rel="BannersAndPairings" title="" href="pictures/ArtBiennialsAndOtherGlobalDisasters_ALL/BannersAndPairings_Large/3_BannersAndPairings.jpg">
+								<img src="pictures/ArtBiennialsAndOtherGlobalDisasters_ALL/BannersAndPairings_Thumb/3_BannersAndPairings_thumb.jpg" alt="">
+							</a>
+						</li>
+                        <li>
+							<a class="fancybox" rel="BannersAndPairings" title="" href="pictures/ArtBiennialsAndOtherGlobalDisasters_ALL/BannersAndPairings_Large/4_BannersAndPairings.jpg">
+								<img src="pictures/ArtBiennialsAndOtherGlobalDisasters_ALL/BannersAndPairings_Thumb/4_BannersAndPairings_thumb.jpg" alt="">
+							</a>
+						</li>
+                        <li>
+							<a class="fancybox" rel="BannersAndPairings" title="" href="pictures/ArtBiennialsAndOtherGlobalDisasters_ALL/BannersAndPairings_Large/5_BannersAndPairings.jpg">
+								<img src="pictures/ArtBiennialsAndOtherGlobalDisasters_ALL/BannersAndPairings_Thumb/5_BannersAndPairings_thumb.jpg" alt="">
+							</a>
+						</li>
+                        <li>
+							<a class="fancybox" rel="BannersAndPairings" title="" href="pictures/ArtBiennialsAndOtherGlobalDisasters_ALL/BannersAndPairings_Large/6_BannersAndPairings.jpg">
+								<img src="pictures/ArtBiennialsAndOtherGlobalDisasters_ALL/BannersAndPairings_Thumb/6_BannersAndPairings_thumb.jpg" alt="">
+							</a>
+						</li>
+                        <li>
+							<a class="fancybox" rel="BannersAndPairings" title="" href="pictures/ArtBiennialsAndOtherGlobalDisasters_ALL/BannersAndPairings_Large/7_BannersAndPairings.jpg">
+								<img src="pictures/ArtBiennialsAndOtherGlobalDisasters_ALL/BannersAndPairings_Thumb/7_BannersAndPairings_thumb.jpg" alt="">
+							</a>
+						</li>
+                        <li>
+							<a class="fancybox" rel="BannersAndPairings" title="" href="pictures/ArtBiennialsAndOtherGlobalDisasters_ALL/BannersAndPairings_Large/8_BannersAndPairings.jpg">
+								<img src="pictures/ArtBiennialsAndOtherGlobalDisasters_ALL/BannersAndPairings_Thumb/8_BannersAndPairings_thumb.jpg" alt="">
+							</a>
+						</li>
+                        <li>
+							<a class="fancybox" rel="BannersAndPairings" title="" href="pictures/ArtBiennialsAndOtherGlobalDisasters_ALL/BannersAndPairings_Large/9_BannersAndPairings.jpg">
+								<img src="pictures/ArtBiennialsAndOtherGlobalDisasters_ALL/BannersAndPairings_Thumb/9_BannersAndPairings_thumb.jpg" alt="">
+							</a>
+						</li>
+					</ul>
+				</div><!-- side -->
+				
+			</div><!-- colio-content # BannersAndPairings -->
+            
+            <div id="GulfLabor" class="colio-content">
+									
+				<div class="main">
+					
+					<h3 lang="en">Gulf Labor</br></h3>
+					<p lang="en">Pedro Lasch’s contributions to the <em lang="en">52 Weeks</em> campaign and other work for <em lang="en">Gulf Labor</em> are part of a series entitled <em lang="en">Art Biennials & Other Global Disasters.</em><br><br>
+To learn more about Gulf Labor, visit: 
+<a href="http://gulflabor.org" target="_blank">http://gulflabor.org</a></p>		
+				</div><!-- main -->
+				
+				<div class="side">
+					<ul class="feed">
+						<li>
+							<a class="fancybox" title="" href="pictures/ArtBiennialsAndOtherGlobalDisasters_ALL/GulfLabor_Large/1_GulfLabor.jpg">
+								<img src="pictures/ArtBiennialsAndOtherGlobalDisasters_ALL/GulfLabor_Thumb/1_GulfLabor_thumb.jpg" alt="">
+							</a>
+						</li>
+					</ul>
+				</div><!-- side -->
+				
+			</div><!-- colio-content # GulfLabor -->
+            
+            <div id="IslandsOfFantasyAndTragedy" class="colio-content">
+									
+				<div class="main">
+					
+					<h3 lang="en">Islands of Tragedy and Fantasy</br>12th Havana Biennial, 2015</h3>
+					<p lang="en">Monumental banners installed at the Pabellón Cuba, gallery installation, and series of workshops with local artists and intellectuals.<br><br>
+
+                  <em lang="en">Islands of Tragedy and Fantasy</em> is a new work of art produced specifically for the context of the 12th Havana Biennial. It is part of the <em lang="en">Art Biennials & Other Global Disasters</em> series, begun in Beirut in 2013.</p>		
+				</div><!-- main -->
+				
+				<div class="side">
+					<ul class="feed">
+						<li>
+							<a class="fancybox" rel="IslandsOfFantasyAndTragedy" title="" href="pictures/ArtBiennialsAndOtherGlobalDisasters_ALL/IslandsOfFantasyAndTragedy_Large/1_IslandsOfFantasyAndTragedy.jpg">
+								<img src="pictures/ArtBiennialsAndOtherGlobalDisasters_ALL/IslandsOfFantasyAndTragedy_Thumb/1_IslandsOfFantasyAndTragedy_thumb.jpg" alt="">
+							</a>
+						</li>
+                        <li>
+							<a class="fancybox" rel="IslandsOfFantasyAndTragedy" title="" href="pictures/ArtBiennialsAndOtherGlobalDisasters_ALL/IslandsOfFantasyAndTragedy_Large/2_IslandsOfFantasyAndTragedy.jpg">
+								<img src="pictures/ArtBiennialsAndOtherGlobalDisasters_ALL/IslandsOfFantasyAndTragedy_Thumb/2_IslandsOfFantasyAndTragedy_thumb.jpg" alt="">
+							</a>
+						</li>
+                        <li>
+							<a class="fancybox" rel="IslandsOfFantasyAndTragedy" title="" href="pictures/ArtBiennialsAndOtherGlobalDisasters_ALL/IslandsOfFantasyAndTragedy_Large/3_IslandsOfFantasyAndTragedy.jpg">
+								<img src="pictures/ArtBiennialsAndOtherGlobalDisasters_ALL/IslandsOfFantasyAndTragedy_Thumb/3_IslandsOfFantasyAndTragedy_thumb.jpg" alt="">
+							</a>
+						</li>
+                        <li>
+							<a class="fancybox" rel="IslandsOfFantasyAndTragedy" title="" href="pictures/ArtBiennialsAndOtherGlobalDisasters_ALL/IslandsOfFantasyAndTragedy_Large/4_IslandsOfFantasyAndTragedy.jpg">
+								<img src="pictures/ArtBiennialsAndOtherGlobalDisasters_ALL/IslandsOfFantasyAndTragedy_Thumb/4_IslandsOfFantasyAndTragedy_thumb.jpg" alt="">
+							</a>
+						</li>
+                        <li>
+							<a class="fancybox" rel="IslandsOfFantasyAndTragedy" title="" href="pictures/ArtBiennialsAndOtherGlobalDisasters_ALL/IslandsOfFantasyAndTragedy_Large/5_IslandsOfFantasyAndTragedy.jpg">
+								<img src="pictures/ArtBiennialsAndOtherGlobalDisasters_ALL/IslandsOfFantasyAndTragedy_Thumb/5_IslandsOfFantasyAndTragedy_thumb.jpg" alt="">
+							</a>
+						</li>
+                        <li>
+							<a class="fancybox" rel="IslandsOfFantasyAndTragedy" title="" href="pictures/ArtBiennialsAndOtherGlobalDisasters_ALL/IslandsOfFantasyAndTragedy_Large/6_IslandsOfFantasyAndTragedy.jpg">
+								<img src="pictures/ArtBiennialsAndOtherGlobalDisasters_ALL/IslandsOfFantasyAndTragedy_Thumb/6_IslandsOfFantasyAndTragedy_thumb.jpg" alt="">
+							</a>
+						</li>
+                        <li>
+							<a class="fancybox" rel="IslandsOfFantasyAndTragedy" title="" href="pictures/ArtBiennialsAndOtherGlobalDisasters_ALL/IslandsOfFantasyAndTragedy_Large/7_IslandsOfFantasyAndTragedy.jpg">
+								<img src="pictures/ArtBiennialsAndOtherGlobalDisasters_ALL/IslandsOfFantasyAndTragedy_Thumb/7_IslandsOfFantasyAndTragedy_thumb.jpg" alt="">
+							</a>
+						</li>
+                        <li>
+							<a class="fancybox" rel="IslandsOfFantasyAndTragedy" title="" href="pictures/ArtBiennialsAndOtherGlobalDisasters_ALL/IslandsOfFantasyAndTragedy_Large/8_IslandsOfFantasyAndTragedy.jpg">
+								<img src="pictures/ArtBiennialsAndOtherGlobalDisasters_ALL/IslandsOfFantasyAndTragedy_Thumb/8_IslandsOfFantasyAndTragedy_thumb.jpg" alt="">
+							</a>
+						</li>
+                        <li>
+							<a class="fancybox" rel="IslandsOfFantasyAndTragedy" title="" href="pictures/ArtBiennialsAndOtherGlobalDisasters_ALL/IslandsOfFantasyAndTragedy_Large/9_IslandsOfFantasyAndTragedy.jpg">
+								<img src="pictures/ArtBiennialsAndOtherGlobalDisasters_ALL/IslandsOfFantasyAndTragedy_Thumb/9_IslandsOfFantasyAndTragedy_thumb.jpg" alt="">
+							</a>
+						</li>
+                        <li>
+							<a class="fancybox" rel="IslandsOfFantasyAndTragedy" title="" href="pictures/ArtBiennialsAndOtherGlobalDisasters_ALL/IslandsOfFantasyAndTragedy_Large/10_IslandsOfFantasyAndTragedy.jpg">
+								<img src="pictures/ArtBiennialsAndOtherGlobalDisasters_ALL/IslandsOfFantasyAndTragedy_Thumb/10_IslandsOfFantasyAndTragedy_thumb.jpg" alt="">
+							</a>
+						</li>
+                        <li>
+							<a class="fancybox" rel="IslandsOfFantasyAndTragedy" title="" href="pictures/ArtBiennialsAndOtherGlobalDisasters_ALL/IslandsOfFantasyAndTragedy_Large/11_IslandsOfFantasyAndTragedy.jpg">
+								<img src="pictures/ArtBiennialsAndOtherGlobalDisasters_ALL/IslandsOfFantasyAndTragedy_Thumb/11_IslandsOfFantasyAndTragedy_thumb.jpg" alt="">
+							</a>
+						</li>
+                        <li>
+							<a class="fancybox" rel="IslandsOfFantasyAndTragedy" title="" href="pictures/ArtBiennialsAndOtherGlobalDisasters_ALL/IslandsOfFantasyAndTragedy_Large/12_IslandsOfFantasyAndTragedy.jpg">
+								<img src="pictures/ArtBiennialsAndOtherGlobalDisasters_ALL/IslandsOfFantasyAndTragedy_Thumb/12_IslandsOfFantasyAndTragedy_thumb.jpg" alt="">
+							</a>
+						</li>
+                        <li>
+							<a class="fancybox" rel="IslandsOfFantasyAndTragedy" title="" href="pictures/ArtBiennialsAndOtherGlobalDisasters_ALL/IslandsOfFantasyAndTragedy_Large/13_IslandsOfFantasyAndTragedy.jpg">
+								<img src="pictures/ArtBiennialsAndOtherGlobalDisasters_ALL/IslandsOfFantasyAndTragedy_Thumb/13_IslandsOfFantasyAndTragedy_thumb.jpg" alt="">
+							</a>
+						</li>
+                        <li>
+							<a class="fancybox" rel="IslandsOfFantasyAndTragedy" title="" href="pictures/ArtBiennialsAndOtherGlobalDisasters_ALL/IslandsOfFantasyAndTragedy_Large/14_IslandsOfFantasyAndTragedy.jpg">
+								<img src="pictures/ArtBiennialsAndOtherGlobalDisasters_ALL/IslandsOfFantasyAndTragedy_Thumb/14_IslandsOfFantasyAndTragedy_thumb.jpg" alt="">
+							</a>
+						</li>
+                        <li>
+							<a class="fancybox" rel="IslandsOfFantasyAndTragedy" title="" href="pictures/ArtBiennialsAndOtherGlobalDisasters_ALL/IslandsOfFantasyAndTragedy_Large/15_IslandsOfFantasyAndTragedy.jpg">
+								<img src="pictures/ArtBiennialsAndOtherGlobalDisasters_ALL/IslandsOfFantasyAndTragedy_Thumb/15_IslandsOfFantasyAndTragedy_thumb.jpg" alt="">
+							</a>
+						</li>
+                        <li>
+							<a class="fancybox" rel="IslandsOfFantasyAndTragedy" title="" href="pictures/ArtBiennialsAndOtherGlobalDisasters_ALL/IslandsOfFantasyAndTragedy_Large/16_IslandsOfFantasyAndTragedy.jpg">
+								<img src="pictures/ArtBiennialsAndOtherGlobalDisasters_ALL/IslandsOfFantasyAndTragedy_Thumb/16_IslandsOfFantasyAndTragedy_thumb.jpg" alt="">
+							</a>
+						</li>
+                        <li>
+							<a class="fancybox" rel="IslandsOfFantasyAndTragedy" title="" href="pictures/ArtBiennialsAndOtherGlobalDisasters_ALL/IslandsOfFantasyAndTragedy_Large/17_IslandsOfFantasyAndTragedy.jpg">
+								<img src="pictures/ArtBiennialsAndOtherGlobalDisasters_ALL/IslandsOfFantasyAndTragedy_Thumb/17_IslandsOfFantasyAndTragedy_thumb.jpg" alt="">
+							</a>
+						</li>
+                        <li>
+							<a class="fancybox" rel="IslandsOfFantasyAndTragedy" title="" href="pictures/ArtBiennialsAndOtherGlobalDisasters_ALL/IslandsOfFantasyAndTragedy_Large/18_IslandsOfFantasyAndTragedy.jpg">
+								<img src="pictures/ArtBiennialsAndOtherGlobalDisasters_ALL/IslandsOfFantasyAndTragedy_Thumb/18_IslandsOfFantasyAndTragedy_thumb.jpg" alt="">
+							</a>
+						</li>
+                        <li>
+							<a class="fancybox" rel="IslandsOfFantasyAndTragedy" title="" href="pictures/ArtBiennialsAndOtherGlobalDisasters_ALL/IslandsOfFantasyAndTragedy_Large/19_IslandsOfFantasyAndTragedy.jpg">
+								<img src="pictures/ArtBiennialsAndOtherGlobalDisasters_ALL/IslandsOfFantasyAndTragedy_Thumb/19_IslandsOfFantasyAndTragedy_thumb.jpg" alt="">
+							</a>
+						</li>
+                        <li>
+							<a class="fancybox" rel="IslandsOfFantasyAndTragedy" title="" href="pictures/ArtBiennialsAndOtherGlobalDisasters_ALL/IslandsOfFantasyAndTragedy_Large/20_IslandsOfFantasyAndTragedy.jpg">
+								<img src="pictures/ArtBiennialsAndOtherGlobalDisasters_ALL/IslandsOfFantasyAndTragedy_Thumb/20_IslandsOfFantasyAndTragedy_thumb.jpg" alt="">
+							</a>
+						</li>
+                        <li>
+							<a class="fancybox" rel="IslandsOfFantasyAndTragedy" title="" href="pictures/ArtBiennialsAndOtherGlobalDisasters_ALL/IslandsOfFantasyAndTragedy_Large/21_IslandsOfFantasyAndTragedy.jpg">
+								<img src="pictures/ArtBiennialsAndOtherGlobalDisasters_ALL/IslandsOfFantasyAndTragedy_Thumb/21_IslandsOfFantasyAndTragedy_thumb.jpg" alt="">
+							</a>
+						</li>
+					</ul>
+				</div><!-- side -->
+				
+			</div><!-- colio-content # IslandsOfFantasyAndTragedy -->
+            
+            <div id="ResearchDiagramsAndMaterials" class="colio-content">
+									
+				<div class="main">
+					
+					<h3 lang="en">Research Diagrams And Materials</br></h3>
+					<p></p>		
+				</div><!-- main -->
+				
+				<div class="side">
+					<ul class="feed">
+						<li>
+							<a class="fancybox" title="" href="pictures/ArtBiennialsAndOtherGlobalDisasters_ALL/ResearchDiagramsAndMaterials_Large/1_ResearchDiagramsAndMaterials.jpg">
+								<img src="pictures/ArtBiennialsAndOtherGlobalDisasters_ALL/ResearchDiagramsAndMaterials_Thumb/1_ResearchDiagramsAndMaterials_thumb.jpg" alt="">
+							</a>
+						</li>
+					</ul>
+				</div><!-- side -->
+				
+			</div><!-- colio-content # ResearchDiagramsAndMaterials -->
+            
+		</div><!-- sixteen columns -->
+        
+	</div><!-- container -->
+    
+    <div id="space"></div>
+    
+    <div id="TextContainer"><p lang="en">This series provocatively pairs well-known, or deservedly memorable art events with global political, economic or ecological disasters. Each banner offers a different challenge to viewers and participants, by the sheer specificity of its double naming. For instance the banner “Venice / Chernobyl” triggers very different associations and significations than “Sharjah / Kanungu” or “Kassel / Banqiao”. Additional layers of meaning appear through the physical and cultural context in which these seemingly celebratory corporate banners are placed. The banners often serve to initiate dialogues with local participants by means of a series of workshops and public discussions. They also become the cohesive element bringing together social and curatorial projects produced by local artists, students, curators, activists, and scholars, wherever the project may go. New works in the series offer a particular focus to overall process of accumulation and memory production.</p>
+	</div>
+    
+    <div id="TextContainer">
+    	<a href="works.html"><h2 lang="en">BACK TO ALL WORKS</h2></a>
+	</div>
+    
+	</div>
+    
+</div>
+
+</body>
+</html>

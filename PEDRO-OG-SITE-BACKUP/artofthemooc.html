@@ -1,0 +1,302 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"/>
+	<title>Pedro Lasch - Fire &amp; Ice</title>
+
+	<!-- CSS
+	================================================== -->
+    
+    <!--Coolio Plugin-->
+	<link rel="stylesheet" href="css/base.css">
+	<link rel="stylesheet" href="css/skeleton.css">
+	<link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/isotope.css">
+	<link rel="stylesheet" href="css/colio.css">
+    
+    <!--Custom-->
+    <link rel="stylesheet" type="text/css" href="css/PedroLasch_style.css"/>
+ 
+    <!-- Responsive Mobile Menu -->    
+    <link rel="stylesheet" href="css/responsivemobilemenu.css" type="text/css"/>
+    
+    <!--RS Slider-->
+    <link rel="stylesheet" type="text/css" href="css/responsiveslides.css"/>
+    <link rel="stylesheet" type="text/css" href="css/RS_Slider_mod.css"/>
+    
+    <!-- JS
+	================================================== -->
+    
+    <!--Misc-->
+    <script src="js/jquery-1.8.2.min.js"></script>
+    <script type="text/javascript" src="js/fade.js"></script>
+    
+    <!-- Responsive Mobile Menu -->    
+    <script type="text/javascript" src="js/responsivemobilemenu.js"></script>
+     
+    <!--RS Slider-->
+    <!--<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>-->
+    <script src="js/responsiveslides.min.js"></script>
+    <script src="js/RS_Slider_call.js"></script>
+    
+    <!--Coolio Plugin-->
+	<!--<script type="text/javascript" src="js/jquery.min.js"></script>-->
+	<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+	<script type="text/javascript" src="js/jquery.scrollUp.min.js"></script>
+    <script type="text/javascript" src="js/jquery.isotope.min.js"></script>
+	<script type="text/javascript" src="js/jquery.colio.min.js"></script>
+    
+    <!-- Colio Black Theme-->
+	<link rel="stylesheet" href="colio-black/style.css" />
+	<link rel="stylesheet" href="colio-black/fancybox/jquery.fancybox.css" />
+	<script type="text/javascript" src="colio-black/fancybox/jquery.fancybox.js"></script>
+    
+    <!-- Initialize Colio-->    
+	<script type="text/javascript">
+		$(document).ready(function(){
+			
+			// "scrollTop" plugin
+			$.scrollUp();
+			
+			// "colio" plugin
+			$('.portfolio .list').colio({
+				id: 'demo_1',
+				theme: 'black',
+				placement: 'inside',
+				onContent: function(content){
+					// init "fancybox" plugin
+					$('.fancybox').fancybox({
+						titlePosition : 'over',
+						cyclic : true
+					});
+				}
+			});
+			
+			// "isotope" plugin
+			var filter = '*', isotope_run = function(f) {
+				$('.portfolio .list').isotope({layoutMode : 'fitRows', filter: f}).
+				trigger('colio','excludeHidden');
+			};
+			
+			$('.portfolio .filters a').click(function(){
+				$(this).addClass('filter-active').siblings().removeClass('filter-active');
+				var href = $(this).attr('href').substr(1);
+				filter = href ? '.' + href : '*';
+				isotope_run(filter);
+				return false;
+			});
+			
+			isotope_run(filter);
+			
+		});
+	</script>
+
+    <!--Social Media-->
+    <script src="https://platform.twitter.com/widgets.js"></script>
+    
+    <!--Language Switcher-->
+    <script src="js/jquery-cookie.js" charset="utf-8" type="text/javascript"></script>
+	<script src="js/jquery-lang.js" charset="utf-8" type="text/javascript"></script>
+    <script src="js/JqueryLangJS_call.js" charset="utf-8" type="text/javascript"></script>
+   
+</head>
+
+<body>
+
+<div class="WrapAll">
+
+	<div class="WrapNav">
+    
+    	<div class="WrapLangSwitch">
+            <div id="langChanger"><a href="#" onclick="window.lang.change('en'); location.reload(); return false;"><h4>ENG</h4></a> | <a  href="#" onclick="window.lang.change('es'); return false;"><h4>ESP</h4></a>
+            </div>
+        </div>
+
+            <div class="header">
+             <a href="index.html"><img src="images/PedroTitle.jpg" alt=""></a>
+        </div>
+        
+        <div class="rmm" data-menu-style = "minimal">
+            <ul>
+                <li><a href="works.html"><p lang="en">WORKS</p></a></li>
+                <li><a href="publications.html"><p lang="en">PUBLICATIONS</p></a></li>
+                <li><a href="about.html"><p lang="en">BIO / CV</p></a></li>
+                <li><a href="current.html"><p lang="en">CURRENT</p></a></li>
+                <li><a href="subscribe.html"><p lang="en">SUBSCRIBE</p></a></li>
+            </ul>
+        </div>
+        
+	</div>
+    
+    <div class="WrapContent">
+    
+	<div id="TextContainer">
+    	<h1 lang="en">ART of the MOOC</h1>
+        <br><br>
+        <p lang="en">ART of the MOOC is a series of free massive open online courses (MOOCs) designed by visual artist and Duke professor Pedro Lasch to also be an international work of public art. Over 25,000 enrolled participants from 134 countries have joined the project since its launch in 2015. 
+            <br>
+            <br>
+        The two inaugural segments (Public Art &amp; Pedagogy, Activism &amp; Social Movements) are co-taught by Nato Thompson and offered in both English and Spanish, and were produced by Creative Time and Duke University in 2015. The third segment was co-produced by Duke and UdK in Berlin and is co-taught by Mathias Hinke (UdK), Jace Clayton (DJ Rupture) and Candice Hopkins (Documenta 14). Additional perspectives are provided by the project’s thirty-seven guest presenters, including artists, scholars, curators, and activists from around the world. Participants watch video lectures, guest presentations, and project prompts, with the option of creating their own artistic and social interventions. Using the Coursera platform, these creations receive feedback and exchange through specific rubrics and written comments in smaller groups of peers. Internal forums, a series of hangouts, and various social media platforms also provide opportunity for additional exchange.</p><br><br>
+
+        <p lang="en">For a full syllabus and list of guest presenters in the first two segments, visit <strong><a href="http://creativetime.org/projects/art-mooc" target="_blank">CreativeTime.org</a></strong>.</p>
+        <br>
+        <br>
+
+        <p lang="en">For a full syllabus and list of guest presenters in the third segment, visit <a href="https://www.socialpracticelab.org/portfolio/aom-collective-experiments-with-sound/" target="_blank">the <strong>Social Practice Lab</strong></a>.</p>
+        <br>
+        <br>
+
+        <p lang="en">To enroll, go to <strong><a href="https://www.coursera.org/instructor/~10670344" target="_blank">Coursera.org</a></strong>.</p> 
+        <br>
+        <br>
+
+        <p lang="en">You can also watch short preview clips on our <strong><a href="https://www.youtube.com/channel/UCO_1IJWp1nmky38dFVelBZw/videos" target="_blank">YouTube channel</a></strong> or connect with us on <strong><a href="https://www.facebook.com/artofthemooc/" target="_blank">Facebook</a></strong>.</p> 
+        <br>
+        
+	</div>
+    
+	<div class="container">
+    
+		<div class="sixteen columns">
+							
+			<div class="portfolio clearfix">
+
+				<ul class="list">
+                    
+                    <li data-content="#PublicArtAndPedagogy">
+						<div class="thumb">
+							<div class="view">
+								<a class="button colio-link" href="#" lang="en">View Project</a>
+							</div>
+							<img src="pictures/ArtoftheMOOC_ALL/AoM_PublicArt_thumbnail.png" alt="public art and pedagogy"/>
+						</div>
+						<h4><a class="colio-link" href="#" lang="en">Public Art &amp; Pedagogy</a></h4>
+					</li>
+
+					<li data-content="#ActivismandSocialMovements">
+						<div class="thumb">
+							<div class="view">
+								<a class="button colio-link" href="#" lang="en">View Project</a>
+							</div>
+							<img src="pictures/ArtoftheMOOC_ALL/AoM_ActivismandSocial_thumbnail.png" alt=""/>
+						</div>
+						<h4><a class="colio-link" href="#" lang="en">Activism &amp; Social Movements</a></h4>
+					</li>
+					
+					<li data-content="#ExperimentswithSound">
+						<div class="thumb">
+							<div class="view">
+								<a class="button colio-link" href="#" lang="en">View Project</a>
+							</div>
+							<img src="pictures/ArtoftheMOOC_ALL/AoM_ExperimentswithSound_thumbnail.png" alt=""/>
+						</div>
+						<h4><a class="colio-link" href="#" lang="en">Experiments with Sound</a></h4>
+					</li>
+                
+				</ul><!-- list -->
+
+			</div><!-- portfolio -->
+            		<!-- PublicArtAndPedagogy -->
+			
+			<div id="PublicArtAndPedagogy" class="colio-content">
+									
+				<div class="main">
+					
+					<h3 lang="en">ART of the MOOC: Public Art &amp; Pedagogy <br></h3>
+                    <p lang="en"><strong style="color:whitesmoke">(Creative Time &amp; Duke University, launched 2015)</strong><br><br> Participants of this course may try their hand at their own public art interventions, or simply focus on learning from the theory and recent history of public practice. Designed by artist and Duke professor Pedro Lasch and co-taught by Creative Time artistic director, Nato Thompson, this course presents public culture and art in their radically reinvented contemporary forms. The lectures link major developments of recent decades to wider topics like spatial politics, everyday social structures, and experimental education. Also included are guest presentations from key thinkers and practitioners, like: Tania Bruguera, Claire Doherty, Tom Finkelpearl, Hans Haacke, Shannon Jackson, Suzanne Lacy, Rick Lowe, and many more. As the ‘ART of the MOOC’ title implies, learners and participants are encouraged to treat the MOOC itself as a public art medium. This happens mostly through the course’s practical components, local project productions, global exchanges, and critical feedback. While no prior art making experience is required, projects also offer challenging options for advanced learners. 
+                    <br><br>    
+                    For other course offerings or language versions in this series, just search 'ART of the MOOC' in the Coursera catalog (también en español).
+                    <br><br>
+                    Link: <a href="https://www.coursera.org/learn/public-art-pedagogy" target="_blank">www.coursera.org/learn/public-art-pedagogy</a>
+</p>		
+				</div><!-- main -->
+				
+				<div class="side">
+					<ul class="feed">
+						<li>
+							<a class="fancybox" rel="PublicArtAndPedagogy" title="" href="pictures/ArtoftheMOOC_ALL/AoM_PublicArt_thumbnail.png">
+								<img src="pictures/ArtoftheMOOC_ALL/AoM_PublicArt_thumbnail_small.png" alt="">
+							</a>
+						</li>
+                        
+					</ul>
+				</div> <!-- side -->
+				
+			</div><!-- colio-content # ActivismandSocialMovements -->
+            
+            <div id="ActivismandSocialMovements" class="colio-content">
+									
+				<div class="main">
+					
+					<h3 lang="en">ART of the MOOC: Activism and Social Movements<br></h3>
+					<p lang="en"><strong style="color:whitesmoke">(Creative Time &amp; Duke University, launched 2015)</strong>
+                    <br><br>    
+                    This course is for activists, artists, and thinkers who wish to better understand and participate in social change. We focus on the prolific and exciting overlap between socially engaged art and cultural practices generated by recent social movements around the world. Rather than assess the political efficacy of activities like mourning, listening, organizing, dancing, or partying, the lectures examine such cultural activities next to, and within, contemporary art practice. Included in the course are guest presentations by key artists, activists, and scholars, like: Rebecca Gomperts, Chido Govera, Gulf Labor, Hans Haacke, Sharon Hayes, Jolene Rickard, Gregory Sholette, Joshua Wong, and many more. Designed by artist and Duke professor Pedro Lasch and co-taught by Creative Time artistic director, Nato Thompson, the course challenges learners to treat the MOOC itself as a social and artistic form. This happens mostly through the practical components, local project productions, global exchanges, and critical feedback. While no prior art making or activist experience is required, projects also offer challenging options for advanced learners. 
+                    <br><br>    
+                    For other course offerings or language versions in this series, just search 'ART of the MOOC' inside the Coursera course catalogue. 
+                    <br><br>
+                    Link: <a href="www.coursera.org/learn/activism-social-movements" target="_blank">www.coursera.org/learn/activism-social-movements</a>
+</p>		
+				</div><!-- main -->
+				
+                
+				<div class="side">
+					<ul class="feed">
+						<li>
+							<a class="fancybox" rel="ActivismandSocialMovements" title="" href="pictures/ArtoftheMOOC_ALL/AoM_ActivismandSocial_thumbnail.png">
+								<img src="pictures/ArtoftheMOOC_ALL/AoM_ActivismandSocial_thumbnail_small.png" alt="activism and social movements">
+							</a>
+						</li>
+					</ul>
+				</div> 
+                <!-- side-->
+				
+			</div><!-- colio-content # ExperimentswithSound -->
+            
+            <div id="ExperimentswithSound" class="colio-content">
+									
+				<div class="main">
+					
+					<h3 lang="en">ART of the MOOC: Experiments with Sound<br></h3>
+					<p lang="en"><strong style="color:whitesmoke">(Duke University &amp; Universität der Künste - Berlin, launched 2018)</strong> 
+                    <br><br>
+                    Participants in this course may try their hand at their own sound interventions and musical compositions, or simply focus on learning more about diverse musical traditions, sonic experimentation, and acoustic phenomena in everyday life. Designed by artist and Duke professor Pedro Lasch and UdK composer Mathias Hinke, this course is also co-taught by scholar and musician Jace Clayton (DJ Rupture) and curator Candice Hopkins (Documenta 14). The lectures link major artistic developments of recent decades to wider ideas about sound in specific social and spatial contexts. Also included are guest presentations from key thinkers and practitioners, like: Christopher DeLaurenti, Jen Delos Reyes, Tina Haver Currin, Quran Karriem, Christina Kubisch, Thomas Kusitzky, Scott Lindroth, Mark Anthony Neal, Bill Seaman, and John Supko. As the ‘ART of the MOOC’ title implies, learners and participants are encouraged to treat the MOOC itself as a public art medium. This happens mostly through the course’s optional practical components, local project productions, global exchanges, and critical feedback. While no prior sound production or musical experience is required, projects also offer challenging options for advanced learners. 
+                    <br><br>    
+                    For other course offerings or language versions in this series, just search 'ART of the MOOC' in the Coursera catalog. For other course offerings or language versions in this series, just search 'ART of the MOOC' inside the Coursera course catalogue. 
+                    <br><br>
+                    Link: <a href="https://www.coursera.org/learn/activism-social-movements" target="_blank">www.coursera.org/learn/activism-social-movements</a>
+ <br><br></p>		
+				</div><!-- main -->
+                
+				
+				<div class="side">
+					<ul class="feed">
+						<li>
+							<a class="fancybox" rel="ExperimentswithSound" title="" href="pictures/ArtoftheMOOC_ALL/AoM_ExperimentswithSound_thumbnail.png">
+								<img src="pictures/ArtoftheMOOC_ALL/AoM_ExperimentswithSound_thumbnail_small.png" alt="experiments with sound">
+							</a>
+						</li>
+                       
+					</ul>
+				</div>
+                <!-- side -->
+				
+			</div>
+         
+		</div><!-- sixteen columns -->
+        
+	</div><!-- container -->
+    
+    <div id="space"></div>
+    
+    <div id="TextContainer">
+        <br>
+    	<a href="works.html"><h2 lang="en">BACK TO ALL WORKS</h2></a>
+	</div>
+    </div>
+	
+    </div>
+</body>
+</html>

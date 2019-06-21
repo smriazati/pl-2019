@@ -1,0 +1,272 @@
+/* Colio - Black Theme
+================================================== */
+
+
+/* container */
+
+.colio-theme-black {
+	margin-right: 20px;
+}
+
+.colio-theme-black .colio-container {
+	background: #333;
+}
+
+/* colio close */
+
+.colio-theme-black .colio-close span {
+	display: inline-block;
+	width: 24px;
+	height: 24px;
+	text-indent: -9999px;
+}
+
+.colio-theme-black .colio-close {
+	position: absolute;
+	top: 16px;
+	right: 16px;
+}
+
+.colio-theme-black .colio-close span {
+	background: url(images/controls.png) no-repeat -48px 0;
+}
+
+.colio-theme-black .colio-close:hover {
+	opacity: 0.8;
+}
+
+/* colio navigation */
+
+.colio-theme-black .colio-navigation span {
+	display: inline-block;
+	width: 24px;
+	height: 24px;
+	text-indent: -9999px;
+}
+
+.colio-theme-black .colio-navigation {
+	position: absolute;
+	top: 60px;
+	left: 60px;
+}
+
+.colio-theme-black .colio-navigation a {
+	float: left;
+	padding: 5px;
+	margin-right: 5px;
+	background: #ff5452;
+	-webkit-transition: background .1s;
+	-moz-transition: background .1s;
+	-o-transition: background .1s;
+	transition: background .1s;
+}
+
+.colio-theme-black .colio-navigation a:hover {
+	background: #555;
+}
+
+.colio-theme-black .colio-prev span {
+	background: url(images/controls.png) no-repeat 0 0;
+}
+
+.colio-theme-black .colio-next span {
+	background: url(images/controls.png) no-repeat -24px 0;
+}
+
+.colio-theme-black .colio-no-prev,
+.colio-theme-black .colio-no-next {
+	background: #555!important;
+}
+
+/* content */
+
+.colio-theme-black .main {
+	float: left;
+	width: 45%;
+	padding: 20px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.colio-theme-black .side {
+	float: left;
+	padding: 20px;
+	width: 55%;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+/* typography */
+
+.colio-theme-black {
+	color: #999;
+}
+
+.colio-theme-black h3 {
+	padding: 0;
+	margin: 0 0 35px 100px;
+	color: #ccc;
+}
+
+.colio-theme-black a,
+.colio-theme-black a:visited {
+	color: #ccc;
+	font-style: italic;
+	text-decoration: underline;
+}
+
+.colio-theme-black a:hover {
+	color: #eee;
+}
+
+.colio-theme-black a.visit-link {
+	display: inline-block;
+	padding: 5px 15px;
+	border: 2px solid #ccc;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-style: normal;
+	line-height: 21px;
+	font-size: 12px;
+	letter-spacing: 0.05px;
+}
+
+/* photo feed */
+
+.colio-theme-black .feed {
+	margin: 0;
+	list-style: none;
+}
+
+.colio-theme-black .feed li {
+	float: left;
+	margin: 0 5px 5px 0;
+	width: 130px;
+	height: 130px;
+	overflow: hidden;
+	background: #ff5452 url(images/plus.png) no-repeat center;
+}
+
+.colio-theme-black .feed img {
+	height: 100%;
+	width: auto;
+	vertical-align: top;
+	-webkit-transition: opacity .2s;
+	-moz-transition: opacity .2s;
+	-o-transition: opacity .2s;
+	transition: opacity .2s;
+}
+
+.colio-theme-black .feed li:hover img {
+	opacity: 0.2;
+}
+
+/* social icons */
+
+.colio-theme-black .social {
+	width: 100%;
+	margin-bottom: 21px;
+	overflow: hidden;
+}
+
+.colio-theme-black .social li {
+	float: left;
+	margin: 0 7px 0 0;
+}
+
+.colio-theme-black .social a {
+	display: inline-block;
+	width: 24px;
+	height: 24px;
+	text-indent: -9999px;
+	opacity: 0.8;
+	border-radius: 12px;
+	-moz-border-radius: 12px;
+	background-size: 24px 24px !important;
+}
+
+.colio-theme-black .social a:hover {
+	opacity: 1;
+	-webkit-transition: opacity .2s;
+	-moz-transition: opacity .2s;
+	-o-transition: opacity .2s;
+	transition: opacity .2s;
+}
+
+.colio-theme-black .social .delicious { background: url(images/social/delicious.png) no-repeat center; }
+.colio-theme-black .social .digg { background: url(images/social/digg.png) no-repeat center; }
+.colio-theme-black .social .dribble { background: url(images/social/dribble.png) no-repeat center; }
+.colio-theme-black .social .ember { background: url(images/social/ember.png) no-repeat center; }
+.colio-theme-black .social .facebook { background: url(images/social/facebook.png) no-repeat center; }
+.colio-theme-black .social .flickr { background: url(images/social/flickr.png) no-repeat center; }
+.colio-theme-black .social .forrst { background: url(images/social/forrst.png) no-repeat center; }
+.colio-theme-black .social .google { background: url(images/social/google.png) no-repeat center; }
+.colio-theme-black .social .last_fm { background: url(images/social/last_fm.png) no-repeat center; }
+.colio-theme-black .social .linkedin { background: url(images/social/linkedin.png) no-repeat center; }
+.colio-theme-black .social .my_space { background: url(images/social/my_space.png) no-repeat center; }
+.colio-theme-black .social .quora { background: url(images/social/quora.png) no-repeat center; }
+.colio-theme-black .social .rss { background: url(images/social/rss.png) no-repeat center; }
+.colio-theme-black .social .sharethis { background: url(images/social/sharethis.png) no-repeat center; }
+.colio-theme-black .social .skype { background: url(images/social/skype.png) no-repeat center; }
+.colio-theme-black .social .stumbleupon { background: url(images/social/stumbleupon.png) no-repeat center; }
+.colio-theme-black .social .tumblr { background: url(images/social/tumblr.png) no-repeat center; }
+.colio-theme-black .social .twitter { background: url(images/social/twitter.png) no-repeat center; }
+.colio-theme-black .social .vimeo { background: url(images/social/vimeo.png) no-repeat center; }
+.colio-theme-black .social .youtube { background: url(images/social/you_tube.png) no-repeat center; }
+
+
+/* Retina
+================================================== */
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5) {
+	.colio-theme-black .colio-prev span {
+		background: url(images/controls@2x.png) no-repeat 0 0;
+		background-size: 72px 24px;
+	}
+	
+	.colio-theme-black .colio-next span {
+		background: url(images/controls@2x.png) no-repeat -24px 0;
+		background-size: 72px 24px;
+	}
+	
+	.colio-theme-black .colio-close span {
+		background: url(images/controls@2x.png) no-repeat -48px 0;
+		background-size: 72px 24px;
+	}
+}
+
+
+/* Media queries
+================================================== */
+
+/* Smaller than standard 960 (devices and browsers) */ /*mod*/
+@media only screen and (max-width: 1145px) { }
+
+/* Tablet Portrait size to standard 960 (devices and browsers) */ /*mod*/
+@media only screen and (min-width: 768px) and (max-width: 1145px) {}
+
+/* All Mobile Sizes (devices and browser) */ /*mod*/
+@media only screen and (max-width: 950px) {
+	
+	.colio-theme-black .main, 
+	.colio-theme-black .side { clear: both; width: 100%; padding: 0; margin-bottom: 40px; }
+	.colio-theme-black .side { margin-bottom: 0; }
+	.colio-theme-black .colio-navigation { left: 40px; top: 40px; }
+	.colio-theme-black .main h3 { float: none; margin: 60px 0 20px; text-align: left; }
+	
+}
+
+/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */ /*mod*/
+@media only screen and (min-width: 651px) and (max-width: 950px) {} 
+
+/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */ /*mod*/
+@media only screen and (max-width: 650px) {
+	
+	.colio-theme-black .colio-container { padding: 30px; }
+	.colio-theme-black .colio-navigation { left: 30px; top: 30px; }
+	.colio-theme-black .feed li { width: 115px; height: 115px; }
+	
+}

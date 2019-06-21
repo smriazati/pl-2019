@@ -1,0 +1,2 @@
+[11-Jan-2017 15:00:54] PHP Fatal error:  require() [<a href='function.require'>function.require</a>]: Failed opening required 'ABSPATHWPINC/option.php' (include_path='.:/usr/lib64/php:/usr/share/pear') in /home3/pedrolas/public_html/twintowersgoglobal/wtc/wp-includes/functions.php on line 8
+[10-Mar-2017 20:15:51] PHP Fatal error:  Call to undefined function  _deprecated_file() in /home3/pedrolas/public_html/twintowersgoglobal/wtc/wp-includes/rss-functions.php on line 8

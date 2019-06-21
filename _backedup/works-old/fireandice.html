@@ -1,0 +1,485 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"/>
+	<title>Pedro Lasch - Art Biennials &amp; Other Global Disasters</title>
+
+	<!-- CSS
+	================================================== -->
+    
+    <!--Coolio Plugin-->
+	<link rel="stylesheet" href="css/base.css">
+	<link rel="stylesheet" href="css/skeleton.css">
+	<link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/isotope.css">
+	<link rel="stylesheet" href="css/colio.css">
+    
+    <!--Custom-->
+    <link rel="stylesheet" type="text/css" href="css/PedroLasch_style.css"/>
+ 
+    <!-- Responsive Mobile Menu -->    
+    <link rel="stylesheet" href="css/responsivemobilemenu.css" type="text/css"/>
+    
+    <!--RS Slider-->
+    <link rel="stylesheet" type="text/css" href="css/responsiveslides.css"/>
+    <link rel="stylesheet" type="text/css" href="css/RS_Slider_mod.css"/>
+    
+    <!-- JS
+	================================================== -->
+    
+    <!--Misc-->
+    <script src="js/jquery-1.8.2.min.js"></script>
+    <script type="text/javascript" src="js/fade.js"></script>
+    
+    <!-- Responsive Mobile Menu -->    
+    <script type="text/javascript" src="js/responsivemobilemenu.js"></script>
+     
+    <!--RS Slider-->
+    <!--<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>-->
+    <script src="js/responsiveslides.min.js"></script>
+    <script src="js/RS_Slider_call.js"></script>
+    
+    <!--Coolio Plugin-->
+	<!--<script type="text/javascript" src="js/jquery.min.js"></script>-->
+	<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+	<script type="text/javascript" src="js/jquery.scrollUp.min.js"></script>
+    <script type="text/javascript" src="js/jquery.isotope.min.js"></script>
+	<script type="text/javascript" src="js/jquery.colio.min.js"></script>
+    
+    <!-- Colio Black Theme-->
+	<link rel="stylesheet" href="colio-black/style.css" />
+	<link rel="stylesheet" href="colio-black/fancybox/jquery.fancybox.css" />
+	<script type="text/javascript" src="colio-black/fancybox/jquery.fancybox.js"></script>
+    
+    <!-- Initialize Colio-->    
+	<script type="text/javascript">
+		$(document).ready(function(){
+			
+			// "scrollTop" plugin
+			$.scrollUp();
+			
+			// "colio" plugin
+			$('.portfolio .list').colio({
+				id: 'demo_1',
+				theme: 'black',
+				placement: 'inside',
+				onContent: function(content){
+					// init "fancybox" plugin
+					$('.fancybox').fancybox({
+						titlePosition : 'over',
+						cyclic : true
+					});
+				}
+			});
+			
+			// "isotope" plugin
+			var filter = '*', isotope_run = function(f) {
+				$('.portfolio .list').isotope({layoutMode : 'fitRows', filter: f}).
+				trigger('colio','excludeHidden');
+			};
+			
+			$('.portfolio .filters a').click(function(){
+				$(this).addClass('filter-active').siblings().removeClass('filter-active');
+				var href = $(this).attr('href').substr(1);
+				filter = href ? '.' + href : '*';
+				isotope_run(filter);
+				return false;
+			});
+			
+			isotope_run(filter);
+			
+		});
+	</script>
+
+    <!--Social Media-->
+    <script src="https://platform.twitter.com/widgets.js"></script>
+    
+    <!--Language Switcher-->
+    <script src="js/jquery-cookie.js" charset="utf-8" type="text/javascript"></script>
+	<script src="js/jquery-lang.js" charset="utf-8" type="text/javascript"></script>
+    <script src="js/JqueryLangJS_call.js" charset="utf-8" type="text/javascript"></script>
+   
+</head>
+
+<body>
+
+<div class="WrapAll">
+
+	<div class="WrapNav">
+    
+    	<div class="WrapLangSwitch">
+            <div id="langChanger"><a href="#" onclick="window.lang.change('en'); location.reload(); return false;"><h4>ENG</h4></a> | <a  href="#" onclick="window.lang.change('es'); return false;"><h4>ESP</h4></a>
+            </div>
+        </div>
+
+            <div class="header">
+             <a href="index.html"><img src="images/PedroTitle.jpg" alt=""></a>
+        </div>
+        
+        <div class="rmm" data-menu-style = "minimal">
+            <ul>
+                <li><a href="works.html"><p lang="en">WORKS</p></a></li>
+                <li><a href="publications.html"><p lang="en">PUBLICATIONS</p></a></li>
+                <li><a href="about.html"><p lang="en">BIO / CV</p></a></li>
+                <li><a href="current.html"><p lang="en">CURRENT</p></a></li>
+                <li><a href="subscribe.html"><p lang="en">SUBSCRIBE</p></a></li>
+            </ul>
+        </div>
+        
+	</div>
+    
+    <div class="WrapContent">
+    
+	<div id="TextContainer">
+    	<h1 lang="en">Fire &amp; Ice (In Memory of Heather Heyer)</h1><p lang="en"> (2018-ongoing)</p>
+        <br><br>
+        <p lang="en">A public art project by Pedro Lasch<br>
+Charlottesville Main Street Arena. April 1st, 2018.</p><br><br>
+
+<p lang="en">Public art installation, fire performances, skating vigil, and three-channel video installation and photo suites, 2018.</p><br><br>
+
+<p lang="en">On August 11, 2017, Neo-Nazis, KKK, and other white supremacists brought tiki torches and racist slogans to their Unite the Right rally in Charlottesville. The following day, they were met downtown by massive counter-protests. It was then that a Neo-Nazi ran his car into the crowd, killing Heather Heyer, and injuring many others.</p><br><br>
+
+<p lang="en"><em>FIRE &amp; ICE</em> collectively reimagines fire as a positive force, presented on the ice rink of Charlottesville’s Main Street Arena, opposed to the hatred that led to Heather Heyer’s tragic death. On April 1st, 2018, viewers joined the piece by skating, observed it from the ice rink wall, or were surprised by it from the street, seen through the arena’s beautiful arched windows on their walk upon the mall. Playful and solemn at the same time, the work is a celebration of Heather Heyer’s life, as well as the building that brought joy to so many people. <em>FIRE &amp; ICE</em> was the last public event at the arena, before it was demolished to be relocated from its historic site. As an ephemeral sculpture, the work is centered in the title's core materials. Fire and ice have been revered in many cultures as basic methods of subsistence and key elements of matter. Capturing the solid, liquid, and gas spectrum of the states of matter, their extreme temperatures also bring awe to human and planetary experience. The work also includes a series of photo suites, and a three-channel video installation that interweaves an original sound track with the key elements of the event: the installation, its fire performances, and the participatory candle vigil on skates.</p> <br>
+	</div>
+    
+	<div class="container">
+    
+		<div class="sixteen columns">
+							
+			<div class="portfolio clearfix">
+
+				<ul class="list">
+                    
+                    <li data-content="#FireAndIceInstallation">
+						<div class="thumb">
+							<div class="view">
+								<a class="button colio-link" href="#" lang="en">View Project</a>
+							</div>
+							<img src="pictures/FireAndIce_ALL/FireAndIce_Thumb/2_FireAndIce_thumb.jpg" alt=""/>
+						</div>
+						<h4><a class="colio-link" href="#" lang="en">Public Art Installation</a></h4>
+					</li>
+
+					<li data-content="#FireAndIcePerformances">
+						<div class="thumb">
+							<div class="view">
+								<a class="button colio-link" href="#" lang="en">View Project</a>
+							</div>
+							<img src="pictures/FireAndIce_ALL/FireAndIce_Thumb/3_FireAndIce_thumb.jpg" alt=""/>
+						</div>
+						<h4><a class="colio-link" href="#" lang="en">Performances</a></h4>
+					</li>
+					
+					<li data-content="#FireAndIceVigil">
+						<div class="thumb">
+							<div class="view">
+								<a class="button colio-link" href="#" lang="en">View Project</a>
+							</div>
+							<img src="pictures/FireAndIce_ALL/FireAndIce_Thumb/4_FireAndIce_thumb.jpg" alt=""/>
+						</div>
+						<h4><a class="colio-link" href="#" lang="en">Skating Vigil for Heather</a></h4>
+					</li>
+                    
+                    <li data-content="#FireAndIceThreeChannelVideo">
+						<div class="thumb">
+							<div class="view">
+								<a class="button colio-link" href="#" lang="en">View Project</a>
+							</div>
+							<img src="pictures/FireAndIce_ALL/FireAndIce_Thumb/1_FireAndIce_thumb.jpg" alt=""/>
+						</div>
+						<h4><a class="colio-link" href="#" lang="en">Three-Channel Video</a></h4>
+					</li>
+                
+				</ul><!-- list -->
+
+			</div><!-- portfolio -->
+            		<!-- 1. FIRE & ICE: Public Art Installation 
+2. FIRE & ICE: Performances 
+3. FIRE & ICE: Skating Vigil for Heather 
+4. FIRE & ICE: Three-Channel Video  -->
+			
+			<div id="FireAndIceInstallation" class="colio-content">
+									
+				<div class="main">
+					
+					<h3 lang="en">Public Art Installation<br></h3>
+                    <p lang="en"><em lang="en">FIRE &amp; ICE</em> collectively reimagines fire as a positive force, presented on the ice rink of Charlottesville’s Main Street Arena, opposed to the hatred that led to Heather Heyer’s tragic death. As an ephemeral sculpture, the work is centered in the title's core materials. </p>		
+				</div><!-- main -->
+				
+				<div class="side">
+					<ul class="feed">
+						<li>
+							<a class="fancybox" rel="FireAndIceInstallation" title="" href="pictures/FireAndIce_ALL/FireAndIce_Full/1_FireAndIceInstall.jpg">
+								<img src="pictures/FireAndIce_ALL/FireAndIce_Thumb/1_FireAndIceInstall_thumb.jpg" alt="">
+							</a>
+						</li>
+                        <li>
+							<a class="fancybox" rel="FireAndIceInstallation" title="" href="pictures/FireAndIce_ALL/FireAndIce_Full/2_FireAndIceInstall.jpg">
+								<img src="pictures/FireAndIce_ALL/FireAndIce_Thumb/2_FireAndIceInstall_thumb.jpg" alt="">
+							</a>
+						</li>
+                        <li>
+							<a class="fancybox" rel="FireAndIceInstallation" title="" href="pictures/FireAndIce_ALL/FireAndIce_Full/3_FireAndIceInstall.jpg">
+								<img src="pictures/FireAndIce_ALL/FireAndIce_Thumb/3_FireAndIceInstall_thumb.jpg" alt="">
+							</a>
+						</li>
+                        <li>
+							<a class="fancybox" rel="FireAndIceInstallation" title="" href="pictures/FireAndIce_ALL/FireAndIce_Full/4_FireAndIceInstall.jpg">
+								<img src="pictures/FireAndIce_ALL/FireAndIce_Thumb/4__FireAndIceInstall_thumb.jpg" alt="">
+							</a>
+						</li>
+                        <li>
+							<a class="fancybox" rel="FireAndIceInstallation" title="" href="pictures/FireAndIce_ALL/FireAndIce_Full/5_FireAndIceInstall.jpg">
+								<img src="pictures/FireAndIce_ALL/FireAndIce_Thumb/5_FireAndIceInstall_thumb.jpg" alt="">
+							</a>
+						</li>
+                        <li>
+							<a class="fancybox" rel="FireAndIceInstallation" title="" href="pictures/FireAndIce_ALL/FireAndIce_Full/6_FireAndIceInstall.jpg">
+								<img src="pictures/FireAndIce_ALL/FireAndIce_Thumb/6_FireAndIceInstall_thumb.jpg" alt="">
+							</a>
+						</li>
+                        <li>
+							<a class="fancybox" rel="FireAndIceInstallation" title="" href="pictures/FireAndIce_ALL/FireAndIce_Thumb/1_FireAndIce_thumb.jpg">
+								<img src="pictures/FireAndIce_ALL/FireAndIce_Thumb/1_FireAndIce_thumb.jpg" alt="">
+							</a>
+						</li>
+                         <li>
+							<a class="fancybox" rel="FireAndIceInstallation" title="" href="pictures/FireAndIce_ALL/FireAndIce_Full/8_FireAndIceInstall.jpg">
+								<img src="pictures/FireAndIce_ALL/FireAndIce_Thumb/8_FireAndIceInstall_thumb.jpg" alt="">
+							</a>
+						</li>
+                         <li>
+							<a class="fancybox" rel="FireAndIceInstallation" title="" href="pictures/FireAndIce_ALL/FireAndIce_Full/9_FireAndIceInstall.jpg">
+								<img src="pictures/FireAndIce_ALL/FireAndIce_Thumb/9_FireAndIceInstall_thumb.jpg" alt="">
+							</a>
+						</li>
+					</ul>
+				</div><!-- side -->
+				
+			</div><!-- colio-content # Performancess -->
+            
+            <div id="FireAndIcePerformances" class="colio-content">
+									
+				<div class="main">
+					
+					<h3 lang="en">Performances<br></h3>
+					<p>Fire and ice have been revered in many cultures as basic methods of subsistence and key elements of matter. Capturing the solid, liquid, and gas spectrum of the states of matter, their extreme temperatures also bring awe to human and planetary experience. Fire performers Erin Riley and Joe Schepps performed original pieces on the ice rink of Charlottesville’s Main Street Arena, opposed to the hatred that led to Heather Heyer’s tragic death.</p>		
+				</div><!-- main -->
+				
+				<div class="side">
+					<ul class="feed">
+						<li>
+							<a class="fancybox" rel="FireAndIcePerformances" title="" href="pictures/FireAndIce_ALL/FireAndIce_Full/1_FireAndIcePerformances.jpg">
+								<img src="pictures/FireAndIce_ALL/FireAndIce_Thumb/1_FireAndIcePerformances_thumb.jpg" alt="">
+							</a>
+						</li>
+                        <li>
+							<a class="fancybox" rel="FireAndIcePerformances" title="" href="pictures/FireAndIce_ALL/FireAndIce_Full/2_FireAndIcePerformances.jpg">
+								<img src="pictures/FireAndIce_ALL/FireAndIce_Thumb/2_FireAndIcePerformances_thumb.jpg" alt="">
+							</a>
+						</li>
+                        <li>
+							<a class="fancybox" rel="FireAndIcePerformances" title="" href="pictures/FireAndIce_ALL/FireAndIce_Full/3_FireAndIcePerformances.jpg">
+								<img src="pictures/FireAndIce_ALL/FireAndIce_Thumb/3_FireAndIcePerformances_thumb.jpg" alt="">
+							</a>
+						</li>
+                        <li>
+							<a class="fancybox" rel="FireAndIcePerformances" title="" href="pictures/FireAndIce_ALL/FireAndIce_Full/4_FireAndIcePerformances.jpg">
+								<img src="pictures/FireAndIce_ALL/FireAndIce_Thumb/4_FireAndIcePerformances_thumb.jpg" alt="">
+							</a>
+						</li>
+                        <li>
+							<a class="fancybox" rel="FireAndIcePerformances" title="" href="pictures/FireAndIce_ALL/FireAndIce_Full/5_FireAndIcePerformances.jpg">
+								<img src="pictures/FireAndIce_ALL/FireAndIce_Thumb/5_FireAndIcePerformances_thumb.jpg" alt="">
+							</a>
+						</li>
+                        <li>
+							<a class="fancybox" rel="FireAndIcePerformances" title="" href="pictures/FireAndIce_ALL/FireAndIce_Full/6_FireAndIcePerformances.jpg">
+								<img src="pictures/FireAndIce_ALL/FireAndIce_Thumb/6_FireAndIcePerformances_thumb.jpg" alt="">
+							</a>
+						</li>
+                        <li>
+							<a class="fancybox" rel="FireAndIcePerformances" title="" href="pictures/FireAndIce_ALL/FireAndIce_Full/7_FireAndIcePerformances.jpg">
+								<img src="pictures/FireAndIce_ALL/FireAndIce_Thumb/7_FireAndIcePerformances_thumb.jpg" alt="">
+							</a>
+						</li>
+                        <li>
+							<a class="fancybox" rel="FireAndIcePerformances" title="" href="pictures/FireAndIce_ALL/FireAndIce_Full/8_FireAndIcePerformances.jpg">
+								<img src="pictures/FireAndIce_ALL/FireAndIce_Thumb/8_FireAndIcePerformances_thumb.jpg" alt="">
+							</a>
+						</li>
+                        <li>
+							<a class="fancybox" rel="FireAndIcePerformances" title="" href="pictures/FireAndIce_ALL/FireAndIce_Full/9_FireAndIcePerformances.jpg">
+								<img src="pictures/FireAndIce_ALL/FireAndIce_Thumb/9_FireAndIcePerformances_thumb.jpg" alt="">
+							</a>
+						</li>
+                         <li>
+							<a class="fancybox" rel="FireAndIcePerformances" title="" href="pictures/FireAndIce_ALL/FireAndIce_Full/10_FireAndIcePerformances.jpg">
+								<img src="pictures/FireAndIce_ALL/FireAndIce_Thumb/10_FireAndIcePerformances_thumb.jpg" alt="">
+							</a>
+						</li>
+					</ul>
+				</div><!-- side -->
+				
+			</div><!-- colio-content # Skating Vigil for Heather -->
+            
+            <div id="FireAndIceVigil" class="colio-content">
+									
+				<div class="main">
+					
+					<h3 lang="en">Skating Vigil For Heather<br></h3>
+					<p lang="en">On April 1st, 2018, viewers joined the piece by skating, observed it from the ice rink wall, or were surprised by it from the street, seen through the arena’s beautiful arched windows on their walk upon the mall. <em>FIRE &amp; ICE</em> was the last public event at the arena, before it was demolished to be relocated from its historic site. <br><br></p>		
+				</div><!-- main -->
+				
+				<div class="side">
+					<ul class="feed">
+						<li>
+							<a class="fancybox" rel="FireAndIceVigil" title="" href="pictures/FireAndIce_ALL/FireAndIce_Full/1_FireAndIceVigil.jpg">
+								<img src="pictures/FireAndIce_ALL/FireAndIce_Thumb/1_FireAndIceVigil_thumb.jpg" alt="">
+							</a>
+						</li>
+                        <li>
+							<a class="fancybox" rel="FireAndIceVigil" title="" href="pictures/FireAndIce_ALL/FireAndIce_Full/2_FireAndIceVigil.jpg">
+								<img src="pictures/FireAndIce_ALL/FireAndIce_Thumb/2_FireAndIceVigil_thumb.jpg" alt="">
+							</a>
+						</li>
+                        <li>
+							<a class="fancybox" rel="FireAndIceVigil" title="" href="pictures/FireAndIce_ALL/FireAndIce_Full/3_FireAndIceVigil.jpg">
+								<img src="pictures/FireAndIce_ALL/FireAndIce_Thumb/3_FireAndIceVigil_thumb.jpg" alt="">
+							</a>
+						</li>
+                        <li>
+							<a class="fancybox" rel="FireAndIceVigil" title="" href="pictures/FireAndIce_ALL/FireAndIce_Full/4_FireAndIceVigil.jpg">
+								<img src="pictures/FireAndIce_ALL/FireAndIce_Thumb/4_FireAndIceVigil_thumb.jpg" alt="">
+							</a>
+						</li><li>
+							<a class="fancybox" rel="FireAndIceVigil" title="" href="pictures/FireAndIce_ALL/FireAndIce_Full/5_FireAndIceVigil.jpg">
+								<img src="pictures/FireAndIce_ALL/FireAndIce_Thumb/5_FireAndIceVigil_thumb.jpg" alt="">
+							</a>
+						</li><li>
+							<a class="fancybox" rel="FireAndIceVigil" title="" href="pictures/FireAndIce_ALL/FireAndIce_Full/6_FireAndIceVigil.jpg">
+								<img src="pictures/FireAndIce_ALL/FireAndIce_Thumb/6_FireAndIceVigil_thumb.jpg" alt="">
+							</a>
+						</li>
+                        <li>
+							<a class="fancybox" rel="FireAndIceVigil" title="" href="pictures/FireAndIce_ALL/FireAndIce_Full/7_FireAndIceVigil.jpg">
+								<img src="pictures/FireAndIce_ALL/FireAndIce_Thumb/7_FireAndIceVigil_thumb.jpg" alt="">
+							</a>
+						</li>
+                        <li>
+							<a class="fancybox" rel="FireAndIceVigil" title="" href="pictures/FireAndIce_ALL/FireAndIce_Full/8_FireAndIceVigil.jpg">
+								<img src="pictures/FireAndIce_ALL/FireAndIce_Thumb/8_FireAndIceVigil_thumb.jpg" alt="">
+							</a>
+						</li>
+                        <li>
+							<a class="fancybox" rel="FireAndIceVigil" title="" href="pictures/FireAndIce_ALL/FireAndIce_Full/9_FireAndIceVigil.jpg">
+								<img src="pictures/FireAndIce_ALL/FireAndIce_Thumb/9_FireAndIceVigil_thumb.jpg" alt="">
+							</a>
+						</li>
+                        
+                        <li>
+							<a class="fancybox" rel="FireAndIceVigil" title="" href="pictures/FireAndIce_ALL/FireAndIce_Full/11_FireAndIceVigil.jpg">
+								<img src="pictures/FireAndIce_ALL/FireAndIce_Thumb/11_FireAndIceVigil_thumb.jpg" alt="">
+							</a>
+						</li>
+                        <li>
+							<a class="fancybox" rel="FireAndIceVigil" title="" href="pictures/FireAndIce_ALL/FireAndIce_Full/12_FireAndIceVigil.jpg">
+								<img src="pictures/FireAndIce_ALL/FireAndIce_Thumb/12_FireAndIceVigil_thumb.jpg" alt="">
+							</a>
+						</li>
+                        <li>
+							<a class="fancybox" rel="FireAndIceVigil" title="" href="pictures/FireAndIce_ALL/FireAndIce_Full/13_FireAndIceVigil.jpg">
+								<img src="pictures/FireAndIce_ALL/FireAndIce_Thumb/13_FireAndIceVigil_thumb.jpg" alt="">
+							</a>
+						</li>
+                        <li>
+							<a class="fancybox" rel="FireAndIceVigil" title="" href="pictures/FireAndIce_ALL/FireAndIce_Full/14_FireAndIceVigil.jpg">
+								<img src="pictures/FireAndIce_ALL/FireAndIce_Thumb/14_FireAndIceVigil_thumb.jpg" alt="">
+							</a>
+						</li>
+                        <li>
+							<a class="fancybox" rel="FireAndIceVigil" title="" href="pictures/FireAndIce_ALL/FireAndIce_Full/15_FireAndIceVigil.jpg">
+								<img src="pictures/FireAndIce_ALL/FireAndIce_Thumb/15_FireAndIceVigil_thumb.jpg" alt="">
+							</a>
+						</li>
+                        <li>
+							<a class="fancybox" rel="FireAndIceVigil" title="" href="pictures/FireAndIce_ALL/FireAndIce_Full/16_FireAndIceVigil.jpg">
+								<img src="pictures/FireAndIce_ALL/FireAndIce_Thumb/16_FireAndIceVigil_thumb.jpg" alt="">
+							</a>
+						</li>
+					</ul>
+				</div><!-- side -->
+				
+			</div><!-- colio-content # Three Channel Video -->
+            
+            <div id="FireAndIceThreeChannelVideo" class="colio-content">
+									
+				<div class="main">
+					
+					<h3 lang="en">Three-Channel Video</h3>
+					<p lang="en"><br>
+                        The work also includes a series of photo suites, and a three-channel video installation that interweaves an original sound track with the key elements of the event: the installation, its fire performances, and the participatory candle vigil on skates. 
+                  </p>		
+				</div><!-- main -->
+				
+				<div class="side">
+					<ul class="feed">
+						<li>
+							<a class="fancybox" rel="FireAndIceThreeChannelVideo" title="" href="pictures/FireAndIce_ALL/FireAndIce_Thumb/1_FireAndIce_thumb.jpg">
+								<img src="pictures/FireAndIce_ALL/FireAndIce_Thumb/1_FireAndIce_thumb.jpg" alt="">
+							</a>
+						</li>
+                        <li>
+							<a class="fancybox" rel="FireAndIceThreeChannelVideo" title="" href="pictures/FireAndIce_ALL/FireAndIce_Thumb/3_FireAndIce_thumb.jpg">
+								<img src="pictures/FireAndIce_ALL/FireAndIce_Thumb/3_FireAndIce_thumb.jpg" alt="">
+							</a>
+						</li>
+                        <li>
+							<a class="fancybox" rel="FireAndIceThreeChannelVideo" title="" href="pictures/FireAndIce_ALL/FireAndIce_Thumb/5_FireAndIce_thumb.jpg">
+								<img src="pictures/FireAndIce_ALL/FireAndIce_Thumb/5_FireAndIce_thumb.jpg" alt="">
+							</a>
+						</li>
+                        
+					</ul>
+				</div><!-- side -->
+				
+			</div><!-- colio-content # IslandsOfFantasyAndTragedy -->
+            
+        
+            
+		</div><!-- sixteen columns -->
+        
+	</div><!-- container -->
+    
+    <div id="space"></div>
+    
+    <div id="TextContainer">
+        <p lang="en"><br><strong>Credits:</strong><br>
+Pedro Lasch - Author &amp; Artistic Director<br>
+Ed Woodham and Bill Bennett - Co-Producers <br>
+Yuchen Xie - Curator <br>
+Erin Riley and Joe Schepps - Fire Performers<br>
+Michael Blair - Video and Editing<br>
+Charles Lambert &amp; Kia Wassenaar - Videography<br>
+Amanda Christensen, Gabby Fuller, Gillian Liedke, Lucy Wu - Photography<br><br></p>
+        
+        <p lang="en"><strong>Presented by:</strong> <br>
+            <a href="http://www.uvaartsboard.com/">UVA Arts Board</a>
+            <br><a href="https://www.socialpracticelab.org/">FHI Social Practice Lab</a> 
+            <br><a href="http://www.uvaartsboard.com/about/">AiOP 2018: Matter</a><br><br></p>
+        
+        <strong>Special thanks to:</strong><p lang="en">
+Michael Blair, Fire Marshal &amp; Battalion Chief Joshua J. Davis; Brian Adams, Gary Jones, Will Bryant, and Main Street Arena staff; James Silay, Amanda Christensen, Gabby Fuller, Charles Lambert, Gillian Liedke, Madeline Smith, Sarah Walshak, Kia Wassenaar, Lucy Wu, Women's Ice Hockey Club at UVA; Susan Bro &amp; <a href="https://www.heatherheyerfoundation.com/">The Heather Heyer Foundation</a>.</p><br>
+	</div>
+    
+    <div id="TextContainer">
+    	<a href="works.html"><h2 lang="en">BACK TO ALL WORKS</h2></a>
+	</div>
+    </div>
+	
+    </div>
+</body>
+</html>
